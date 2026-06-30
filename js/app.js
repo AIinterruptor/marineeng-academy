@@ -34,10 +34,6 @@ function showHome() {
 }
 
 function showAllTopics() {
-  // capture previousView before hiding anything
-  const wasSearch = document.getElementById('searchView').style.display !== 'none';
-  const wasHome   = document.getElementById('homeView').style.display   !== 'none';
-  // navigating directly to All Topics always comes from home/search — back goes home
   previousView = 'home';
 
   hide('homeView'); hide('topicDetailView'); hide('aboutView'); hide('searchView');
@@ -83,6 +79,7 @@ function showTopic(id) {
   document.getElementById('topicDetailContent').innerHTML = buildTopicDetail(topic);
   hide('homeView'); hide('allTopicsView'); hide('aboutView'); hide('searchView');
   show('topicDetailView');
+  renderRelated(topic);
   window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
@@ -143,7 +140,7 @@ function buildTopicDetail(topic) {
   const catLabel    = capitalize(topic.category);
   const keyTopicsHtml = topic.keyTopics.map(k => `<li>${k}</li>`).join('');
   const tagsHtml    = topic.tags.map(t => `<span class="tag">${t}</span>`).join('');
-  const folderLink  = `${REPO_URL}/tree/main/data`;
+  const folderLink  = `${REPO_URL}/tree/main/files/${encodeURIComponent(topic.sourceDir)}`;
 
   return `
     <div class="detail-hero">
@@ -194,7 +191,7 @@ function buildTopicDetail(topic) {
         <div class="cta-box">
           <h3>📂 Original Source Materials</h3>
           <p>The full set of ${topic.fileCount} reference documents for this module is available in the GitHub repository.</p>
-          <a href="${REPO_URL}" class="btn-primary" style="display:inline-block;margin-top:4px" target="_blank" rel="noopener">View Repository →</a>
+          <a href="${folderLink}" class="btn-primary" style="display:inline-block;margin-top:4px" target="_blank" rel="noopener">Browse Files on GitHub →</a>
           <p class="cta-note">Files include PDFs, work instructions, and PowerPoint presentations from active vessel operations.</p>
         </div>
 
@@ -336,10 +333,3 @@ function clearSearch() {
   window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
-// render related topics after topic detail innerHTML is written
-document.addEventListener('click', () => {
-  setTimeout(() => {
-    const active = topics.find(t => document.getElementById(`related-${t.id}`));
-    if (active) renderRelated(active);
-  }, 0);
-});
