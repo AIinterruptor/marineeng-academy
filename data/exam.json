@@ -1,0 +1,702 @@
+[
+  {
+    "id": 1,
+    "question": "A Carnot cycle operates between a heat source at 500 K and a heat sink at 300 K. What is the thermal efficiency of this cycle?",
+    "choices": ["A. 40%", "B. 50%", "C. 60%", "D. 30%"],
+    "answer": "A",
+    "explanation": "Carnot efficiency = 1 − (T_cold/T_hot) = 1 − (300/500) = 0.40 or 40%."
+  },
+  {
+    "id": 2,
+    "question": "Which thermodynamic law states that the total entropy of an isolated system can never decrease over time?",
+    "choices": ["A. Zeroth Law", "B. First Law", "C. Second Law", "D. Third Law"],
+    "answer": "C",
+    "explanation": "The Second Law of Thermodynamics states that entropy of an isolated system always increases or remains constant."
+  },
+  {
+    "id": 3,
+    "question": "In a constant-pressure (isobaric) process, heat added to an ideal gas is equal to which thermodynamic quantity?",
+    "choices": ["A. Change in internal energy", "B. Change in enthalpy", "C. Change in entropy multiplied by temperature", "D. Work done by the gas"],
+    "answer": "B",
+    "explanation": "At constant pressure, Q = ΔH (change in enthalpy), since work done W = PΔV accounts for boundary work."
+  },
+  {
+    "id": 4,
+    "question": "Steam enters a turbine at 3 MPa and 400°C and exits at 10 kPa. If the isentropic efficiency of the turbine is 85%, the actual work output compared to the ideal isentropic work output is:",
+    "choices": ["A. 85% of the isentropic work", "B. 15% more than the isentropic work", "C. Equal to the isentropic work", "D. 115% of the isentropic work"],
+    "answer": "A",
+    "explanation": "Isentropic turbine efficiency is defined as actual work divided by isentropic work, so actual work = 0.85 × isentropic work."
+  },
+  {
+    "id": 5,
+    "question": "Which heat transfer mode does NOT require a medium and can occur through a vacuum?",
+    "choices": ["A. Conduction", "B. Convection", "C. Radiation", "D. Advection"],
+    "answer": "C",
+    "explanation": "Radiation transfers heat via electromagnetic waves and requires no intervening medium, unlike conduction or convection."
+  },
+  {
+    "id": 6,
+    "question": "The overall heat transfer coefficient U for a heat exchanger accounts for:",
+    "choices": ["A. Conduction resistance only", "B. Convection resistance on one side only", "C. Combined conduction and convection resistances on all sides", "D. Radiation resistance only"],
+    "answer": "C",
+    "explanation": "U combines thermal resistances due to convection on both fluid sides and conduction through the wall in series."
+  },
+  {
+    "id": 7,
+    "question": "For an ideal gas undergoing an adiabatic reversible (isentropic) process, which relationship is correct where γ = Cp/Cv?",
+    "choices": ["A. PV = constant", "B. TV^(γ-1) = constant", "C. P/T = constant", "D. V/T = constant"],
+    "answer": "B",
+    "explanation": "For an isentropic process, TV^(γ-1) = constant is one of the valid relations derived from PV^γ = constant."
+  },
+  {
+    "id": 8,
+    "question": "The LMTD (Log Mean Temperature Difference) method in heat exchanger design is used to calculate:",
+    "choices": ["A. Fluid velocity inside tubes", "B. The effective mean temperature driving force for heat transfer", "C. Fouling factor of the heat exchanger", "D. Pressure drop across the exchanger"],
+    "answer": "B",
+    "explanation": "LMTD provides the effective mean temperature difference between hot and cold streams, used in Q = U·A·LMTD."
+  },
+  {
+    "id": 9,
+    "question": "A refrigeration cycle absorbs 150 kW of heat from the cold reservoir and rejects 200 kW to the hot reservoir. The coefficient of performance (COP) of the refrigerator is:",
+    "choices": ["A. 1.33", "B. 3.00", "C. 0.75", "D. 4.00"],
+    "answer": "B",
+    "explanation": "COP_refrigerator = Q_L / W_net = Q_L / (Q_H − Q_L) = 150 / (200 − 150) = 150/50 = 3.00."
+  },
+  {
+    "id": 10,
+    "question": "Fourier's Law of heat conduction is expressed as Q = −kA(dT/dx). What does the negative sign signify?",
+    "choices": ["A. Heat flows in the direction of temperature increase", "B. Heat flux is always negative", "C. Heat flows in the direction of decreasing temperature", "D. Thermal conductivity is a negative quantity"],
+    "answer": "C",
+    "explanation": "The negative sign indicates heat flows from high to low temperature (in the negative direction of the temperature gradient)."
+  },
+  {
+    "id": 11,
+    "question": "In a 4-stroke diesel engine, the power stroke occurs during which stroke?",
+    "choices": ["A. First stroke (intake)", "B. Second stroke (compression)", "C. Third stroke (expansion/power)", "D. Fourth stroke (exhaust)"],
+    "answer": "C",
+    "explanation": "The power stroke is the third stroke where combustion gases expand and push the piston downward, producing work."
+  },
+  {
+    "id": 12,
+    "question": "The purpose of the scavenge air system in a 2-stroke marine diesel engine is to:",
+    "choices": ["A. Cool the fuel injectors", "B. Remove exhaust gases and supply fresh air for the next cycle", "C. Lubricate the cylinder liner", "D. Regulate fuel injection timing"],
+    "answer": "B",
+    "explanation": "Scavenging removes burnt exhaust gases from the cylinder and charges it with fresh air to support the next combustion cycle."
+  },
+  {
+    "id": 13,
+    "question": "Which component in a marine diesel engine prevents excessive axial movement of the crankshaft?",
+    "choices": ["A. Main bearing", "B. Crosshead bearing", "C. Thrust bearing", "D. Bottom-end bearing"],
+    "answer": "C",
+    "explanation": "The thrust bearing absorbs propeller thrust and restricts axial (fore-and-aft) movement of the crankshaft."
+  },
+  {
+    "id": 14,
+    "question": "The compression ratio of a diesel engine is defined as:",
+    "choices": ["A. Ratio of stroke length to bore diameter", "B. Ratio of total cylinder volume to clearance volume", "C. Ratio of indicated power to brake power", "D. Ratio of fuel mass to air mass in the cylinder"],
+    "answer": "B",
+    "explanation": "Compression ratio = (V_displacement + V_clearance) / V_clearance = total volume / clearance volume."
+  },
+  {
+    "id": 15,
+    "question": "In a marine diesel engine, the function of the crosshead is to:",
+    "choices": ["A. Transmit power from the crankshaft to the propeller shaft", "B. Convert rotary motion of the crankshaft into reciprocating motion", "C. Guide the connecting rod and separate crankcase from the combustion space", "D. Control fuel injection timing"],
+    "answer": "C",
+    "explanation": "The crosshead guides the piston rod, bears the side thrust from the connecting rod, and isolates the crankcase from cylinder combustion gases."
+  },
+  {
+    "id": 16,
+    "question": "What is the function of a fuel oil viscosity controller on a main engine fuel system?",
+    "choices": ["A. To measure the calorific value of fuel", "B. To maintain optimum fuel viscosity for proper atomization at injectors", "C. To separate water from fuel before injection", "D. To filter particulates from fuel oil"],
+    "answer": "B",
+    "explanation": "Maintaining correct fuel viscosity (typically 10–15 cSt at injectors) ensures proper atomization for efficient combustion."
+  },
+  {
+    "id": 17,
+    "question": "Indicator diagrams (P-V diagrams) taken from a marine diesel engine cylinder are primarily used to:",
+    "choices": ["A. Measure lube oil consumption", "B. Detect wear on cylinder liners", "C. Calculate indicated mean effective pressure and detect combustion faults", "D. Monitor cooling water temperature"],
+    "answer": "C",
+    "explanation": "P-V indicator diagrams reveal IMEP, cylinder power balance, and combustion anomalies such as delayed ignition or blow-by."
+  },
+  {
+    "id": 18,
+    "question": "The mean effective pressure (MEP) in an engine cylinder is best described as:",
+    "choices": ["A. Peak cylinder pressure during combustion", "B. Average pressure throughout the entire piston stroke that would produce the same work", "C. Intake manifold pressure after the turbocharger", "D. Exhaust back-pressure at the turbine inlet"],
+    "answer": "B",
+    "explanation": "MEP is the hypothetical constant pressure over the displacement volume that would yield the same net work as the actual cycle."
+  },
+  {
+    "id": 19,
+    "question": "An exhaust valve on a large 2-stroke marine diesel engine that fails to close properly will most likely cause:",
+    "choices": ["A. Increased scavenge air pressure", "B. Loss of compression and reduced power in that unit", "C. Higher fuel injection pressure", "D. Increased lube oil consumption"],
+    "answer": "B",
+    "explanation": "A leaking exhaust valve allows compressed charge to escape, reducing compression pressure and thus cylinder power output."
+  },
+  {
+    "id": 20,
+    "question": "Which type of fuel injection system provides variable injection timing and rate-shaping in modern electronically controlled marine diesel engines?",
+    "choices": ["A. Jerk-type mechanical pump system", "B. Common rail fuel injection system", "C. Air-blast injection system", "D. Solid injection with cam-driven plunger only"],
+    "answer": "B",
+    "explanation": "Common rail systems store fuel at high constant pressure and use electronic solenoid valves for precise timing and rate shaping."
+  },
+  {
+    "id": 21,
+    "question": "The purpose of cylinder liner cooling in a marine diesel engine is to:",
+    "choices": ["A. Increase compression ratio", "B. Maintain liner temperature within safe limits to preserve lubrication film integrity", "C. Reduce exhaust gas temperature", "D. Increase fuel injection pressure"],
+    "answer": "B",
+    "explanation": "Proper liner cooling prevents thermal distortion, maintains lubricating oil film, and controls wear while avoiding condensation corrosion."
+  },
+  {
+    "id": 22,
+    "question": "In a diesel engine, detonation (knocking) is caused by:",
+    "choices": ["A. Too long an ignition delay followed by rapid simultaneous combustion of accumulated fuel", "B. Insufficient air supply to the cylinder", "C. Excessive cooling water flow", "D. High lube oil viscosity"],
+    "answer": "A",
+    "explanation": "A long ignition delay allows excess fuel to accumulate; when ignition finally occurs, rapid uncontrolled combustion causes the characteristic knock."
+  },
+  {
+    "id": 23,
+    "question": "What is the function of the steam drum in a water tube boiler?",
+    "choices": ["A. To superheat steam before it enters the turbine", "B. To separate steam from the water-steam mixture and provide a steam reservoir", "C. To preheat feedwater entering the boiler", "D. To measure steam flow rate"],
+    "answer": "B",
+    "explanation": "The steam drum separates saturated steam from water through gravity and baffles, and serves as the main steam reservoir."
+  },
+  {
+    "id": 24,
+    "question": "A boiler safety valve is set to lift at 17 bar. According to SOLAS requirements, how many safety valves must be fitted?",
+    "choices": ["A. One is sufficient for all boilers", "B. At least two independent safety valves", "C. Three safety valves of equal capacity", "D. One safety valve and one bursting disc"],
+    "answer": "B",
+    "explanation": "SOLAS and classification rules require at least two independent safety valves on each boiler to prevent over-pressurization."
+  },
+  {
+    "id": 25,
+    "question": "Priming in a marine boiler is the carryover of water droplets with steam and is most commonly caused by:",
+    "choices": ["A. Low steam pressure operation", "B. High water level, high steam demand, or contaminated boiler water with high TDS", "C. Excessive feedwater temperature", "D. Insufficient fuel supply"],
+    "answer": "B",
+    "explanation": "High water level, sudden heavy steam demand, or foaming due to high TDS/oil contamination all promote carryover of water with steam."
+  },
+  {
+    "id": 26,
+    "question": "The purpose of the economizer in a boiler system is to:",
+    "choices": ["A. Superheat the steam before the main engine", "B. Preheat feedwater using waste exhaust gas heat to improve efficiency", "C. Cool exhaust gases to meet emission limits", "D. Reduce fuel oil viscosity"],
+    "answer": "B",
+    "explanation": "An economizer recovers heat from exhaust gases to preheat boiler feedwater, increasing overall thermal efficiency."
+  },
+  {
+    "id": 27,
+    "question": "Scale formation on the water-side of boiler heating surfaces is dangerous because:",
+    "choices": ["A. It increases steam pressure beyond design limits", "B. It acts as a thermal insulator, causing tube overheating and possible failure", "C. It reduces steam quality by increasing moisture content", "D. It corrodes the fire-side of boiler tubes"],
+    "answer": "B",
+    "explanation": "Scale has very low thermal conductivity, impeding heat transfer and causing the metal to overheat, potentially leading to tube failure."
+  },
+  {
+    "id": 28,
+    "question": "A boiler water sample shows a high chloride content. The most appropriate corrective action is to:",
+    "choices": ["A. Increase chemical dosing of oxygen scavenger", "B. Blow down the boiler to reduce chloride concentration and investigate source of contamination", "C. Increase feed pump flow rate", "D. Raise boiler operating pressure"],
+    "answer": "B",
+    "explanation": "High chlorides indicate seawater contamination or excessive concentration; blowdown reduces the level while the contamination source is traced."
+  },
+  {
+    "id": 29,
+    "question": "What is the purpose of the feed check valve on a boiler feed line?",
+    "choices": ["A. To control feed water temperature", "B. To prevent reverse flow of steam from the boiler back into the feed system", "C. To regulate feedwater pH", "D. To measure feedwater flow rate"],
+    "answer": "B",
+    "explanation": "The feed check valve is a non-return valve that stops steam or hot water from flowing back from the boiler into the feed pumps."
+  },
+  {
+    "id": 30,
+    "question": "Oxygen corrosion in a boiler system is prevented primarily by:",
+    "choices": ["A. Adding phosphates to the boiler water", "B. Deaeration of feedwater and dosing with oxygen scavengers such as hydrazine or sodium sulphite", "C. Increasing the operating pressure of the boiler", "D. Filtering the feedwater through activated carbon"],
+    "answer": "B",
+    "explanation": "Dissolved oxygen causes pitting corrosion; deaerators remove the bulk of oxygen and chemical scavengers neutralize the residual."
+  },
+  {
+    "id": 31,
+    "question": "An exhaust gas boiler (waste heat recovery boiler) on a diesel engine ship generates steam primarily from:",
+    "choices": ["A. Hot seawater cooling the main engine", "B. Heat recovered from main engine exhaust gases", "C. Fresh water heated by the generator cooling system", "D. Combustion of auxiliary fuel in a separate furnace"],
+    "answer": "B",
+    "explanation": "Waste heat recovery boilers (EGB) extract heat from main engine exhaust gases to generate steam without additional fuel consumption."
+  },
+  {
+    "id": 32,
+    "question": "Which boiler fitting is used to control the feed water flow into the boiler automatically to maintain the correct water level?",
+    "choices": ["A. Safety valve", "B. Steam stop valve", "C. Feed regulator (automatic feed controller)", "D. Blow-down valve"],
+    "answer": "C",
+    "explanation": "The feed regulator or automatic feed controller modulates feedwater flow to maintain the drum water level within set limits."
+  },
+  {
+    "id": 33,
+    "question": "A centrifugal pump fails to develop rated pressure despite running at design speed. The most probable cause is:",
+    "choices": ["A. Excessive discharge pressure", "B. Air entrainment or cavitation at the pump suction", "C. Low motor current draw", "D. Oversized discharge piping"],
+    "answer": "B",
+    "explanation": "Air in the suction line or cavitation breaks the liquid column, causing the pump to lose prime and fail to develop head."
+  },
+  {
+    "id": 34,
+    "question": "Cavitation in a centrifugal pump is characterized by:",
+    "choices": ["A. Smooth, quiet operation with increasing flow rate", "B. Noise, vibration, and erosion damage to the impeller due to collapse of vapor bubbles", "C. Gradual increase in pump efficiency", "D. Reduced motor current consumption"],
+    "answer": "B",
+    "explanation": "When local pressure falls below vapor pressure, bubbles form and collapse violently on metal surfaces causing noise, vibration, and erosion."
+  },
+  {
+    "id": 35,
+    "question": "The Net Positive Suction Head Required (NPSHR) is a characteristic of:",
+    "choices": ["A. The suction pipeline design", "B. The pump itself, specified by the manufacturer", "C. The discharge piping system", "D. The fluid being pumped"],
+    "answer": "B",
+    "explanation": "NPSHR is a pump characteristic determined by its design; the system must provide NPSHA > NPSHR to avoid cavitation."
+  },
+  {
+    "id": 36,
+    "question": "In a reciprocating air compressor, intercooling between stages is provided to:",
+    "choices": ["A. Increase the pressure ratio per stage", "B. Cool the compressed air, reducing volume and work required in the next stage", "C. Remove oil from the compressed air", "D. Increase the discharge temperature"],
+    "answer": "B",
+    "explanation": "Intercooling reduces the temperature (and thus volume) of air between stages, approaching isothermal compression and reducing total work input."
+  },
+  {
+    "id": 37,
+    "question": "The refrigerant in a marine air conditioning system absorbs heat by:",
+    "choices": ["A. Condensing at high pressure in the evaporator", "B. Evaporating at low pressure in the evaporator, extracting latent heat from the space being cooled", "C. Compressing in the compressor cylinder", "D. Expanding through the condenser"],
+    "answer": "B",
+    "explanation": "In the evaporator, refrigerant changes from liquid to vapor at low pressure, absorbing latent heat of vaporization from the cooled space."
+  },
+  {
+    "id": 38,
+    "question": "What is the purpose of the expansion valve in a vapour compression refrigeration system?",
+    "choices": ["A. To compress the refrigerant vapour to high pressure", "B. To condense the refrigerant from vapour to liquid", "C. To reduce refrigerant pressure and temperature before the evaporator", "D. To separate liquid refrigerant from vapour"],
+    "answer": "C",
+    "explanation": "The expansion valve throttles high-pressure liquid refrigerant to low pressure, causing partial evaporation and temperature drop before the evaporator."
+  },
+  {
+    "id": 39,
+    "question": "In a marine refrigeration plant, a high condenser pressure alarm most likely indicates:",
+    "choices": ["A. Low refrigerant charge", "B. Fouled condenser tubes or inadequate cooling water flow", "C. Faulty expansion valve", "D. Compressor valve failure"],
+    "answer": "B",
+    "explanation": "High condensing pressure results from inadequate heat rejection, typically due to fouled condenser surfaces or insufficient cooling water flow."
+  },
+  {
+    "id": 40,
+    "question": "Which type of pump is best suited for handling high-viscosity fluids such as heavy fuel oil?",
+    "choices": ["A. Centrifugal pump", "B. Axial flow pump", "C. Gear pump (positive displacement)", "D. Mixed-flow pump"],
+    "answer": "C",
+    "explanation": "Gear pumps are positive displacement pumps that handle viscous fluids efficiently, maintaining steady flow regardless of viscosity."
+  },
+  {
+    "id": 41,
+    "question": "The volumetric efficiency of an air compressor is defined as:",
+    "choices": ["A. Ratio of indicated power to shaft power", "B. Ratio of actual volume of air delivered to the swept volume of the piston", "C. Ratio of discharge pressure to suction pressure", "D. Ratio of heat rejected to heat absorbed"],
+    "answer": "B",
+    "explanation": "Volumetric efficiency = actual volume of air delivered per cycle / piston displacement volume, reduced by clearance and valve losses."
+  },
+  {
+    "id": 42,
+    "question": "A bilge pump on a vessel is required to provide a minimum throughput based on:",
+    "choices": ["A. Vessel deadweight tonnage", "B. SOLAS formula based on the internal diameter of the bilge main", "C. Crew complement", "D. Cargo hold volume only"],
+    "answer": "B",
+    "explanation": "SOLAS specifies minimum bilge pump capacity calculated from the bilge main diameter, ensuring adequate pumping capacity for damage control."
+  },
+  {
+    "id": 43,
+    "question": "A marine alternator generates electricity at 440 V, 60 Hz. The synchronous speed of a 4-pole alternator at this frequency is:",
+    "choices": ["A. 900 RPM", "B. 1200 RPM", "C. 1500 RPM", "D. 1800 RPM"],
+    "answer": "D",
+    "explanation": "Synchronous speed Ns = (120 × f) / P = (120 × 60) / 4 = 1800 RPM."
+  },
+  {
+    "id": 44,
+    "question": "When connecting two alternators in parallel on a ship's switchboard, which condition is NOT required before closing the bus-tie breaker?",
+    "choices": ["A. Equal voltage", "B. Equal frequency", "C. Equal power factor", "D. Phase sequence match"],
+    "answer": "C",
+    "explanation": "Paralleling requires equal voltage, equal frequency, matching phase sequence, and phase angle; equal power factor is not a prerequisite for synchronization."
+  },
+  {
+    "id": 45,
+    "question": "An earth fault in a ship's insulated distribution system is detected by:",
+    "choices": ["A. An overcurrent relay", "B. A voltmeter connected line-to-line", "C. Lamps or voltmeters connected between each phase and earth", "D. A wattmeter in the main bus"],
+    "answer": "C",
+    "explanation": "Earth fault lamps or voltmeters from each phase to earth glow equally under normal conditions; an earth fault on one phase causes its lamp to go out or dim."
+  },
+  {
+    "id": 46,
+    "question": "The function of a preferential trip in a ship's electrical distribution system is to:",
+    "choices": ["A. Disconnect all non-essential loads automatically to prevent main generator overload", "B. Trip the main generator when overloaded", "C. Increase generator output voltage during heavy loads", "D. Synchronize two generators automatically"],
+    "answer": "A",
+    "explanation": "Preferential trips shed non-essential loads (e.g., galley, HVAC) automatically when generator load exceeds a set limit, protecting essential services."
+  },
+  {
+    "id": 47,
+    "question": "The insulation resistance of a motor winding measured with a megohmmeter (megger) should be:",
+    "choices": ["A. Zero ohms for a properly earthed motor", "B. Greater than 1 MΩ as a minimum acceptable value", "C. Equal to the winding resistance in ohms", "D. Less than 100 ohms"],
+    "answer": "B",
+    "explanation": "A minimum insulation resistance of 1 MΩ (often stated as 1 MΩ per kV of rated voltage) is generally required for safe motor operation."
+  },
+  {
+    "id": 48,
+    "question": "A three-phase induction motor runs at 1450 RPM on a 50 Hz supply with a synchronous speed of 1500 RPM. The slip of the motor is:",
+    "choices": ["A. 1%", "B. 2%", "C. 3.33%", "D. 5%"],
+    "answer": "C",
+    "explanation": "Slip = (Ns − Nr) / Ns = (1500 − 1450) / 1500 = 50/1500 = 0.0333 = 3.33%."
+  },
+  {
+    "id": 49,
+    "question": "In a ship's electrical system, a circuit breaker differs from a fuse in that:",
+    "choices": ["A. A circuit breaker can only handle AC circuits", "B. A circuit breaker can be reset and reused after clearing a fault", "C. A fuse provides faster response to overloads", "D. A circuit breaker does not protect against short circuits"],
+    "answer": "B",
+    "explanation": "Circuit breakers can be manually or automatically reset after tripping, whereas a fuse must be replaced after it operates."
+  },
+  {
+    "id": 50,
+    "question": "The power factor of a ship's electrical load is improved (raised toward unity) by:",
+    "choices": ["A. Adding series resistance to the circuit", "B. Connecting capacitor banks in parallel with inductive loads", "C. Increasing the generator excitation current only", "D. Reducing the supply frequency"],
+    "answer": "B",
+    "explanation": "Capacitors supply reactive power locally, reducing the reactive current drawn from the generator and improving the overall power factor."
+  },
+  {
+    "id": 51,
+    "question": "The emergency generator on a ship must be capable of starting and taking load automatically within:",
+    "choices": ["A. 30 seconds of blackout", "B. 45 seconds of blackout", "C. 60 seconds of blackout", "D. 5 minutes of blackout"],
+    "answer": "B",
+    "explanation": "SOLAS II-1/43 requires the emergency generator to start and assume emergency load within 45 seconds of loss of main power."
+  },
+  {
+    "id": 52,
+    "question": "What protection is provided by a reverse power relay (RPR) in a generator panel?",
+    "choices": ["A. Protects against voltage fluctuations", "B. Prevents a generator from motoring (taking power from the bus) when it loses its prime mover", "C. Limits generator current during startup", "D. Protects against earth faults"],
+    "answer": "B",
+    "explanation": "A reverse power relay trips the generator breaker if power flows into the generator (motoring mode), protecting the prime mover from being driven as a load."
+  },
+  {
+    "id": 53,
+    "question": "Under STCW 2010 Manila Amendments, the minimum rest hours for a watchkeeping officer are:",
+    "choices": ["A. 6 hours rest in any 24-hour period", "B. 10 hours rest in any 24-hour period and 77 hours rest in any 7-day period", "C. 8 hours rest in any 24-hour period", "D. 12 hours rest in any 24-hour period"],
+    "answer": "B",
+    "explanation": "STCW requires minimum 10 hours rest per 24-hour period (may be divided into no more than two periods) and 77 hours in any 7-day period."
+  },
+  {
+    "id": 54,
+    "question": "MARPOL Annex I regulation 15 restricts the discharge of oily mixtures from machinery spaces of ships 400 GT and above to a maximum oil content of:",
+    "choices": ["A. 5 ppm", "B. 10 ppm", "C. 15 ppm", "D. 100 ppm"],
+    "answer": "C",
+    "explanation": "MARPOL Annex I requires that oily water discharged overboard from machinery spaces does not exceed 15 ppm oil content."
+  },
+  {
+    "id": 55,
+    "question": "SOLAS Chapter II-2 requires that fixed gas fire-fighting systems in engine rooms using CO2 shall be designed to flood the protected space with what minimum percentage of CO2 by volume?",
+    "choices": ["A. 25%", "B. 30%", "C. 35%", "D. 40%"],
+    "answer": "C",
+    "explanation": "SOLAS requires CO2 systems to deliver a minimum concentration of 35% by volume of the gross volume of the protected machinery space."
+  },
+  {
+    "id": 56,
+    "question": "The International Safety Management (ISM) Code requires every ship to have a designated person ashore (DPA) whose primary responsibility is to:",
+    "choices": ["A. Manage cargo operations", "B. Provide a link between the company and those on board, ensuring safe ship operation and environmental compliance", "C. Certify the ship's seaworthiness", "D. Issue certificates under flag State authority"],
+    "answer": "B",
+    "explanation": "The DPA is the link between the company's shore management and shipboard personnel, with direct access to the highest level of management for safety matters."
+  },
+  {
+    "id": 57,
+    "question": "Under SOLAS, an immersion suit must be provided for each person on a ship and must allow the wearer to don it within:",
+    "choices": ["A. 1 minute", "B. 2 minutes", "C. 3 minutes", "D. 5 minutes"],
+    "answer": "B",
+    "explanation": "SOLAS LSA Code requires that an immersion suit can be correctly donned by an unaided person in not more than 2 minutes."
+  },
+  {
+    "id": 58,
+    "question": "MARPOL Annex VI sets the global sulphur cap on fuel oil used onboard ships (outside Emission Control Areas) from 1 January 2020 at:",
+    "choices": ["A. 0.1% m/m", "B. 0.5% m/m", "C. 1.0% m/m", "D. 3.5% m/m"],
+    "answer": "B",
+    "explanation": "MARPOL Annex VI Regulation 14 reduced the global sulphur limit from 3.5% to 0.5% m/m effective 1 January 2020."
+  },
+  {
+    "id": 59,
+    "question": "Under the STCW Code, a Basic Safety Training certificate covers which four elements?",
+    "choices": ["A. Navigation, cargo handling, GMDSS, and medical care", "B. Personal survival techniques, fire prevention and firefighting, elementary first aid, and personal safety and social responsibilities", "C. Watchkeeping, bridge procedures, cargo operations, and tanker safety", "D. Stability calculations, ballast management, mooring, and anchoring"],
+    "answer": "B",
+    "explanation": "STCW Basic Safety Training (BST) comprises the four elements: personal survival techniques, fire prevention/firefighting, elementary first aid, and personal safety/social responsibilities."
+  },
+  {
+    "id": 60,
+    "question": "A Ship Sanitation Certificate is issued under the authority of:",
+    "choices": ["A. SOLAS", "B. MARPOL", "C. The International Health Regulations (IHR) of the World Health Organization", "D. The ISM Code"],
+    "answer": "C",
+    "explanation": "Ship Sanitation Control and Exemption Certificates are issued under the WHO International Health Regulations to control the spread of disease."
+  },
+  {
+    "id": 61,
+    "question": "Which SOLAS chapter deals specifically with the carriage of dangerous goods?",
+    "choices": ["A. Chapter II-1", "B. Chapter III", "C. Chapter VI", "D. Chapter VII"],
+    "answer": "D",
+    "explanation": "SOLAS Chapter VII covers the carriage of dangerous goods and references the IMDG Code for packaged goods and other IMO codes."
+  },
+  {
+    "id": 62,
+    "question": "The Oil Record Book Part I (machinery space operations) must be retained on board for how long?",
+    "choices": ["A. 1 year after the date of the last entry", "B. 2 years after the date of the last entry", "C. 3 years after the date of the last entry", "D. 5 years after the date of the last entry"],
+    "answer": "C",
+    "explanation": "MARPOL Annex I Regulation 17 requires the Oil Record Book Part I to be kept on board for 3 years after the date of the last entry."
+  },
+  {
+    "id": 63,
+    "question": "Bernoulli's equation for steady, incompressible, frictionless flow states that along a streamline:",
+    "choices": ["A. Pressure increases as velocity increases", "B. The sum of pressure energy, kinetic energy, and potential energy per unit volume remains constant", "C. Velocity is constant regardless of pipe diameter", "D. Fluid density increases with pressure"],
+    "answer": "B",
+    "explanation": "Bernoulli's principle: P + ½ρv² + ρgh = constant along a streamline for ideal incompressible flow."
+  },
+  {
+    "id": 64,
+    "question": "Reynolds number is used to characterize fluid flow. A Reynolds number greater than 4000 in a pipe indicates:",
+    "choices": ["A. Laminar flow", "B. Transitional flow", "C. Turbulent flow", "D. Plug flow"],
+    "answer": "C",
+    "explanation": "Re > 4000 is generally considered fully turbulent flow in pipes; Re < 2300 is laminar and 2300–4000 is transitional."
+  },
+  {
+    "id": 65,
+    "question": "The continuity equation for incompressible fluid flow in a pipe states that:",
+    "choices": ["A. Pressure is constant throughout the pipe", "B. The product of cross-sectional area and velocity is constant (A₁V₁ = A₂V₂)", "C. Velocity is proportional to pressure", "D. Density varies inversely with velocity"],
+    "answer": "B",
+    "explanation": "Mass conservation for incompressible flow requires A₁V₁ = A₂V₂, so fluid accelerates when the pipe narrows."
+  },
+  {
+    "id": 66,
+    "question": "The pressure at the bottom of a sea water column 10 meters deep (ρ = 1025 kg/m³, g = 9.81 m/s²) is approximately:",
+    "choices": ["A. 100.6 kPa gauge", "B. 98.1 kPa gauge", "C. 1.025 kPa gauge", "D. 10.25 kPa gauge"],
+    "answer": "A",
+    "explanation": "P = ρgh = 1025 × 9.81 × 10 ≈ 100,553 Pa ≈ 100.6 kPa gauge."
+  },
+  {
+    "id": 67,
+    "question": "In a hydraulic system, Pascal's Law states that:",
+    "choices": ["A. Pressure decreases with fluid height in a closed system", "B. Pressure applied to a confined fluid is transmitted equally and undiminished in all directions", "C. Flow velocity increases as pressure increases", "D. Hydraulic fluid is always compressible"],
+    "answer": "B",
+    "explanation": "Pascal's Law: pressure exerted on a confined static fluid is transmitted equally in all directions throughout the fluid."
+  },
+  {
+    "id": 68,
+    "question": "The Darcy-Weisbach equation is used to calculate:",
+    "choices": ["A. Pump power output", "B. Fluid temperature rise in a pipe", "C. Frictional head loss in a pipe", "D. Flow velocity at a pipe exit"],
+    "answer": "C",
+    "explanation": "Darcy-Weisbach: h_f = f(L/D)(V²/2g), which gives the friction head loss due to pipe wall friction."
+  },
+  {
+    "id": 69,
+    "question": "Specific gravity of a fluid is defined as the ratio of the fluid's density to the density of:",
+    "choices": ["A. Sea water at 15°C", "B. Pure water at 4°C (or 15°C for petroleum)", "C. Air at standard conditions", "D. The fluid at its boiling point"],
+    "answer": "B",
+    "explanation": "Specific gravity is the dimensionless ratio of a substance's density to that of pure water (typically at 4°C or 15°C for petroleum products)."
+  },
+  {
+    "id": 70,
+    "question": "A hydraulic press has a small piston of area 10 cm² and a large piston of area 500 cm². If a force of 100 N is applied to the small piston, the force generated on the large piston is:",
+    "choices": ["A. 2 N", "B. 500 N", "C. 5000 N", "D. 50,000 N"],
+    "answer": "C",
+    "explanation": "By Pascal's Law, P = F₁/A₁ = F₂/A₂; F₂ = F₁ × (A₂/A₁) = 100 × (500/10) = 5000 N."
+  },
+  {
+    "id": 71,
+    "question": "A ship's engine produces a brake power of 5000 kW at 120 RPM. The torque developed is approximately:",
+    "choices": ["A. 297.6 kNm", "B. 398.1 kNm", "C. 600.0 kNm", "D. 125.0 kNm"],
+    "answer": "B",
+    "explanation": "Torque T = P / ω = P / (2πN/60) = 5,000,000 / (2π × 120/60) = 5,000,000 / 12.566 ≈ 398,100 Nm ≈ 398.1 kNm."
+  },
+  {
+    "id": 72,
+    "question": "If a flywheel has a mass moment of inertia of 500 kg·m² and is rotating at 300 RPM, its kinetic energy is approximately:",
+    "choices": ["A. 246.7 kJ", "B. 22.5 kJ", "C. 493.5 kJ", "D. 150.0 kJ"],
+    "answer": "A",
+    "explanation": "KE = ½Iω² = ½ × 500 × (2π × 300/60)² = ½ × 500 × (31.416)² = 250 × 987.0 ≈ 246,740 J ≈ 246.7 kJ."
+  },
+  {
+    "id": 73,
+    "question": "The indicated power (IP) of a diesel engine is calculated from the formula:",
+    "choices": ["A. IP = Brake Power / Mechanical Efficiency", "B. IP = IMEP × L × A × N × n", "C. IP = Torque × Angular Velocity × Number of Cylinders", "D. IP = Fuel mass flow rate × Calorific Value"],
+    "answer": "B",
+    "explanation": "IP = P_m × L × A × N × n where P_m = IMEP, L = stroke, A = bore area, N = power strokes/sec, n = cylinder count."
+  },
+  {
+    "id": 74,
+    "question": "The specific fuel oil consumption (SFOC) is expressed in units of:",
+    "choices": ["A. kg/kWh", "B. kW/kg", "C. L/hour", "D. g/L"],
+    "answer": "A",
+    "explanation": "SFOC = fuel mass consumed per hour divided by power output; standard units are g/kWh or kg/kWh."
+  },
+  {
+    "id": 75,
+    "question": "A spring with a stiffness constant k = 20 kN/m is compressed by 0.05 m. The potential energy stored in the spring is:",
+    "choices": ["A. 1000 J", "B. 25 J", "C. 50 J", "D. 500 J"],
+    "answer": "B",
+    "explanation": "PE = ½kx² = ½ × 20,000 × (0.05)² = ½ × 20,000 × 0.0025 = 25 J."
+  },
+  {
+    "id": 76,
+    "question": "In a ship stability context, the metacentric height GM is given by GM = KM − KG. If KM = 8.5 m and KG = 7.2 m, then GM is:",
+    "choices": ["A. 15.7 m", "B. 1.3 m", "C. −1.3 m", "D. 0.59 m"],
+    "answer": "B",
+    "explanation": "GM = KM − KG = 8.5 − 7.2 = 1.3 m; a positive GM indicates initial stability."
+  },
+  {
+    "id": 77,
+    "question": "Ohm's Law states the relationship between voltage (V), current (I), and resistance (R) as:",
+    "choices": ["A. V = I² × R", "B. V = I / R", "C. V = I × R", "D. V = R / I"],
+    "answer": "C",
+    "explanation": "Ohm's Law: V = IR, where voltage equals the product of current and resistance."
+  },
+  {
+    "id": 78,
+    "question": "The mechanical advantage (MA) of a simple block and tackle system with 4 rope segments supporting the load is:",
+    "choices": ["A. 1", "B. 2", "C. 4", "D. 8"],
+    "answer": "C",
+    "explanation": "For a simple pulley system, MA equals the number of rope segments supporting the moving block, which is 4."
+  },
+  {
+    "id": 79,
+    "question": "The function of the jacket water (freshwater cooling) system on a marine diesel engine is to:",
+    "choices": ["A. Lubricate the cylinder liners", "B. Remove heat from cylinder heads, liners, and exhaust valves to maintain safe component temperatures", "C. Supply coolant to the turbocharger only", "D. Cool the fuel oil before injection"],
+    "answer": "B",
+    "explanation": "The freshwater jacket cooling circuit removes combustion heat from critical components, maintaining thermal integrity and dimensional stability."
+  },
+  {
+    "id": 80,
+    "question": "A central cooling system on a ship uses sea water to cool a central fresh water loop, which in turn cools multiple equipment. The main advantage of this arrangement is:",
+    "choices": ["A. Higher sea water flow requirements", "B. Corrosion-resistant materials throughout the system", "C. Only one sea water pump and heat exchanger required, reducing seawater-side corrosion risk on individual equipment", "D. No fresh water treatment needed"],
+    "answer": "C",
+    "explanation": "Central cooling limits sea water exposure to one heat exchanger, reducing corrosion risk across multiple equipment circuits cooled by treated fresh water."
+  },
+  {
+    "id": 81,
+    "question": "The stern tube seal on a vessel is designed to:",
+    "choices": ["A. Transmit torque from the engine to the propeller", "B. Prevent sea water from entering the ship along the propeller shaft and prevent lube oil from escaping outboard", "C. Absorb propeller-induced vibration", "D. Measure shaft RPM"],
+    "answer": "B",
+    "explanation": "Stern tube seals (inboard and outboard) prevent sea water ingress and oil egress along the propeller shaft where it penetrates the hull."
+  },
+  {
+    "id": 82,
+    "question": "A controllable pitch propeller (CPP) system allows the ship to:",
+    "choices": ["A. Only change propeller rotation direction", "B. Change vessel speed and direction without changing engine shaft speed or direction by varying blade pitch angle", "C. Operate without a rudder", "D. Eliminate the need for a gearbox"],
+    "answer": "B",
+    "explanation": "CPP blades can be rotated to change pitch angle, allowing speed and direction changes while the engine runs at constant RPM."
+  },
+  {
+    "id": 83,
+    "question": "The purpose of an incinerator on board a ship is to:",
+    "choices": ["A. Generate steam for heating fuel oil", "B. Dispose of shipboard waste (garbage, oily sludge, sewage sludge) in compliance with MARPOL", "C. Treat ballast water before discharge", "D. Neutralize sewage chemically"],
+    "answer": "B",
+    "explanation": "Marine incinerators burn solid wastes and oily sludge onboard, reducing the volume and providing MARPOL-compliant disposal when shore reception is unavailable."
+  },
+  {
+    "id": 84,
+    "question": "The function of the fresh water generator (evaporator) on a vessel is to:",
+    "choices": ["A. Convert salt water to fresh water using waste heat from the main engine cooling water", "B. Desalinate ballast water for drinking", "C. Purify fuel oil by removing water", "D. Produce distilled water for battery topping-up only"],
+    "answer": "A",
+    "explanation": "The evaporator uses low-temperature waste heat from jacket cooling water to evaporate sea water at sub-atmospheric pressure, producing fresh water."
+  },
+  {
+    "id": 85,
+    "question": "What is the purpose of a sewage treatment plant (STP) on a ship?",
+    "choices": ["A. To filter oil from bilge water", "B. To treat black and grey water to meet effluent standards before discharge under MARPOL Annex IV", "C. To incinerate solid waste", "D. To desalinate sea water for drinking"],
+    "answer": "B",
+    "explanation": "The STP processes sewage using biological or chemical means so that the treated effluent meets the standards of MARPOL Annex IV before overboard discharge."
+  },
+  {
+    "id": 86,
+    "question": "In a turbocharger fitted to a marine diesel engine, the turbine wheel is driven by:",
+    "choices": ["A. Electric motor powered from the ship's switchboard", "B. Exhaust gases from the engine", "C. A gear drive from the crankshaft", "D. Scavenge air pressure"],
+    "answer": "B",
+    "explanation": "The turbocharger turbine extracts energy from engine exhaust gases to drive the compressor wheel, which boosts air pressure into the engine."
+  },
+  {
+    "id": 87,
+    "question": "Surging in a turbocharger occurs when:",
+    "choices": ["A. Compressor speed exceeds design limits", "B. Airflow through the compressor reverses periodically because the engine cannot accept the compressed air volume — typically during rapid load reduction", "C. Turbine blades erode due to exhaust contamination", "D. Lubricating oil temperature rises above 90°C"],
+    "answer": "B",
+    "explanation": "Surge occurs when the compressor operates left of its surge line — reduced mass flow causes flow reversal, resulting in pulsating noise and vibration."
+  },
+  {
+    "id": 88,
+    "question": "In a steam turbine, impulse blading differs from reaction blading in that:",
+    "choices": ["A. Both types have equal pressure drop across the rotor blades", "B. Impulse blading has all pressure drop in the nozzle; reaction blading has pressure drop across both stator and rotor", "C. Reaction blading operates only on steam velocity, not pressure", "D. Impulse blading requires a condenser, reaction blading does not"],
+    "answer": "B",
+    "explanation": "In impulse stages, steam expands fully in fixed nozzles; in reaction stages, pressure drops across both fixed and moving blades, providing reactive force."
+  },
+  {
+    "id": 89,
+    "question": "The purpose of an axial flow turbine's blade profile twist from root to tip is to:",
+    "choices": ["A. Increase steam temperature along the blade", "B. Account for the increasing circumferential velocity from root to tip so that the relative steam angle is optimized at all radii", "C. Reduce centrifugal stress at the blade tip", "D. Increase stage pressure ratio"],
+    "answer": "B",
+    "explanation": "Blade twist compensates for the higher peripheral velocity at larger radii, maintaining correct steam entry angles (velocity triangles) along the full blade span."
+  },
+  {
+    "id": 90,
+    "question": "Turbocharger fouling on the air side (compressor) is most commonly caused by:",
+    "choices": ["A. Exhaust gas contamination from the turbine side", "B. Oily or dirty intake air depositing contaminants on compressor blades, reducing efficiency", "C. Cooling water leakage into the air stream", "D. Excessive intercooler water temperature"],
+    "answer": "B",
+    "explanation": "Engine room air (oil mist, dust) passing through the compressor deposits on blades, degrading aerodynamic performance and reducing boost pressure."
+  },
+  {
+    "id": 91,
+    "question": "The flash point of a marine fuel oil is the temperature at which:",
+    "choices": ["A. The fuel ignites spontaneously without an external ignition source", "B. The fuel gives off sufficient vapour to form an ignitable mixture with air above the liquid surface when an external flame is applied", "C. The fuel solidifies (wax appearance)", "D. The fuel starts to boil"],
+    "answer": "B",
+    "explanation": "Flash point is the minimum temperature at which fuel vapour in air above the liquid surface can be ignited momentarily by a test flame."
+  },
+  {
+    "id": 92,
+    "question": "The viscosity of heavy fuel oil (HFO) must be reduced before injection into a diesel engine. This is achieved by:",
+    "choices": ["A. Adding a chemical viscosity modifier to the fuel", "B. Heating the fuel using steam or electric heaters to reduce viscosity to the required injection level", "C. Pressurizing the fuel above 200 bar", "D. Blending with distillate fuel only at the injection pump"],
+    "answer": "B",
+    "explanation": "HFO is heated (typically to 120–150°C for VLSFO/HFO) to reduce its viscosity to the 10–15 cSt range required for proper atomization at injectors."
+  },
+  {
+    "id": 93,
+    "question": "A fuel oil purifier (centrifuge) removes which of the following from fuel oil?",
+    "choices": ["A. Sulfur compounds", "B. Water and solid contaminants by centrifugal density separation", "C. Aromatic hydrocarbons", "D. Asphaltenes by chemical reaction"],
+    "answer": "B",
+    "explanation": "Centrifugal purifiers separate denser water and solid particles from fuel oil by centrifugal force based on density differences."
+  },
+  {
+    "id": 94,
+    "question": "The Total Base Number (TBN) of a cylinder lubricating oil indicates:",
+    "choices": ["A. The oil's viscosity at 100°C", "B. The oil's capacity to neutralize acidic combustion products (sulphuric acid) formed when burning high-sulphur fuel", "C. The oil's flash point in degrees Celsius", "D. The concentration of zinc in the oil"],
+    "answer": "B",
+    "explanation": "TBN measures the alkaline reserve of lubricating oil in mg KOH/g; higher TBN oils neutralize more sulphuric acid from high-sulphur fuel combustion."
+  },
+  {
+    "id": 95,
+    "question": "When switching from HFO to LSFO/MGO before entering an ECA, the main engine fuel changeover procedure requires attention to:",
+    "choices": ["A. Increasing turbocharger speed before switching", "B. Gradual fuel changeover to avoid thermal shock and compatibility issues, monitoring fuel temperature and viscosity throughout", "C. Stopping the engine during the switchover", "D. Bypassing the fuel purifier during switchover"],
+    "answer": "B",
+    "explanation": "Gradual changeover prevents thermal shock from rapid temperature changes and avoids fuel incompatibility precipitation, which can block filters."
+  },
+  {
+    "id": 96,
+    "question": "MARPOL Annex VI Regulation 12 prohibits the use of which of the following ozone-depleting substances in new ship installations?",
+    "choices": ["A. Carbon dioxide (CO2)", "B. Chlorofluorocarbons (CFCs) and hydrochlorofluorocarbons (HCFCs)", "C. Nitrogen oxides (NOx)", "D. Sulphur hexafluoride (SF6)"],
+    "answer": "B",
+    "explanation": "MARPOL Annex VI Reg 12 bans new installations containing ozone-depleting substances (ODS), primarily CFCs and HCFCs, on all ships."
+  },
+  {
+    "id": 97,
+    "question": "The Ballast Water Management Convention (BWM Convention) requires ships to manage ballast water to meet the D-2 performance standard, which limits viable organisms in discharged ballast water to:",
+    "choices": ["A. Zero organisms per cubic metre", "B. Less than 10 viable organisms per mL for organisms 10–50 micrometres", "C. Less than 10 viable organisms per m³ for organisms greater than 50 micrometres in minimum dimension", "D. Less than 100 colonies per 100 mL for bacteria"],
+    "answer": "C",
+    "explanation": "D-2 standard limits organisms ≥50 µm to < 10 viable organisms per m³, organisms 10–50 µm to < 10 per mL, plus indicator microbial limits."
+  },
+  {
+    "id": 98,
+    "question": "The Energy Efficiency Existing Ship Index (EEXI) under MARPOL Annex VI is used to:",
+    "choices": ["A. Track fuel consumption per voyage", "B. Measure the technical energy efficiency of an existing ship and compare it against a required reference value", "C. Calculate carbon tax liability for each ship", "D. Monitor NOx emissions only"],
+    "answer": "B",
+    "explanation": "EEXI measures the CO2 efficiency (g CO2/tonne-mile) of existing ships and must meet IMO reference values; applicable from 1 January 2023."
+  },
+  {
+    "id": 99,
+    "question": "Under MARPOL Annex V, which of the following items is PROHIBITED from being discharged into the sea anywhere?",
+    "choices": ["A. Food waste beyond 12 nautical miles from land", "B. Plastic in all its forms, including synthetic ropes and fishing gear", "C. Paper products beyond 3 nautical miles", "D. Cargo residues beyond 12 nautical miles"],
+    "answer": "B",
+    "explanation": "MARPOL Annex V absolutely prohibits the discharge of ALL plastics into the sea regardless of location or ship type."
+  },
+  {
+    "id": 100,
+    "question": "The Carbon Intensity Indicator (CII) rating system introduced under MARPOL Annex VI requires ships to:",
+    "choices": ["A. Install a carbon capture system by 2025", "B. Annually report operational carbon intensity and receive an A–E rating, with corrective action plans required for D or E ratings", "C. Reduce NOx emissions by 30% annually", "D. Use only zero-emission fuels in ECAs from 2023"],
+    "answer": "B",
+    "explanation": "CII regulations require annual reporting of operational carbon intensity (CO2/tonne-mile); ships rated D or E must develop corrective action plans under SEEMP Part III."
+  }
+]

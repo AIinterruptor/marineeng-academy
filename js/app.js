@@ -136,13 +136,33 @@ function buildTopicDetail(topic) {
   const keyTopicsHtml = topic.keyTopics.map(k => `<li>${k}</li>`).join('');
   const tagsHtml      = topic.tags.map(t => `<span class="tag">${t}</span>`).join('');
 
-  // Drive link if available, else repo root
   const driveLink = topic.driveUrl || null;
-  const repoLink  = REPO_URL;
-
   const filesBtn = driveLink
     ? `<a href="${driveLink}" class="btn-primary" style="display:inline-block;margin-top:8px" target="_blank" rel="noopener">📂 Open in Google Drive →</a>`
-    : `<a href="${repoLink}" class="btn-primary" style="display:inline-block;margin-top:8px" target="_blank" rel="noopener">📂 View Repository →</a>`;
+    : `<a href="${REPO_URL}" class="btn-primary" style="display:inline-block;margin-top:8px" target="_blank" rel="noopener">📂 View Repository →</a>`;
+
+  // External links section
+  const extLinks = (topic.externalLinks || []);
+  const ytLinks  = extLinks.filter(l => l.type === 'youtube');
+  const wkLinks  = extLinks.filter(l => l.type === 'wikipedia');
+  const refLinks = extLinks.filter(l => l.type === 'reference');
+
+  const renderLinkGroup = (icon, label, links) => links.length === 0 ? '' : `
+    <div class="ext-group">
+      <div class="ext-group-label">${icon} ${label}</div>
+      ${links.map(l => `<a href="${l.url}" class="ext-link" target="_blank" rel="noopener">${l.label} ↗</a>`).join('')}
+    </div>`;
+
+  const externalSection = extLinks.length === 0 ? '' : `
+    <div class="cta-box" style="margin-top:14px">
+      <h3>🌐 Learn More</h3>
+      <p>Curated external resources — videos, Wikipedia articles, and engineering references.</p>
+      <div class="ext-links-container">
+        ${renderLinkGroup('▶️', 'YouTube Videos', ytLinks)}
+        ${renderLinkGroup('📖', 'Wikipedia', wkLinks)}
+        ${renderLinkGroup('🔗', 'Engineering References', refLinks)}
+      </div>
+    </div>`;
 
   return `
     <div class="detail-hero">
@@ -194,6 +214,8 @@ function buildTopicDetail(topic) {
           ${filesBtn}
           <p class="cta-note">Materials are in Japanese. English summaries are provided on this page.</p>
         </div>
+
+        ${externalSection}
 
         <div class="cta-box" style="margin-top:14px">
           <h3>🔗 Related Topics</h3>
@@ -290,15 +312,20 @@ function renderSearchResults(query) {
 
   const grid = document.getElementById('searchResultGrid');
   if (results.length === 0) {
+    const safeQuery = escapeHtml(query);
     grid.innerHTML = `
       <div class="no-results">
         <div class="nr-icon">🔍</div>
-        <h3>No results for "${query}"</h3>
+        <h3>No results for "${safeQuery}"</h3>
         <p>Try: "boiler", "DG", "fire", "pump", "exam", "LNG", "turbine"</p>
       </div>`;
   } else {
     grid.innerHTML = results.map(buildCard).join('');
   }
+}
+
+function escapeHtml(str) {
+  return str.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
 }
 
 function clearSearch() {
@@ -311,7 +338,7 @@ function clearSearch() {
 }
 
 // ─── UTILS ───────────────────────────────────────────────────────────
-const VIEWS = ['homeView', 'allTopicsView', 'topicDetailView', 'aboutView', 'searchView'];
+const VIEWS = ['homeView', 'allTopicsView', 'topicDetailView', 'aboutView', 'searchView', 'examView'];
 
 function hideAll() {
   VIEWS.forEach(id => {
@@ -343,4 +370,144 @@ function capitalize(str) {
 function scrollToSection(id) {
   const el = document.getElementById(id);
   if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+// ─── BOARD EXAM ──────────────────────────────────────────────────────
+let examQuestions = [];
+let examAnswers   = {};   // { questionId: 'A'|'B'|'C'|'D' }
+let examSubmitted = false;
+
+async function showExam() {
+  previousView = isVisible('allTopicsView') ? 'all' : isVisible('searchView') ? 'search' : 'home';
+  if (examQuestions.length === 0) {
+    try {
+      const res = await fetch('data/exam.json');
+      examQuestions = await res.json();
+    } catch (e) {
+      console.error('Failed to load exam:', e);
+      return;
+    }
+  }
+  examAnswers   = {};
+  examSubmitted = false;
+  hideAll();
+  show('examView');
+  renderExam();
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+function exitExam() {
+  if (previousView === 'all') { hideAll(); show('allTopicsView'); }
+  else if (previousView === 'search') { hideAll(); show('searchView'); if (lastSearchQuery) renderSearchResults(lastSearchQuery); }
+  else { showHome(); }
+}
+
+function renderExam() {
+  const el = document.getElementById('examContent');
+  el.innerHTML = `
+    <div class="exam-header">
+      <h1>📋 MARINA Board Exam Practice</h1>
+      <p class="exam-subtitle">100-item Marine Engineering Licensure Examination (Philippine MARINA standard)</p>
+      <div class="exam-meta-row">
+        <span class="exam-badge">100 Items</span>
+        <span class="exam-badge">Multiple Choice</span>
+        <span class="exam-badge">3AE – 2AE Level</span>
+      </div>
+    </div>
+    <form id="examForm" onsubmit="submitExam(event)">
+      ${examQuestions.map(q => buildQuestion(q)).join('')}
+      <div class="exam-submit-row">
+        <button type="submit" class="btn-primary exam-submit-btn">Submit Exam →</button>
+      </div>
+    </form>`;
+}
+
+function buildQuestion(q) {
+  return `
+    <div class="exam-question" id="eq-${q.id}">
+      <div class="eq-number">Question ${q.id}</div>
+      <div class="eq-text">${escapeHtml(q.question)}</div>
+      <div class="eq-choices">
+        ${q.choices.map(c => {
+          const letter = c.charAt(0);
+          return `
+            <label class="eq-choice" id="eq-${q.id}-${letter}">
+              <input type="radio" name="q${q.id}" value="${letter}" onchange="recordAnswer(${q.id}, '${letter}')">
+              <span class="eq-choice-text">${escapeHtml(c)}</span>
+            </label>`;
+        }).join('')}
+      </div>
+      <div class="eq-explanation" id="ex-${q.id}" style="display:none"></div>
+    </div>`;
+}
+
+function recordAnswer(qid, letter) {
+  examAnswers[qid] = letter;
+}
+
+function submitExam(e) {
+  e.preventDefault();
+  if (examSubmitted) return;
+
+  const unanswered = examQuestions.filter(q => !examAnswers[q.id]);
+  if (unanswered.length > 0) {
+    const confirmed = confirm(`You have ${unanswered.length} unanswered question(s). Submit anyway?`);
+    if (!confirmed) return;
+  }
+
+  examSubmitted = true;
+  let correct = 0;
+
+  examQuestions.forEach(q => {
+    const selected = examAnswers[q.id];
+    const isCorrect = selected === q.answer;
+    if (isCorrect) correct++;
+
+    const qEl = document.getElementById(`eq-${q.id}`);
+    if (qEl) {
+      qEl.classList.add(isCorrect ? 'eq-correct' : 'eq-wrong');
+      // highlight choices
+      q.choices.forEach(c => {
+        const letter = c.charAt(0);
+        const label = document.getElementById(`eq-${q.id}-${letter}`);
+        if (!label) return;
+        if (letter === q.answer) label.classList.add('eq-answer');
+        if (letter === selected && !isCorrect) label.classList.add('eq-selected-wrong');
+      });
+      // show explanation
+      const exEl = document.getElementById(`ex-${q.id}`);
+      if (exEl) {
+        exEl.style.display = '';
+        exEl.innerHTML = `<strong>${isCorrect ? '✓ Correct' : '✗ Incorrect'}.</strong> ${escapeHtml(q.explanation || '')}`;
+      }
+    }
+  });
+
+  const pct = Math.round((correct / examQuestions.length) * 100);
+  const grade = pct >= 75 ? '✅ PASSED' : '❌ FAILED';
+  const scoreHtml = `
+    <div class="exam-score-card" id="examScoreCard">
+      <div class="score-grade">${grade}</div>
+      <div class="score-num">${correct} / ${examQuestions.length}</div>
+      <div class="score-pct">${pct}%</div>
+      <p class="score-note">Passing mark: 75% (Philippine MARINA standard)</p>
+      <button class="btn-secondary" onclick="retakeExam()" style="margin-top:12px">↩ Retake Exam</button>
+    </div>`;
+
+  const form = document.getElementById('examForm');
+  form.insertAdjacentHTML('afterbegin', scoreHtml);
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+
+  // disable all radios
+  form.querySelectorAll('input[type=radio]').forEach(r => r.disabled = true);
+  // hide submit button
+  const submitRow = form.querySelector('.exam-submit-row');
+  if (submitRow) submitRow.style.display = 'none';
+}
+
+function retakeExam() {
+  examAnswers   = {};
+  examSubmitted = false;
+  renderExam();
+  window.scrollTo({ top: 0, behavior: 'smooth' });
 }

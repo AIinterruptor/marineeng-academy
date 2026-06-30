@@ -16,7 +16,14 @@
     ],
     "difficulty": "Intermediate",
     "fileCount": 7,
-    "sourceDir": "Boiler"
+    "sourceDir": "Boiler",
+    "externalLinks": [
+      { "type": "youtube", "label": "Marine Boiler Operation Explained", "url": "https://www.youtube.com/watch?v=4STCK_bFkLU" },
+      { "type": "youtube", "label": "Boiler Water Treatment on Ships", "url": "https://www.youtube.com/watch?v=VsR1OuEAyvQ" },
+      { "type": "wikipedia", "label": "Marine Boiler — Wikipedia", "url": "https://en.wikipedia.org/wiki/Marine_steam_engine" },
+      { "type": "reference", "label": "Exhaust Gas Economizer — Marine Engineering Knowledge", "url": "https://www.marineinsight.com/tech/exhaust-gas-economizer-on-ships/" },
+      { "type": "reference", "label": "Boiler Water Treatment Guide", "url": "https://www.marineinsight.com/tech/boiler-water-treatment-on-ships/" }
+    ]
   },
   {
     "id": "dg",
@@ -37,7 +44,14 @@
     ],
     "difficulty": "Intermediate",
     "fileCount": 27,
-    "sourceDir": "DG"
+    "sourceDir": "DG",
+    "externalLinks": [
+      { "type": "youtube", "label": "Marine Diesel Generator — How It Works", "url": "https://www.youtube.com/watch?v=DPuGP7MpMoY" },
+      { "type": "youtube", "label": "AVR (Automatic Voltage Regulator) Explained", "url": "https://www.youtube.com/watch?v=F7i9b4G5bYw" },
+      { "type": "youtube", "label": "Tappet Clearance Adjustment Procedure", "url": "https://www.youtube.com/watch?v=9E3BEjuRpQs" },
+      { "type": "wikipedia", "label": "Diesel Generator — Wikipedia", "url": "https://en.wikipedia.org/wiki/Diesel_generator" },
+      { "type": "reference", "label": "DG Safety Devices — Marine Insight", "url": "https://www.marineinsight.com/tech/safety-devices-on-diesel-generators-on-ship/" }
+    ]
   },
   {
     "id": "me",
@@ -54,7 +68,14 @@
     ],
     "difficulty": "Advanced",
     "fileCount": 4,
-    "sourceDir": "ME"
+    "sourceDir": "ME",
+    "externalLinks": [
+      { "type": "youtube", "label": "Two-Stroke Marine Diesel Engine — How It Works", "url": "https://www.youtube.com/watch?v=DPuGP7MpMoY" },
+      { "type": "youtube", "label": "Marine Main Engine Piston Overhaul", "url": "https://www.youtube.com/watch?v=4OizaVC8b3k" },
+      { "type": "youtube", "label": "WinGD Engine Overview (Official)", "url": "https://www.youtube.com/watch?v=9cIBjfsX238" },
+      { "type": "wikipedia", "label": "Two-Stroke Engine — Wikipedia", "url": "https://en.wikipedia.org/wiki/Two-stroke_engine" },
+      { "type": "reference", "label": "MCR vs CSR vs NCR Explained", "url": "https://www.marineinsight.com/tech/mcr-csr-ncr-marine-engine/" }
+    ]
   },
   {
     "id": "mt",
@@ -73,7 +94,14 @@
     ],
     "difficulty": "Advanced",
     "fileCount": 7,
-    "sourceDir": "MT"
+    "sourceDir": "MT",
+    "externalLinks": [
+      { "type": "youtube", "label": "Steam Turbine Working Principle", "url": "https://www.youtube.com/watch?v=tfCDhcCwzXI" },
+      { "type": "youtube", "label": "LNG Carrier Steam Plant Overview", "url": "https://www.youtube.com/watch?v=yGRVIkFEwNs" },
+      { "type": "wikipedia", "label": "Steam Turbine — Wikipedia", "url": "https://en.wikipedia.org/wiki/Steam_turbine" },
+      { "type": "wikipedia", "label": "Marine Steam Engine — Wikipedia", "url": "https://en.wikipedia.org/wiki/Marine_steam_engine" },
+      { "type": "reference", "label": "Steam Turbine Ships — Marine Insight", "url": "https://www.marineinsight.com/tech/steam-turbine-ship/" }
+    ]
   },
   {
     "id": "tg",
@@ -92,7 +120,13 @@
     ],
     "difficulty": "Advanced",
     "fileCount": 9,
-    "sourceDir": "TG"
+    "sourceDir": "TG",
+    "externalLinks": [
+      { "type": "youtube", "label": "Turbo Generator Operation on Ships", "url": "https://www.youtube.com/watch?v=Ra2NhckT9xI" },
+      { "type": "wikipedia", "label": "Turbo Generator — Wikipedia", "url": "https://en.wikipedia.org/wiki/Turbogenerator" },
+      { "type": "wikipedia", "label": "Synchro-Self-Shifting Clutch — Wikipedia", "url": "https://en.wikipedia.org/wiki/Synchro-self-shifting_clutch" },
+      { "type": "reference", "label": "Turbo Generator on Ships — Marine Insight", "url": "https://www.marineinsight.com/tech/turbo-generator-ships/" }
+    ]
   },
   {
     "id": "eg",
@@ -110,7 +144,13 @@
     ],
     "difficulty": "Intermediate",
     "fileCount": 10,
-    "sourceDir": "EG"
+    "sourceDir": "EG",
+    "externalLinks": [
+      { "type": "youtube", "label": "Emergency Generator on Ships — Purpose and Testing", "url": "https://www.youtube.com/watch?v=p3uBqiI7A3g" },
+      { "type": "youtube", "label": "Dead Ship Condition — Recovery Procedure", "url": "https://www.youtube.com/watch?v=5VEn_-GjEmY" },
+      { "type": "wikipedia", "label": "Emergency Power Supply (Marine) — Wikipedia", "url": "https://en.wikipedia.org/wiki/Emergency_power_supply" },
+      { "type": "reference", "label": "SOLAS Emergency Generator Requirements", "url": "https://www.marineinsight.com/marine-safety/emergency-generator-on-ships/" }
+    ]
   },
   {
     "id": "purifier",
@@ -130,7 +170,14 @@
     ],
     "difficulty": "Intermediate",
     "fileCount": 25,
-    "sourceDir": "Purifier"
+    "sourceDir": "Purifier",
+    "externalLinks": [
+      { "type": "youtube", "label": "Marine Purifier — How It Works", "url": "https://www.youtube.com/watch?v=SxYsGhB0_OI" },
+      { "type": "youtube", "label": "Purifier Bowl Overhaul Step by Step", "url": "https://www.youtube.com/watch?v=4isFkJibvfc" },
+      { "type": "wikipedia", "label": "Centrifuge — Wikipedia", "url": "https://en.wikipedia.org/wiki/Centrifuge" },
+      { "type": "reference", "label": "Purifier Working Principle — Marine Insight", "url": "https://www.marineinsight.com/tech/purifier-on-ships-working-principle/" },
+      { "type": "reference", "label": "Alfa Laval Separator Training Resources", "url": "https://www.alfalaval.com/industries/marine/marine-separation/" }
+    ]
   },
   {
     "id": "pump",
@@ -149,7 +196,14 @@
     ],
     "difficulty": "Beginner",
     "fileCount": 7,
-    "sourceDir": "pump"
+    "sourceDir": "pump",
+    "externalLinks": [
+      { "type": "youtube", "label": "Centrifugal Pump Working Principle", "url": "https://www.youtube.com/watch?v=WggbHtqA6rU" },
+      { "type": "youtube", "label": "Mechanical Seal Explained", "url": "https://www.youtube.com/watch?v=xvZX-iJt2k0" },
+      { "type": "wikipedia", "label": "Centrifugal Pump — Wikipedia", "url": "https://en.wikipedia.org/wiki/Centrifugal_pump" },
+      { "type": "wikipedia", "label": "Mechanical Seal — Wikipedia", "url": "https://en.wikipedia.org/wiki/Mechanical_seal" },
+      { "type": "reference", "label": "Types of Pumps on Ships — Marine Insight", "url": "https://www.marineinsight.com/tech/types-of-pumps-used-on-ships/" }
+    ]
   },
   {
     "id": "motor",
@@ -168,7 +222,14 @@
     ],
     "difficulty": "Intermediate",
     "fileCount": 12,
-    "sourceDir": "motor"
+    "sourceDir": "motor",
+    "externalLinks": [
+      { "type": "youtube", "label": "Electric Motor Shaft Alignment Tutorial", "url": "https://www.youtube.com/watch?v=q6k4Dj4Ctxc" },
+      { "type": "youtube", "label": "How a 3-Phase Induction Motor Works", "url": "https://www.youtube.com/watch?v=LtJoJBUSe28" },
+      { "type": "youtube", "label": "Bearing Greasing — Correct Procedure", "url": "https://www.youtube.com/watch?v=7Cz1w87Bok4" },
+      { "type": "wikipedia", "label": "Induction Motor — Wikipedia", "url": "https://en.wikipedia.org/wiki/Induction_motor" },
+      { "type": "reference", "label": "Motor Maintenance on Ships — Marine Insight", "url": "https://www.marineinsight.com/tech/electric-motor-maintenance-on-ships/" }
+    ]
   },
   {
     "id": "electrical",
@@ -185,7 +246,14 @@
     ],
     "difficulty": "Intermediate",
     "fileCount": 3,
-    "sourceDir": "Electrical"
+    "sourceDir": "Electrical",
+    "externalLinks": [
+      { "type": "youtube", "label": "Insulation Resistance Test — How to Use a Megger", "url": "https://www.youtube.com/watch?v=gfpFqBysrFg" },
+      { "type": "youtube", "label": "Reactive Power Explained Simply", "url": "https://www.youtube.com/watch?v=UBjtxD-dIbE" },
+      { "type": "wikipedia", "label": "Insulation Resistance — Wikipedia", "url": "https://en.wikipedia.org/wiki/Insulation_resistance_tester" },
+      { "type": "wikipedia", "label": "Reactive Power — Wikipedia", "url": "https://en.wikipedia.org/wiki/AC_power#Reactive_power" },
+      { "type": "reference", "label": "Marine Electrical Systems — Marine Insight", "url": "https://www.marineinsight.com/tech/marine-electrical-system/" }
+    ]
   },
   {
     "id": "governor",
@@ -204,7 +272,14 @@
     ],
     "difficulty": "Intermediate",
     "fileCount": 7,
-    "sourceDir": "Governer"
+    "sourceDir": "Governer",
+    "externalLinks": [
+      { "type": "youtube", "label": "Governor Droop Control Explained", "url": "https://www.youtube.com/watch?v=XmEDcM3eLJU" },
+      { "type": "youtube", "label": "Parallel Generator Operation — Load Sharing", "url": "https://www.youtube.com/watch?v=kFZoXsGsBqE" },
+      { "type": "wikipedia", "label": "Governor (Device) — Wikipedia", "url": "https://en.wikipedia.org/wiki/Governor_(device)" },
+      { "type": "reference", "label": "Governor on Marine Diesel Engine — Marine Insight", "url": "https://www.marineinsight.com/tech/governor-on-marine-diesel-engine/" },
+      { "type": "reference", "label": "Woodward Governor Official Documentation", "url": "https://www.woodward.com/marine" }
+    ]
   },
   {
     "id": "lsa-ffe",
@@ -227,7 +302,14 @@
     ],
     "difficulty": "Intermediate",
     "fileCount": 45,
-    "sourceDir": "LSA, FFE"
+    "sourceDir": "LSA, FFE",
+    "externalLinks": [
+      { "type": "youtube", "label": "Lifeboat Launching Procedure on Ships", "url": "https://www.youtube.com/watch?v=5U6JNdG8nqE" },
+      { "type": "youtube", "label": "CO2 Fixed Fire Extinguishing System", "url": "https://www.youtube.com/watch?v=ViZ3wIiPCuY" },
+      { "type": "youtube", "label": "Fire Detector Testing — Autronica System", "url": "https://www.youtube.com/watch?v=Yq4uyXCVPIE" },
+      { "type": "wikipedia", "label": "Life-Saving Appliances — Wikipedia", "url": "https://en.wikipedia.org/wiki/Life-saving_appliances" },
+      { "type": "reference", "label": "SOLAS LSA Requirements — Marine Insight", "url": "https://www.marineinsight.com/marine-safety/life-saving-appliances-on-ships/" }
+    ]
   },
   {
     "id": "drill",
@@ -246,7 +328,14 @@
     ],
     "difficulty": "Beginner",
     "fileCount": 14,
-    "sourceDir": "Drill"
+    "sourceDir": "Drill",
+    "externalLinks": [
+      { "type": "youtube", "label": "Ship Drill Procedures — STCW Requirements", "url": "https://www.youtube.com/watch?v=PFfCi9ZfPpY" },
+      { "type": "youtube", "label": "Oil Spill Response on Ships (SOPEP)", "url": "https://www.youtube.com/watch?v=4N3ZE9RNaOs" },
+      { "type": "wikipedia", "label": "MARPOL (Oil Pollution) — Wikipedia", "url": "https://en.wikipedia.org/wiki/MARPOL_73/78" },
+      { "type": "reference", "label": "SOPEP — Ship Oil Pollution Emergency Plan", "url": "https://www.marineinsight.com/marine-safety/sopep-ship-oil-pollution-emergency-plan/" },
+      { "type": "reference", "label": "Damage Control on Ships — Marine Insight", "url": "https://www.marineinsight.com/marine-safety/damage-control-on-ships/" }
+    ]
   },
   {
     "id": "refrigeration",
@@ -267,7 +356,14 @@
     ],
     "difficulty": "Intermediate",
     "fileCount": 28,
-    "sourceDir": "Ref Prov 冷凍装置"
+    "sourceDir": "Ref Prov 冷凍装置",
+    "externalLinks": [
+      { "type": "youtube", "label": "Refrigeration Cycle Explained (P-H Diagram)", "url": "https://www.youtube.com/watch?v=Uv5VDnEBqzk" },
+      { "type": "youtube", "label": "Marine Refrigeration System Overview", "url": "https://www.youtube.com/watch?v=4Y0tAXnEdAI" },
+      { "type": "wikipedia", "label": "Vapor-Compression Refrigeration — Wikipedia", "url": "https://en.wikipedia.org/wiki/Vapor-compression_refrigeration" },
+      { "type": "reference", "label": "Refrigeration System on Ships — Marine Insight", "url": "https://www.marineinsight.com/tech/refrigeration-system-on-ships/" },
+      { "type": "reference", "label": "HFO Refrigerant Phase-Out (IMO/Kigali)", "url": "https://www.marineinsight.com/tech/refrigerants-used-on-ships/" }
+    ]
   },
   {
     "id": "ahu",
@@ -284,7 +380,13 @@
     ],
     "difficulty": "Beginner",
     "fileCount": 5,
-    "sourceDir": "Air Handling Unit"
+    "sourceDir": "Air Handling Unit",
+    "externalLinks": [
+      { "type": "youtube", "label": "HVAC Air Handling Unit — How It Works", "url": "https://www.youtube.com/watch?v=mfMpCPNv5RI" },
+      { "type": "youtube", "label": "Marine HVAC System Overview", "url": "https://www.youtube.com/watch?v=HxFSf7MXCZ8" },
+      { "type": "wikipedia", "label": "Air Handling Unit — Wikipedia", "url": "https://en.wikipedia.org/wiki/Air_handler" },
+      { "type": "reference", "label": "HVAC on Ships — Marine Insight", "url": "https://www.marineinsight.com/tech/hvac-system-on-ships/" }
+    ]
   },
   {
     "id": "lng",
@@ -302,7 +404,14 @@
     ],
     "difficulty": "Advanced",
     "fileCount": 8,
-    "sourceDir": "LNG船資料"
+    "sourceDir": "LNG船資料",
+    "externalLinks": [
+      { "type": "youtube", "label": "How LNG Carriers Work", "url": "https://www.youtube.com/watch?v=ACdBVWnDzXo" },
+      { "type": "youtube", "label": "LNG Loading and Unloading Operations", "url": "https://www.youtube.com/watch?v=R7-5mkrWM8Y" },
+      { "type": "wikipedia", "label": "LNG Carrier — Wikipedia", "url": "https://en.wikipedia.org/wiki/LNG_carrier" },
+      { "type": "reference", "label": "LNG Vessel Operations — Marine Insight", "url": "https://www.marineinsight.com/tech/liquefied-natural-gas-carrier/" },
+      { "type": "reference", "label": "SIGTTO — Society of International Gas Tanker Owners", "url": "https://www.sigtto.org/" }
+    ]
   },
   {
     "id": "exam",
@@ -321,7 +430,14 @@
     ],
     "difficulty": "All Levels",
     "fileCount": 35,
-    "sourceDir": "海技試験"
+    "sourceDir": "海技試験",
+    "externalLinks": [
+      { "type": "youtube", "label": "Marine Engineer License Exam Tips", "url": "https://www.youtube.com/watch?v=8i9Ec_bWjGE" },
+      { "type": "youtube", "label": "STCW Marine Engineering Overview", "url": "https://www.youtube.com/watch?v=BkwGAEkeCcI" },
+      { "type": "wikipedia", "label": "STCW Convention — Wikipedia", "url": "https://en.wikipedia.org/wiki/International_Convention_on_Standards_of_Training,_Certification_and_Watchkeeping_for_Seafarers" },
+      { "type": "reference", "label": "Japan Maritime Examination (JMETS) Official Site", "url": "https://www.jmets.or.jp/" },
+      { "type": "reference", "label": "Marine Engineer Ranks and Certificates", "url": "https://www.marineinsight.com/careers-2/marine-engineer-ranks-on-ships/" }
+    ]
   },
   {
     "id": "control",
@@ -340,7 +456,13 @@
     ],
     "difficulty": "Intermediate",
     "fileCount": 10,
-    "sourceDir": "制御機構　PID"
+    "sourceDir": "制御機構　PID",
+    "externalLinks": [
+      { "type": "youtube", "label": "PID Controller Explained", "url": "https://www.youtube.com/watch?v=wkfEZmsQqiA" },
+      { "type": "youtube", "label": "How RTD (PT100) Temperature Sensors Work", "url": "https://www.youtube.com/watch?v=MrBMSHdGXDs" },
+      { "type": "wikipedia", "label": "PID Controller — Wikipedia", "url": "https://en.wikipedia.org/wiki/PID_controller" },
+      { "type": "reference", "label": "Automation & Control on Ships — Marine Insight", "url": "https://www.marineinsight.com/tech/automation-on-ships/" }
+    ]
   },
   {
     "id": "steering",
@@ -356,7 +478,13 @@
     ],
     "difficulty": "Beginner",
     "fileCount": 2,
-    "sourceDir": "steering"
+    "sourceDir": "steering",
+    "externalLinks": [
+      { "type": "youtube", "label": "Ship Steering Gear — How It Works", "url": "https://www.youtube.com/watch?v=WcTDaxI4wYo" },
+      { "type": "youtube", "label": "Emergency Steering Procedure on Ships", "url": "https://www.youtube.com/watch?v=g2lGJFNnA6E" },
+      { "type": "wikipedia", "label": "Steering Gear — Wikipedia", "url": "https://en.wikipedia.org/wiki/Steering_gear" },
+      { "type": "reference", "label": "Steering Gear on Ships — Marine Insight", "url": "https://www.marineinsight.com/tech/steering-gear-system-on-ships/" }
+    ]
   },
   {
     "id": "valve",
@@ -374,7 +502,13 @@
     ],
     "difficulty": "Beginner",
     "fileCount": 8,
-    "sourceDir": "Valve"
+    "sourceDir": "Valve",
+    "externalLinks": [
+      { "type": "youtube", "label": "Types of Valves on Ships Explained", "url": "https://www.youtube.com/watch?v=DcVTbgCJ0YU" },
+      { "type": "youtube", "label": "Gland Packing Replacement Procedure", "url": "https://www.youtube.com/watch?v=6kkxJNs4JiY" },
+      { "type": "wikipedia", "label": "Sea Chest — Wikipedia", "url": "https://en.wikipedia.org/wiki/Sea_chest_(nautical)" },
+      { "type": "reference", "label": "Types of Valves on Ships — Marine Insight", "url": "https://www.marineinsight.com/tech/types-of-valves-used-on-ship/" }
+    ]
   },
   {
     "id": "tools-parts",
@@ -392,7 +526,13 @@
     ],
     "difficulty": "Beginner",
     "fileCount": 15,
-    "sourceDir": "Tool ＆ parts"
+    "sourceDir": "Tool ＆ parts",
+    "externalLinks": [
+      { "type": "youtube", "label": "V-Belt Selection and Tensioning Guide", "url": "https://www.youtube.com/watch?v=kQYBjLFDpSk" },
+      { "type": "youtube", "label": "Hydraulic Bolt Tensioner — How to Use", "url": "https://www.youtube.com/watch?v=ACfm0FK5Fxo" },
+      { "type": "wikipedia", "label": "Belt Drive — Wikipedia", "url": "https://en.wikipedia.org/wiki/Belt_(mechanical)" },
+      { "type": "reference", "label": "Engine Room Tools and Their Uses — Marine Insight", "url": "https://www.marineinsight.com/tech/engine-room-tools-used-on-ships/" }
+    ]
   },
   {
     "id": "fuel-oil",
@@ -410,7 +550,14 @@
     ],
     "difficulty": "Intermediate",
     "fileCount": 2,
-    "sourceDir": "FO 性状"
+    "sourceDir": "FO 性状",
+    "externalLinks": [
+      { "type": "youtube", "label": "IMO 2020 Sulfur Cap Explained", "url": "https://www.youtube.com/watch?v=F8_2GhV_Lf4" },
+      { "type": "youtube", "label": "Marine Fuel Oil Types and Properties", "url": "https://www.youtube.com/watch?v=IhOCDSsYfwk" },
+      { "type": "wikipedia", "label": "Fuel Oil — Wikipedia", "url": "https://en.wikipedia.org/wiki/Fuel_oil" },
+      { "type": "reference", "label": "IMO 2020 Sulphur Cap — Official IMO", "url": "https://www.imo.org/en/MediaCentre/HotTopics/Pages/Sulphur-2020.aspx" },
+      { "type": "reference", "label": "Marine Fuel Properties — Marine Insight", "url": "https://www.marineinsight.com/tech/marine-fuel-oil/" }
+    ]
   },
   {
     "id": "regulations",
@@ -429,7 +576,14 @@
     ],
     "difficulty": "Intermediate",
     "fileCount": 5,
-    "sourceDir": "条約、証書等の規則関連"
+    "sourceDir": "条約、証書等の規則関連",
+    "externalLinks": [
+      { "type": "youtube", "label": "SOLAS Convention Overview", "url": "https://www.youtube.com/watch?v=p2VDKMmXA-E" },
+      { "type": "youtube", "label": "ISM Code Explained for Seafarers", "url": "https://www.youtube.com/watch?v=PiMWIRovJqM" },
+      { "type": "wikipedia", "label": "SOLAS — Wikipedia", "url": "https://en.wikipedia.org/wiki/SOLAS_Convention" },
+      { "type": "wikipedia", "label": "MARPOL — Wikipedia", "url": "https://en.wikipedia.org/wiki/MARPOL_73/78" },
+      { "type": "reference", "label": "IMO Official Website", "url": "https://www.imo.org/" }
+    ]
   },
   {
     "id": "switchboard",
@@ -447,7 +601,13 @@
     ],
     "difficulty": "Intermediate",
     "fileCount": 4,
-    "sourceDir": "配電盤"
+    "sourceDir": "配電盤",
+    "externalLinks": [
+      { "type": "youtube", "label": "Marine Main Switchboard Explained", "url": "https://www.youtube.com/watch?v=wqyWlCPBFIk" },
+      { "type": "youtube", "label": "Circuit Breaker Working Principle", "url": "https://www.youtube.com/watch?v=ERoHrJO5bww" },
+      { "type": "wikipedia", "label": "Switchboard (Electrical) — Wikipedia", "url": "https://en.wikipedia.org/wiki/Switchboard_(electrical)" },
+      { "type": "reference", "label": "Electrical Distribution on Ships — Marine Insight", "url": "https://www.marineinsight.com/tech/electrical-distribution-system-on-ships/" }
+    ]
   },
   {
     "id": "capac",
@@ -464,6 +624,12 @@
     ],
     "difficulty": "Intermediate",
     "fileCount": 3,
-    "sourceDir": "CAPAC"
+    "sourceDir": "CAPAC",
+    "externalLinks": [
+      { "type": "youtube", "label": "Cathodic Protection — How It Works", "url": "https://www.youtube.com/watch?v=Cq9xjRf5paE" },
+      { "type": "youtube", "label": "ICCP System on Ships", "url": "https://www.youtube.com/watch?v=aXCxZkqknqA" },
+      { "type": "wikipedia", "label": "Cathodic Protection — Wikipedia", "url": "https://en.wikipedia.org/wiki/Cathodic_protection" },
+      { "type": "reference", "label": "Cathodic Protection on Ships — Marine Insight", "url": "https://www.marineinsight.com/tech/cathodic-protection-of-ship/" }
+    ]
   }
 ]
