@@ -377,12 +377,24 @@ let examQuestions = [];
 let examAnswers   = {};   // { questionId: 'A'|'B'|'C'|'D' }
 let examSubmitted = false;
 
+function dailyShuffle(arr) {
+  const d = new Date();
+  const seed = d.getFullYear() * 10000 + (d.getMonth() + 1) * 100 + d.getDate();
+  const out = arr.slice();
+  for (let i = out.length - 1; i > 0; i--) {
+    const j = Math.abs((seed * (i + 1) * 2654435761) >> 0) % (i + 1);
+    [out[i], out[j]] = [out[j], out[i]];
+  }
+  return out;
+}
+
 async function showExam() {
   previousView = isVisible('allTopicsView') ? 'all' : isVisible('searchView') ? 'search' : 'home';
   if (examQuestions.length === 0) {
     try {
       const res = await fetch('data/exam.json');
-      examQuestions = await res.json();
+      const raw = await res.json();
+      examQuestions = dailyShuffle(raw);
     } catch (e) {
       console.error('Failed to load exam:', e);
       return;
@@ -508,6 +520,7 @@ function submitExam(e) {
 function retakeExam() {
   examAnswers   = {};
   examSubmitted = false;
+  examQuestions = dailyShuffle(examQuestions);
   renderExam();
   window.scrollTo({ top: 0, behavior: 'smooth' });
 }
