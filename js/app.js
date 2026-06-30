@@ -1,9 +1,11 @@
 'use strict';
 
+const REPO_URL = 'https://github.com/AIinterruptor/marineeng-academy';
+
 // ─── STATE ─────────────────────────────────────────────────────────
 let topics = [];
 let activeCategory = 'all';
-let previousView = 'home';
+let previousView = 'home'; // 'home' | 'all' | 'search'
 
 // ─── INIT ───────────────────────────────────────────────────────────
 async function init() {
@@ -15,6 +17,7 @@ async function init() {
     topics = [];
   }
   renderHomeGrid();
+  resetAllPills('homeView', 'all');
 }
 
 document.addEventListener('DOMContentLoaded', init);
@@ -23,19 +26,24 @@ document.addEventListener('DOMContentLoaded', init);
 function showHome() {
   hide('allTopicsView'); hide('topicDetailView'); hide('aboutView'); hide('searchView');
   show('homeView');
-  resetSearch();
   document.getElementById('globalSearch').value = '';
   activeCategory = 'all';
+  resetAllPills('homeView', 'all');
   renderHomeGrid();
   window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
 function showAllTopics() {
+  // capture previousView before hiding anything
+  const wasSearch = document.getElementById('searchView').style.display !== 'none';
+  const wasHome   = document.getElementById('homeView').style.display   !== 'none';
+  // navigating directly to All Topics always comes from home/search — back goes home
   previousView = 'home';
+
   hide('homeView'); hide('topicDetailView'); hide('aboutView'); hide('searchView');
   show('allTopicsView');
   activeCategory = 'all';
-  setActivePill(document.querySelector('#allTopicsView .pill'));
+  resetAllPills('allTopicsView', 'all');
   renderGrid('allTopicGrid', topics);
   window.scrollTo({ top: 0, behavior: 'smooth' });
 }
@@ -47,21 +55,32 @@ function showAbout() {
 }
 
 function goBack() {
-  if (previousView === 'all') showAllTopics();
-  else showHome();
+  if (previousView === 'all') {
+    showAllTopics();
+  } else if (previousView === 'search') {
+    // restore search view — just show it again (query already in input)
+    hide('homeView'); hide('allTopicsView'); hide('topicDetailView'); hide('aboutView');
+    show('searchView');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  } else {
+    showHome();
+  }
 }
 
 function showTopic(id) {
   const topic = topics.find(t => t.id === id);
   if (!topic) return;
 
-  const el = document.getElementById('topicDetailView');
+  // capture which view is currently visible BEFORE hiding anything
+  if (document.getElementById('allTopicsView').style.display !== 'none') {
+    previousView = 'all';
+  } else if (document.getElementById('searchView').style.display !== 'none') {
+    previousView = 'search';
+  } else {
+    previousView = 'home';
+  }
+
   document.getElementById('topicDetailContent').innerHTML = buildTopicDetail(topic);
-
-  const currentlyVisible = !document.getElementById('allTopicsView').style.display ||
-    document.getElementById('allTopicsView').style.display !== 'none';
-  previousView = document.getElementById('allTopicsView').style.display !== 'none' ? 'all' : 'home';
-
   hide('homeView'); hide('allTopicsView'); hide('aboutView'); hide('searchView');
   show('topicDetailView');
   window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -95,7 +114,7 @@ function renderGrid(containerId, items) {
 function buildCard(topic) {
   const diffClass = 'diff-' + topic.difficulty.replace(/\s+/g, '');
   const tags = topic.tags.slice(0, 4).map(t => `<span class="tag">${t}</span>`).join('');
-  const catLabel = topic.category.charAt(0).toUpperCase() + topic.category.slice(1);
+  const catLabel = capitalize(topic.category);
 
   return `
     <div class="topic-card" onclick="showTopic('${topic.id}')">
@@ -120,10 +139,11 @@ function buildCard(topic) {
 }
 
 function buildTopicDetail(topic) {
-  const diffClass = 'diff-' + topic.difficulty.replace(/\s+/g, '');
-  const catLabel = topic.category.charAt(0).toUpperCase() + topic.category.slice(1);
+  const diffClass   = 'diff-' + topic.difficulty.replace(/\s+/g, '');
+  const catLabel    = capitalize(topic.category);
   const keyTopicsHtml = topic.keyTopics.map(k => `<li>${k}</li>`).join('');
-  const tagsHtml = topic.tags.map(t => `<span class="tag">${t}</span>`).join('');
+  const tagsHtml    = topic.tags.map(t => `<span class="tag">${t}</span>`).join('');
+  const folderLink  = `${REPO_URL}/tree/main/data`;
 
   return `
     <div class="detail-hero">
@@ -174,26 +194,52 @@ function buildTopicDetail(topic) {
         <div class="cta-box">
           <h3>📂 Original Source Materials</h3>
           <p>The full set of ${topic.fileCount} reference documents for this module is available in the GitHub repository.</p>
-          <a href="https://github.com/search?q=marineeng-academy" class="btn-primary" style="display:inline-block;margin-top:4px" target="_blank" rel="noopener">View on GitHub →</a>
-          <p class="cta-note">Files include PDFs, work instructions, and PowerPoint presentations in Japanese from active vessel operations.</p>
+          <a href="${REPO_URL}" class="btn-primary" style="display:inline-block;margin-top:4px" target="_blank" rel="noopener">View Repository →</a>
+          <p class="cta-note">Files include PDFs, work instructions, and PowerPoint presentations from active vessel operations.</p>
+        </div>
+
+        <div class="cta-box" style="margin-top:14px">
+          <h3>🔗 Related Topics</h3>
+          <div id="related-${topic.id}" class="related-list"></div>
         </div>
       </div>
     </div>
   `;
 }
 
+function renderRelated(topic) {
+  const related = topics
+    .filter(t => t.id !== topic.id && (
+      t.category === topic.category ||
+      t.tags.some(tag => topic.tags.includes(tag))
+    ))
+    .slice(0, 3);
+
+  const container = document.getElementById(`related-${topic.id}`);
+  if (!container) return;
+  if (related.length === 0) {
+    container.innerHTML = '<p style="color:var(--text3);font-size:0.82rem">No related topics found.</p>';
+    return;
+  }
+  container.innerHTML = related.map(r => `
+    <div class="related-item" onclick="showTopic('${r.id}')">
+      <span class="related-icon">${r.icon}</span>
+      <span class="related-title">${r.title}</span>
+      <span class="related-arrow">→</span>
+    </div>
+  `).join('');
+}
+
 // ─── CATEGORY FILTER ────────────────────────────────────────────────
 function filterCategory(cat, btn) {
   activeCategory = cat;
 
-  // update pills in whichever section is active
-  const containers = btn.closest('.category-pills').querySelectorAll('.pill');
-  containers.forEach(p => p.classList.remove('active'));
+  // update only the pills in the same pill group as the clicked button
+  btn.closest('.category-pills').querySelectorAll('.pill').forEach(p => p.classList.remove('active'));
   btn.classList.add('active');
 
-  // update the correct grid
-  const allTopicsVisible = document.getElementById('allTopicsView').style.display !== 'none';
-  if (allTopicsVisible) {
+  // render the correct grid
+  if (document.getElementById('allTopicsView').style.display !== 'none') {
     renderGrid('allTopicGrid', topics);
   } else {
     renderGrid('topicGrid', topics);
@@ -201,10 +247,13 @@ function filterCategory(cat, btn) {
   }
 }
 
-function setActivePill(pill) {
-  if (!pill) return;
-  pill.closest('.category-pills').querySelectorAll('.pill').forEach(p => p.classList.remove('active'));
-  pill.classList.add('active');
+function resetAllPills(viewId, cat) {
+  const view = document.getElementById(viewId);
+  if (!view) return;
+  view.querySelectorAll('.pill').forEach(p => {
+    const pillCat = p.getAttribute('onclick').match(/filterCategory\('([^']+)'/);
+    if (pillCat) p.classList.toggle('active', pillCat[1] === cat);
+  });
 }
 
 // ─── SEARCH ─────────────────────────────────────────────────────────
@@ -216,7 +265,12 @@ function handleSearch(query) {
 
 function doSearch(query) {
   if (!query) {
-    resetSearch();
+    // restore whatever was visible before search started
+    if (previousView === 'all') {
+      hide('searchView'); show('allTopicsView');
+    } else {
+      hide('searchView'); show('homeView');
+    }
     return;
   }
 
@@ -229,16 +283,24 @@ function doSearch(query) {
     t.category.toLowerCase().includes(q)
   );
 
+  // remember where we came from before switching to search view
+  if (document.getElementById('searchView').style.display === 'none') {
+    if (document.getElementById('allTopicsView').style.display !== 'none') previousView = 'all';
+    else if (document.getElementById('homeView').style.display !== 'none') previousView = 'home';
+  }
+
   hide('homeView'); hide('allTopicsView'); hide('topicDetailView'); hide('aboutView');
   show('searchView');
-  document.getElementById('searchResultTitle').textContent = `${results.length} result${results.length !== 1 ? 's' : ''} for "${query}"`;
+
+  document.getElementById('searchResultTitle').textContent =
+    `${results.length} result${results.length !== 1 ? 's' : ''} for "${query}"`;
+
   const grid = document.getElementById('searchResultGrid');
-  activeCategory = 'all';
   if (results.length === 0) {
     grid.innerHTML = `<div class="no-results">
       <div class="nr-icon">🔍</div>
       <h3>No results for "${query}"</h3>
-      <p>Try searching for a system name, like "boiler", "DG", or "fire"</p>
+      <p>Try: "boiler", "DG", "fire", "pump", "exam", "LNG"</p>
     </div>`;
   } else {
     grid.innerHTML = results.map(buildCard).join('');
@@ -246,16 +308,38 @@ function doSearch(query) {
   window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
-function resetSearch() {
-  hide('searchView');
-  show('homeView');
-}
-
 // ─── UTILS ─────────────────────────────────────────────────────────
-function show(id) { document.getElementById(id).style.display = ''; }
-function hide(id) { document.getElementById(id).style.display = 'none'; }
-
+function show(id) {
+  const el = document.getElementById(id);
+  if (el) el.style.display = '';
+}
+function hide(id) {
+  const el = document.getElementById(id);
+  if (el) el.style.display = 'none';
+}
+function capitalize(str) {
+  return str.charAt(0).toUpperCase() + str.slice(1);
+}
 function scrollToSection(id) {
   const el = document.getElementById(id);
   if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
 }
+
+function clearSearch() {
+  document.getElementById('globalSearch').value = '';
+  hide('searchView');
+  if (previousView === 'all') {
+    show('allTopicsView');
+  } else {
+    show('homeView');
+  }
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+// render related topics after topic detail innerHTML is written
+document.addEventListener('click', () => {
+  setTimeout(() => {
+    const active = topics.find(t => document.getElementById(`related-${t.id}`));
+    if (active) renderRelated(active);
+  }, 0);
+});
