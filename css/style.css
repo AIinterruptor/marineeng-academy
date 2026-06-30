@@ -174,7 +174,8 @@ a:hover { color: #93c5fd; }
   font-size: 0.9rem; font-weight: 600;
   color: var(--text2);
   transition: all 0.3s;
-  cursor: default;
+  cursor: pointer;
+  user-select: none;
 }
 .eg-card:hover { border-color: var(--accent); color: var(--text); background: var(--surface2); transform: translateY(-2px); }
 .eg-1:hover { border-color: #f97316; }
