@@ -1,0 +1,469 @@
+[
+  {
+    "id": "boiler",
+    "title": "Boiler Systems",
+    "icon": "🔥",
+    "category": "machinery",
+    "tags": ["boiler", "steam", "water treatment", "soot blowing"],
+    "summary": "Covers auxiliary boiler operations, exhaust gas economizers, and boiler water chemistry management. Includes practical guidance on boiler water quality control, EGE soot blowing procedures, and wind box fire prevention — essential knowledge for 3AE candidates and watchkeeping engineers.",
+    "keyTopics": [
+      "Auxiliary boiler structure and operation",
+      "Boiler water management and testing",
+      "Exhaust Gas Economizer (EGE) and soot blowing",
+      "Wind box fire prevention and response",
+      "BLR transmitter blow-off procedures",
+      "Cooling water management"
+    ],
+    "difficulty": "Intermediate",
+    "fileCount": 7,
+    "sourceDir": "Boiler"
+  },
+  {
+    "id": "dg",
+    "title": "Diesel Generator",
+    "icon": "⚡",
+    "category": "machinery",
+    "tags": ["diesel", "generator", "AVR", "safety device", "tappet"],
+    "summary": "Comprehensive diesel generator resource covering engine structure, AVR (Automatic Voltage Regulator) theory, governor operation, fuel filter maintenance, Pmax measurement, tappet clearance adjustment, and full safety device test procedures. Includes work instructions used onboard NYK vessels.",
+    "keyTopics": [
+      "DG engine structure and components",
+      "AVR and excitation systems",
+      "Parallel operation and back-EMF",
+      "Pmax (maximum combustion pressure) measurement",
+      "Tappet clearance measurement and adjustment",
+      "Safety device test procedures (full WI format)",
+      "FO filter cleaning procedures",
+      "Pump rack adjustment"
+    ],
+    "difficulty": "Intermediate",
+    "fileCount": 27,
+    "sourceDir": "DG"
+  },
+  {
+    "id": "me",
+    "title": "Main Engine",
+    "icon": "🚢",
+    "category": "machinery",
+    "tags": ["main engine", "diesel", "piston", "cylinder", "WinGD"],
+    "summary": "Main engine fundamentals including WinGD two-stroke diesel engine manual reference, piston removal procedures, cylinder lubrication rate theory, and MCR vs NOR concepts. Core knowledge for any marine engineer aspiring to Chief Engineer rank.",
+    "keyTopics": [
+      "WinGD two-stroke engine operation",
+      "Piston removal and overhauling",
+      "Cylinder lubrication rate (cylinder oil dosing)",
+      "MCR (Maximum Continuous Rating) vs NOR (Normal Operating Rating)"
+    ],
+    "difficulty": "Advanced",
+    "fileCount": 4,
+    "sourceDir": "ME"
+  },
+  {
+    "id": "mt",
+    "title": "Main Turbine (Steam Plant)",
+    "icon": "🌀",
+    "category": "machinery",
+    "tags": ["turbine", "steam", "maneuvering", "crash astern", "LP turbine"],
+    "summary": "Steam turbine plant operations for LNG and steam-powered vessels. Covers crash astern procedure, maneuvering valve operation, machine-side control, LP turbine blade design, and hydraulic bolt tensioning methods. Critical for engineers on steam-powered LNG carriers.",
+    "keyTopics": [
+      "Crash astern procedure and logic",
+      "Maneuvering valve operation and diagrams",
+      "Machine-side (local) operation",
+      "LP turbine blade engineering",
+      "High-frequency bolt heater usage",
+      "Engine room trip mechanisms"
+    ],
+    "difficulty": "Advanced",
+    "fileCount": 7,
+    "sourceDir": "MT"
+  },
+  {
+    "id": "tg",
+    "title": "Turbo Generator",
+    "icon": "⚙️",
+    "category": "machinery",
+    "tags": ["turbo generator", "TG", "overspeed", "SSS clutch", "safety device"],
+    "summary": "Turbo Generator theory and practical operation guides. Covers TG instruction manuals, safety device test procedures, overspeed trip mechanism, SSS clutch operation, load limiting precautions, and why no-load operation should be avoided. Important for steam vessel engineers.",
+    "keyTopics": [
+      "TG structure and instruction manual",
+      "Safety device test procedures",
+      "Overspeed protection mechanism",
+      "SSS (Synchro-Self-Shifting) clutch",
+      "Load limiter operation precautions",
+      "Run signal relay logic"
+    ],
+    "difficulty": "Advanced",
+    "fileCount": 9,
+    "sourceDir": "TG"
+  },
+  {
+    "id": "eg",
+    "title": "Emergency Generator",
+    "icon": "🔋",
+    "category": "machinery",
+    "tags": ["emergency generator", "EG", "load test", "dead ship", "safety device"],
+    "summary": "Emergency generator load test procedures and safety device tests as required by SOLAS and classification societies. Includes dead ship recovery procedure — starting from total blackout back to normal power. A key topic in 3AE oral examinations.",
+    "keyTopics": [
+      "EG load test procedure (start and restoration)",
+      "Safety device test items",
+      "Dead ship recovery from total blackout",
+      "Load test flowchart and work instructions",
+      "SOLAS compliance for EG testing"
+    ],
+    "difficulty": "Intermediate",
+    "fileCount": 10,
+    "sourceDir": "EG"
+  },
+  {
+    "id": "purifier",
+    "title": "Fuel Oil Purifier",
+    "icon": "🔄",
+    "category": "machinery",
+    "tags": ["purifier", "centrifuge", "selfjector", "mitsubishi", "bowl", "disc"],
+    "summary": "Complete purifier resource using Mitsubishi Kakoki (MKK) Selfjector H-Series as reference. Covers centrifugal separation theory, auto-operation sequences, time chart understanding, alarm monitoring, bowl disassembly and overhaul, and vertical/horizontal shaft maintenance. Includes training video reference.",
+    "keyTopics": [
+      "Centrifugal separation theory",
+      "Selfjector auto-operation sequence and time chart",
+      "Bowl disassembly and rotating assembly overhaul",
+      "Alarm and multi-monitor system",
+      "Vertical shaft and horizontal shaft maintenance",
+      "Quick reference procedures",
+      "Timer setting and adjustment"
+    ],
+    "difficulty": "Intermediate",
+    "fileCount": 25,
+    "sourceDir": "Purifier"
+  },
+  {
+    "id": "pump",
+    "title": "Pumps",
+    "icon": "💧",
+    "category": "auxiliary",
+    "tags": ["pump", "mechanical seal", "vacuum pump", "trochoid", "impeller"],
+    "summary": "Marine pump fundamentals including mechanical seal theory and maintenance, vacuum pump operation, trochoid pump principles, impeller orientation, and oil quench seal systems. Covers practical pump supplementary materials used for training junior engineers.",
+    "keyTopics": [
+      "Mechanical seal types and maintenance",
+      "Vacuum pump operation and troubleshooting",
+      "Trochoid (gear) pump principles",
+      "Impeller direction and priming",
+      "Oil quench meaning and application",
+      "Self-priming pump instruction"
+    ],
+    "difficulty": "Beginner",
+    "fileCount": 7,
+    "sourceDir": "pump"
+  },
+  {
+    "id": "motor",
+    "title": "Electric Motors & Alignment",
+    "icon": "🔧",
+    "category": "electrical",
+    "tags": ["motor", "alignment", "centering", "grease", "inverter", "bearing"],
+    "summary": "Electric motor maintenance and shaft alignment (centering) procedures. Includes grease selection and application intervals, motor-inverter troubleshooting case studies, difference between rolling and sliding bearings, and motor control circuit fundamentals. Practical field-level knowledge from experienced 2nd Engineers.",
+    "keyTopics": [
+      "Shaft alignment / centering methodology",
+      "Grease consistency (NLGI grade) and application intervals",
+      "Motor inverter troubleshooting (two-part case study)",
+      "Motor control circuit basics",
+      "Rolling bearing vs sliding bearing differences",
+      "Fan-side grease-up considerations"
+    ],
+    "difficulty": "Intermediate",
+    "fileCount": 12,
+    "sourceDir": "motor"
+  },
+  {
+    "id": "electrical",
+    "title": "Electrical Systems",
+    "icon": "🔌",
+    "category": "electrical",
+    "tags": ["electrical", "insulation", "reactive power", "bow thruster", "HV"],
+    "summary": "Essential electrical knowledge for marine engineers: insulation resistance testing and low insulation troubleshooting with a multimeter, why bow thrusters use 3300V high voltage systems, and the physics of reactive power. Foundation knowledge tested in 3rd Class licensing examinations.",
+    "keyTopics": [
+      "Insulation resistance (IR) testing with a tester",
+      "Low insulation diagnosis and corrective action",
+      "High-voltage systems — why 3300V for bow thrusters",
+      "Reactive power (VAR) fundamentals"
+    ],
+    "difficulty": "Intermediate",
+    "fileCount": 3,
+    "sourceDir": "Electrical"
+  },
+  {
+    "id": "governor",
+    "title": "Governor Systems",
+    "icon": "🎛️",
+    "category": "machinery",
+    "tags": ["governor", "droop", "woodward", "parallel operation", "speed control"],
+    "summary": "Governor theory and practical operation covering mechanical and electronic governors (Woodward). Explains droop control characteristics, isochronous vs droop mode, parallel generator operation, and load sharing. The droop concept is a frequent oral examination topic for 3AE/2AE candidates.",
+    "keyTopics": [
+      "Governor function and speed regulation",
+      "Droop control characteristic explained",
+      "Isochronous vs droop mode",
+      "Load sharing in parallel generator operation",
+      "Woodward electronic governor basics",
+      "DG governor practical adjustment"
+    ],
+    "difficulty": "Intermediate",
+    "fileCount": 7,
+    "sourceDir": "Governer"
+  },
+  {
+    "id": "lsa-ffe",
+    "title": "LSA & Fire Fighting Equipment",
+    "icon": "🧯",
+    "category": "safety",
+    "tags": ["fire", "lifeboat", "CO2", "foam", "BA", "SOLAS", "LSA"],
+    "summary": "Life Saving Appliances (LSA) and Fire Fighting Equipment (FFE) covering lifeboat launching, BA compressor testing, fixed foam system, CO2 system operation, fire hose pressure testing, fire detector testing (Autronica), high-expansion foam systems, dry chemical powder extinguishers, and SOFTEX water mist systems. SOLAS-mandatory knowledge.",
+    "keyTopics": [
+      "Lifeboat launching drill and engine starting",
+      "BA compressor maintenance and testing",
+      "Fixed foam fire extinguishing system",
+      "CO2 fire extinguishing system (manual operation)",
+      "Fire hose and reel pressure testing",
+      "Autronica fire detector testing procedure",
+      "High-expansion foam system (Hypermist)",
+      "DCP (Dry Chemical Powder) extinguisher",
+      "SOFTEX water mist system",
+      "Emergency shut-off valve testing"
+    ],
+    "difficulty": "Intermediate",
+    "fileCount": 45,
+    "sourceDir": "LSA, FFE"
+  },
+  {
+    "id": "drill",
+    "title": "Emergency Drills",
+    "icon": "🚨",
+    "category": "safety",
+    "tags": ["drill", "SOPEP", "oil spill", "damage control", "CO2", "emergency"],
+    "summary": "Emergency drill procedures including oil spill containment (SOPEP), damage control drills, CO2 release procedures, and bilge emergency discharge. Includes checklists and work instructions used on actual vessels. Understanding drill procedures is required by STCW and ISM Code.",
+    "keyTopics": [
+      "Oil spill containment drill (SOPEP)",
+      "Damage control drill procedures and checklist",
+      "CO2 fire extinguishing system release",
+      "Emergency bilge discharge method",
+      "Hypermist system operation",
+      "FFA (fire fighting appliances) use training"
+    ],
+    "difficulty": "Beginner",
+    "fileCount": 14,
+    "sourceDir": "Drill"
+  },
+  {
+    "id": "refrigeration",
+    "title": "Refrigeration & Air Conditioning",
+    "icon": "❄️",
+    "category": "auxiliary",
+    "tags": ["refrigeration", "provision", "refrigerant", "compressor", "R404A", "R449a"],
+    "summary": "Provision refrigeration and air conditioning systems covering refrigerant types (R404A, R449a), Mollier diagram interpretation, compressor overhaul procedures, refrigerant leak detection, refrigeration oil properties, and the regulatory transition to HFO-free refrigerants. Includes photo-documented compressor overhaul.",
+    "keyTopics": [
+      "Refrigeration cycle theory",
+      "Refrigerant types — R404A, R449a, environmental regulations",
+      "Mollier (P-H) diagram interpretation",
+      "Provision compressor overhaul (photo-documented)",
+      "Refrigerant leak check procedures",
+      "Refrigeration oil properties and selection",
+      "Refrigerant transfer procedure",
+      "LO replenishment for provision compressor"
+    ],
+    "difficulty": "Intermediate",
+    "fileCount": 28,
+    "sourceDir": "Ref Prov 冷凍装置"
+  },
+  {
+    "id": "ahu",
+    "title": "Air Handling Unit (HVAC)",
+    "icon": "💨",
+    "category": "auxiliary",
+    "tags": ["AHU", "HVAC", "evaporator", "drain", "accommodation"],
+    "summary": "Air Handling Unit maintenance covering evaporator cleaning procedures, cooler drain line maintenance, and alarm troubleshooting for accommodation and engine room HVAC systems. Includes package aircon alarm diagnosis.",
+    "keyTopics": [
+      "AHU evaporator cleaning procedure",
+      "Cooler drain line maintenance",
+      "Package aircon alarm types and response",
+      "Package aircon maintenance checklist"
+    ],
+    "difficulty": "Beginner",
+    "fileCount": 5,
+    "sourceDir": "Air Handling Unit"
+  },
+  {
+    "id": "lng",
+    "title": "LNG Vessel Operations",
+    "icon": "🧊",
+    "category": "specialist",
+    "tags": ["LNG", "drydock", "inspection", "cargo", "cryogenic"],
+    "summary": "LNG vessel-specific materials including drydock superintendent manuals, overseas stationed superintendent guides, fitting-out manuals for new LNG vessels, and class survey acceptance manuals. Essential reading for engineers targeting LNG carrier assignments.",
+    "keyTopics": [
+      "LNG drydock superintendent procedures",
+      "Overseas stationed superintendent guide",
+      "LNG vessel fitting-out (instrumentation) manual",
+      "Class survey acceptance procedures",
+      "Drydock and afloat survey requirements"
+    ],
+    "difficulty": "Advanced",
+    "fileCount": 8,
+    "sourceDir": "LNG船資料"
+  },
+  {
+    "id": "exam",
+    "title": "Marine Engineer Licensing Exam",
+    "icon": "📋",
+    "category": "certification",
+    "tags": ["exam", "oral", "3AE", "2AE", "1AE", "past questions", "JMETS"],
+    "summary": "Comprehensive licensing exam preparation materials for 3rd, 2nd, and 1st Class Marine Engineer (Kikan) certificates. Includes past oral examination questions from 2009–2024, topic-by-topic study guides (Diesel, Steam Turbine, Gas Turbine, Boiler, Aux Machinery, Electrical, Fuel, Automation, Maritime Law), and a practical exam questions bank.",
+    "keyTopics": [
+      "3rd Class oral exam past questions (2009–2024)",
+      "2nd Class oral exam past questions",
+      "1st Class oral exam past questions",
+      "Topic modules: Basic Knowledge, Diesel, Steam Turbine, Gas Turbine, Boiler, Auxiliary, Electrical, Fuel Oil, Automation, Maritime Law, Inspection",
+      "Practical exam guidance",
+      "Training ship question sets"
+    ],
+    "difficulty": "All Levels",
+    "fileCount": 35,
+    "sourceDir": "海技試験"
+  },
+  {
+    "id": "control",
+    "title": "Control Engineering & PID",
+    "icon": "📊",
+    "category": "engineering",
+    "tags": ["PID", "control", "automation", "feedback", "sensor"],
+    "summary": "Control engineering fundamentals applied to marine systems. Covers PID (Proportional-Integral-Derivative) control theory, feedback control loops, sensors including RTDs (resistance temperature detectors), flow meters (oval gear type), and practical automation system knowledge required for the 3AE licensing exam automation module.",
+    "keyTopics": [
+      "PID control theory and tuning",
+      "Feedback and feedforward control",
+      "Sensors: RTD (Pt100), thermocouples",
+      "Oval gear flow meter principle",
+      "Control engineering lecture series",
+      "Marine automation system overview"
+    ],
+    "difficulty": "Intermediate",
+    "fileCount": 10,
+    "sourceDir": "制御機構　PID"
+  },
+  {
+    "id": "steering",
+    "title": "Steering Gear",
+    "icon": "🎯",
+    "category": "auxiliary",
+    "tags": ["steering", "rudder", "hydraulic", "emergency steering"],
+    "summary": "Steering gear system fundamentals and emergency steering procedures. SOLAS-required knowledge for all watchkeeping officers. Covers hydraulic steering gear operation and emergency changeover to manual/local steering.",
+    "keyTopics": [
+      "Hydraulic steering gear operation",
+      "Emergency steering procedure",
+      "SOLAS requirements for steering gear drills"
+    ],
+    "difficulty": "Beginner",
+    "fileCount": 2,
+    "sourceDir": "steering"
+  },
+  {
+    "id": "valve",
+    "title": "Valves & Piping",
+    "icon": "🔩",
+    "category": "auxiliary",
+    "tags": ["valve", "piping", "gland packing", "sea chest", "MGPS"],
+    "summary": "Valve maintenance and piping systems covering gland packing replacement, accommodation hot water valve replacement, sea chest piping diagrams, Marine Growth Prevention System (MGPS) chloride testing and overhaul, and piping diagram interpretation.",
+    "keyTopics": [
+      "Gland packing selection and replacement",
+      "Sea chest piping and sea water systems",
+      "MGPS (Marine Growth Prevention System) operation and maintenance",
+      "Accommodation hot water line valve replacement",
+      "Piping diagram reading"
+    ],
+    "difficulty": "Beginner",
+    "fileCount": 8,
+    "sourceDir": "Valve"
+  },
+  {
+    "id": "tools-parts",
+    "title": "Tools, Parts & Materials",
+    "icon": "🛠️",
+    "category": "practical",
+    "tags": ["tools", "V-belt", "anti-seize", "hydraulic jack", "spare parts"],
+    "summary": "Practical knowledge on tools and spare parts used in engine room maintenance. Covers V-belt selection and tensioning, hydraulic jack operation for bolt tensioning, anti-seize compound application, and spare parts management concepts including a novel spare parts platform idea for the maritime industry.",
+    "keyTopics": [
+      "V-belt selection and tensioning",
+      "Hydraulic jack operation for flange bolts",
+      "Anti-seize compound (焼き付き防止剤) usage",
+      "Spare parts management and ordering",
+      "BASSnet maintenance management system"
+    ],
+    "difficulty": "Beginner",
+    "fileCount": 15,
+    "sourceDir": "Tool ＆ parts"
+  },
+  {
+    "id": "fuel-oil",
+    "title": "Fuel Oil Properties",
+    "icon": "⛽",
+    "category": "engineering",
+    "tags": ["fuel oil", "HFO", "VLSFO", "ULSFO", "viscosity", "sulfur"],
+    "summary": "Fuel oil properties and management for marine diesel and steam plants. Covers HFO, VLSFO, and ULSFO characteristics, viscosity-temperature relationships, sulfur content regulations (IMO 2020), and fuel oil analysis and treatment.",
+    "keyTopics": [
+      "Heavy Fuel Oil (HFO) properties",
+      "VLSFO and ULSFO for IMO 2020 compliance",
+      "Viscosity and heating requirements",
+      "Fuel oil purification and treatment",
+      "Sulfur cap regulations"
+    ],
+    "difficulty": "Intermediate",
+    "fileCount": 2,
+    "sourceDir": "FO 性状"
+  },
+  {
+    "id": "regulations",
+    "title": "Maritime Conventions & Surveys",
+    "icon": "📜",
+    "category": "certification",
+    "tags": ["SOLAS", "MARPOL", "STCW", "survey", "certificate", "ISM"],
+    "summary": "Maritime conventions, statutory certificates, and survey requirements. Essential regulatory knowledge including SOLAS, MARPOL, STCW, Load Line Convention, and ISM Code. Covers what certificates a vessel must carry and the survey schedule for statutory inspections.",
+    "keyTopics": [
+      "SOLAS — Safety of Life at Sea",
+      "MARPOL — Marine Pollution prevention",
+      "STCW — Seafarer certification standards",
+      "ISM Code — Safety management system",
+      "Statutory certificates and their validity",
+      "Survey schedule (Annual, Intermediate, Special)"
+    ],
+    "difficulty": "Intermediate",
+    "fileCount": 5,
+    "sourceDir": "条約、証書等の規則関連"
+  },
+  {
+    "id": "switchboard",
+    "title": "Switchboard & Power Distribution",
+    "icon": "🔲",
+    "category": "electrical",
+    "tags": ["switchboard", "MSB", "ESB", "power distribution", "bus bar"],
+    "summary": "Main switchboard (MSB) and emergency switchboard (ESB) power distribution systems. Covers bus bar configuration, circuit breaker operation, power distribution topology on merchant vessels, and practical electrical panel maintenance.",
+    "keyTopics": [
+      "Main Switchboard (MSB) layout and operation",
+      "Emergency Switchboard (ESB) configuration",
+      "Bus bar systems and power distribution",
+      "Circuit breaker types and operation",
+      "Electrical panel maintenance"
+    ],
+    "difficulty": "Intermediate",
+    "fileCount": 4,
+    "sourceDir": "配電盤"
+  },
+  {
+    "id": "capac",
+    "title": "CAPAC (Cathodic Protection)",
+    "icon": "🛡️",
+    "category": "auxiliary",
+    "tags": ["CAPAC", "cathodic protection", "electrode", "corrosion"],
+    "summary": "Impressed Current Cathodic Protection (ICCP) system — CAPAC system documentation covering reference electrode assembly, main component functions, and operation manual. Prevents hull corrosion on steel vessels through controlled electric current.",
+    "keyTopics": [
+      "ICCP (Impressed Current Cathodic Protection) principle",
+      "CAPAC system components and functions",
+      "Reference electrode assembly and maintenance",
+      "Operation manual procedures"
+    ],
+    "difficulty": "Intermediate",
+    "fileCount": 3,
+    "sourceDir": "CAPAC"
+  }
+]

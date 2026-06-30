@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MarineEng Academy — Knowledge Hub for Aspiring Marine Engineers</title>
+  <meta name="description" content="Free knowledge hub for aspiring marine engineers. Engine room systems, safety procedures, licensing exam prep, and practical guides from experienced Japanese officers." />
+  <meta property="og:title" content="MarineEng Academy" />
+  <meta property="og:description" content="Free knowledge hub for aspiring marine engineers — practical guides, exam prep, and engine room systems." />
+  <meta property="og:type" content="website" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <!-- NAV -->
+  <nav class="navbar">
+    <div class="nav-inner">
+      <a href="#" class="nav-brand" onclick="showHome(); return false;">
+        <span class="brand-icon">⚓</span>
+        <span class="brand-text">MarineEng <span class="brand-accent">Academy</span></span>
+      </a>
+      <div class="nav-links">
+        <a href="#" onclick="showHome(); return false;" class="nav-link">Home</a>
+        <a href="#topics" onclick="showAllTopics(); return false;" class="nav-link">Topics</a>
+        <a href="#about" onclick="showAbout(); return false;" class="nav-link">About</a>
+      </div>
+      <div class="nav-search">
+        <input type="text" id="globalSearch" placeholder="Search topics..." class="search-input" oninput="handleSearch(this.value)" />
+        <span class="search-icon">🔍</span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- MAIN -->
+  <main id="app">
+    <!-- HOME VIEW -->
+    <div id="homeView">
+      <!-- HERO -->
+      <section class="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-content">
+          <div class="hero-badge">For Aspiring Marine Engineers</div>
+          <h1 class="hero-title">Your Engine Room<br /><span class="gradient-text">Knowledge Base</span></h1>
+          <p class="hero-subtitle">Practical guides, exam preparation, and real-world procedures — sourced from experienced Japanese marine engineers. Free. Forever.</p>
+          <div class="hero-actions">
+            <button class="btn-primary" onclick="showAllTopics()">Browse All Topics</button>
+            <button class="btn-secondary" onclick="scrollToSection('categories')">Explore by Category</button>
+          </div>
+          <div class="hero-stats">
+            <div class="stat"><span class="stat-num">24</span><span class="stat-label">Topic Modules</span></div>
+            <div class="stat-divider"></div>
+            <div class="stat"><span class="stat-num">800+</span><span class="stat-label">Reference Files</span></div>
+            <div class="stat-divider"></div>
+            <div class="stat"><span class="stat-num">15+</span><span class="stat-label">Years Field Experience</span></div>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="engine-grid">
+            <div class="eg-card eg-1">🔥 Boiler</div>
+            <div class="eg-card eg-2">⚡ DG</div>
+            <div class="eg-card eg-3">🚢 Main Engine</div>
+            <div class="eg-card eg-4">🧯 Fire Safety</div>
+            <div class="eg-card eg-5">📋 Exams</div>
+            <div class="eg-card eg-6">❄️ Refrigeration</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CATEGORY FILTER -->
+      <section class="categories" id="categories">
+        <div class="container">
+          <h2 class="section-title">Browse by Category</h2>
+          <div class="category-pills">
+            <button class="pill active" onclick="filterCategory('all', this)">All</button>
+            <button class="pill" onclick="filterCategory('machinery', this)">Machinery</button>
+            <button class="pill" onclick="filterCategory('electrical', this)">Electrical</button>
+            <button class="pill" onclick="filterCategory('safety', this)">Safety</button>
+            <button class="pill" onclick="filterCategory('auxiliary', this)">Auxiliary Systems</button>
+            <button class="pill" onclick="filterCategory('engineering', this)">Engineering</button>
+            <button class="pill" onclick="filterCategory('certification', this)">Certification</button>
+            <button class="pill" onclick="filterCategory('specialist', this)">Specialist</button>
+            <button class="pill" onclick="filterCategory('practical', this)">Practical</button>
+          </div>
+          <div id="topicGrid" class="topic-grid"></div>
+        </div>
+      </section>
+
+      <!-- ABOUT STRIP -->
+      <section class="about-strip">
+        <div class="container about-inner">
+          <div class="about-text">
+            <h2>Built for Engineers, By Engineers</h2>
+            <p>This knowledge base is compiled from real onboard materials used by Japanese marine engineers aboard NYK Line and MOL vessels. The content spans 3AE to Chief Engineer level — raw, practical, and tested in actual engine rooms.</p>
+            <p>All materials are in their original Japanese format, accompanied by English summaries to make the knowledge accessible to aspiring engineers worldwide.</p>
+          </div>
+          <div class="about-cards">
+            <div class="a-card"><div class="a-icon">📚</div><div class="a-label">Study Reference</div></div>
+            <div class="a-card"><div class="a-icon">🔬</div><div class="a-label">Exam Prep</div></div>
+            <div class="a-card"><div class="a-icon">⚙️</div><div class="a-label">Practical Guides</div></div>
+            <div class="a-card"><div class="a-icon">🛡️</div><div class="a-label">Safety Procedures</div></div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- ALL TOPICS VIEW -->
+    <div id="allTopicsView" style="display:none;">
+      <div class="view-header">
+        <div class="container">
+          <button class="back-btn" onclick="showHome()">← Back to Home</button>
+          <h1 class="view-title">All Topics</h1>
+          <p class="view-subtitle">24 modules covering the full spectrum of marine engineering</p>
+          <div class="category-pills">
+            <button class="pill active" onclick="filterCategory('all', this)">All</button>
+            <button class="pill" onclick="filterCategory('machinery', this)">Machinery</button>
+            <button class="pill" onclick="filterCategory('electrical', this)">Electrical</button>
+            <button class="pill" onclick="filterCategory('safety', this)">Safety</button>
+            <button class="pill" onclick="filterCategory('auxiliary', this)">Auxiliary</button>
+            <button class="pill" onclick="filterCategory('engineering', this)">Engineering</button>
+            <button class="pill" onclick="filterCategory('certification', this)">Certification</button>
+            <button class="pill" onclick="filterCategory('specialist', this)">Specialist</button>
+            <button class="pill" onclick="filterCategory('practical', this)">Practical</button>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div id="allTopicGrid" class="topic-grid"></div>
+      </div>
+    </div>
+
+    <!-- TOPIC DETAIL VIEW -->
+    <div id="topicDetailView" style="display:none;">
+      <div class="container">
+        <button class="back-btn" onclick="goBack()">← Back</button>
+        <div id="topicDetailContent"></div>
+      </div>
+    </div>
+
+    <!-- ABOUT VIEW -->
+    <div id="aboutView" style="display:none;">
+      <div class="container">
+        <button class="back-btn" onclick="showHome()">← Back to Home</button>
+        <div class="about-page">
+          <h1>About MarineEng Academy</h1>
+          <div class="about-section">
+            <h2>What is this?</h2>
+            <p>MarineEng Academy is a free, publicly accessible knowledge hub for aspiring marine engineers. The content is drawn from real training materials, work instructions, manuals, and field notes collected and organized by experienced Japanese marine engineers across multiple vessel types — LNG carriers, bulk carriers, and container ships.</p>
+          </div>
+          <div class="about-section">
+            <h2>Who is it for?</h2>
+            <ul>
+              <li>Cadets and junior engineers preparing for watchkeeping duties</li>
+              <li>3AE/2AE/1AE candidates preparing for oral licensing examinations</li>
+              <li>Marine engineering students looking for practical, real-world reference</li>
+              <li>Experienced engineers looking to cross-reference procedures across vessel types</li>
+            </ul>
+          </div>
+          <div class="about-section">
+            <h2>Content Note</h2>
+            <p>Original source materials are primarily in Japanese. Each topic module on this site provides a full English summary and key topic index. The original files remain available as downloads for those who wish to study the source documents.</p>
+            <p>Materials cover NYK Line and MOL vessel operational standards but are broadly applicable to international merchant marine practice.</p>
+          </div>
+          <div class="about-section">
+            <h2>Disclaimer</h2>
+            <p>This site is for educational purposes only. Always follow your vessel's SMS (Safety Management System), Flag State requirements, and current class society rules. Procedures may vary by vessel type, flag, and company. When in doubt, consult your Chief Engineer.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SEARCH RESULTS VIEW -->
+    <div id="searchView" style="display:none;">
+      <div class="container">
+        <button class="back-btn" onclick="showHome()">← Back to Home</button>
+        <h2 id="searchResultTitle" class="view-title"></h2>
+        <div id="searchResultGrid" class="topic-grid"></div>
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="brand-icon">⚓</span>
+        <span>MarineEng Academy</span>
+      </div>
+      <p class="footer-copy">Free knowledge for the next generation of marine engineers. No ads. No paywall.</p>
+      <div class="footer-links">
+        <a href="https://github.com" target="_blank" rel="noopener">GitHub</a>
+        <span>·</span>
+        <a href="#" onclick="showAbout(); return false;">About</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
