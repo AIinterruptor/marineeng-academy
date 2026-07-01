@@ -21,7 +21,7 @@
       { "type": "youtube", "label": "Steam Boiler Operation on Ship Explained", "url": "https://www.youtube.com/watch?v=QHS2qHY8xUw" },
       { "type": "youtube", "label": "Marine Boiler Systems Explained: Safety & Operation", "url": "https://www.youtube.com/watch?v=HI-zPzP7I50" },
       { "type": "wikipedia", "label": "Marine Boiler — Wikipedia", "url": "https://en.wikipedia.org/wiki/Marine_steam_engine" },
-      { "type": "reference", "label": "Exhaust Gas System of Main Engine — Marine Insight", "url": "https://www.marineinsight.com/main-engine/exhaust-gas-system-of-main-engine-on-ship/" },
+      { "type": "reference", "label": "Exhaust Gas System of Main Engine — Marine Insight", "url": "https://www.marineinsight.com/exhaust-gas-system-of-main-engine-on-ship/" },
       { "type": "reference", "label": "Boiler Feed Water Contamination — Marine Insight", "url": "https://www.marineinsight.com/understanding-boiler-feed-water-contamination/" }
     ]
   },
@@ -50,7 +50,7 @@
       { "type": "youtube", "label": "How a Ship Engine Works — 2-Stroke Marine Diesel", "url": "https://www.youtube.com/watch?v=3zRIndR9j40" },
       { "type": "youtube", "label": "Marine Diesel Engine Turbocharger Explained", "url": "https://www.youtube.com/watch?v=XbaLOZjHz4I" },
       { "type": "wikipedia", "label": "Diesel Generator — Wikipedia", "url": "https://en.wikipedia.org/wiki/Diesel_generator" },
-      { "type": "reference", "label": "Overspeed Trip in Diesel Engines — Marine Insight", "url": "https://www.marineinsight.com/main-engine/over-speed-trip-in-diesel-engines-types-of-over-speed-trips/" }
+      { "type": "reference", "label": "Overspeed Trip in Diesel Engines — Marine Insight", "url": "https://www.marineinsight.com/over-speed-trip-in-diesel-engines-types-of-over-speed-trips/" }
     ]
   },
   {
@@ -74,7 +74,7 @@
       { "type": "youtube", "label": "Marine Diesel Two Stroke Engine — How it Works!", "url": "https://www.youtube.com/watch?v=IM8rxp8qB8k" },
       { "type": "youtube", "label": "How a Ship Engine Works — Full Breakdown (3D)", "url": "https://www.youtube.com/watch?v=3zRIndR9j40" },
       { "type": "wikipedia", "label": "Two-Stroke Engine — Wikipedia", "url": "https://en.wikipedia.org/wiki/Two-stroke_engine" },
-      { "type": "reference", "label": "MCR / CSR / NCR — Marine Engine Power Terms — Marine Insight", "url": "https://www.marineinsight.com/main-engine/12-terminologies-used-for-power-of-the-ships-marine-propulsion-engine/" }
+      { "type": "reference", "label": "MCR / CSR / NCR — Marine Engine Power Terms — Marine Insight", "url": "https://www.marineinsight.com/12-terminologies-used-for-power-of-the-ships-marine-propulsion-engine/" }
     ]
   },
   {
@@ -149,7 +149,7 @@
       { "type": "youtube", "label": "Ship's Switchboard & Emergency Power Distribution", "url": "https://www.youtube.com/watch?v=VATiXnmPNek" },
       { "type": "youtube", "label": "How Electricity is Generated on Ships", "url": "https://www.youtube.com/watch?v=eRRChImarPw" },
       { "type": "wikipedia", "label": "Emergency Power Supply (Marine) — Wikipedia", "url": "https://en.wikipedia.org/wiki/Emergency_power_supply" },
-      { "type": "reference", "label": "Power Generation & Supply on Ships — Marine Insight", "url": "https://www.marineinsight.com/marine-electrical/how-is-power-generated-and-supplied-on-a-ship/" }
+      { "type": "reference", "label": "Power Generation & Supply on Ships — Marine Insight", "url": "https://www.marineinsight.com/how-is-power-generated-and-supplied-on-a-ship/" }
     ]
   },
   {
@@ -202,7 +202,7 @@
       { "type": "youtube", "label": "Marine Auxiliaries: Centrifugal Pumps", "url": "https://www.youtube.com/watch?v=Iu7OMS6IbiM" },
       { "type": "wikipedia", "label": "Centrifugal Pump — Wikipedia", "url": "https://en.wikipedia.org/wiki/Centrifugal_pump" },
       { "type": "wikipedia", "label": "Mechanical Seal — Wikipedia", "url": "https://en.wikipedia.org/wiki/Mechanical_seal" },
-      { "type": "reference", "label": "Types of Pumps on Ships — Marine Insight", "url": "https://www.marineinsight.com/guidelines/general-overview-of-types-of-pumps-on-ship/" }
+      { "type": "reference", "label": "Types of Pumps on Ships — Marine Insight", "url": "https://www.marineinsight.com/general-overview-of-types-of-pumps-on-ship/" }
     ]
   },
   {
@@ -228,7 +228,7 @@
       { "type": "youtube", "label": "How a Ship Engine Works — 2-Stroke Diesel (3D)", "url": "https://www.youtube.com/watch?v=3zRIndR9j40" },
       { "type": "youtube", "label": "Marine Diesel Engine Turbocharger", "url": "https://www.youtube.com/watch?v=XbaLOZjHz4I" },
       { "type": "wikipedia", "label": "Induction Motor — Wikipedia", "url": "https://en.wikipedia.org/wiki/Induction_motor" },
-      { "type": "reference", "label": "How to Overhaul Motors on Ships — Marine Insight", "url": "https://www.marineinsight.com/marine-electrical/how-to-overhaul-motors-on-ships/" }
+      { "type": "reference", "label": "How to Overhaul Motors on Ships — Marine Insight", "url": "https://www.marineinsight.com/how-to-overhaul-motors-on-ships/" }
     ]
   },
   {
@@ -252,7 +252,7 @@
       { "type": "youtube", "label": "How Electricity is Generated on Ships", "url": "https://www.youtube.com/watch?v=eRRChImarPw" },
       { "type": "wikipedia", "label": "Insulation Resistance — Wikipedia", "url": "https://en.wikipedia.org/wiki/Insulation_resistance_tester" },
       { "type": "wikipedia", "label": "Reactive Power — Wikipedia", "url": "https://en.wikipedia.org/wiki/AC_power#Reactive_power" },
-      { "type": "reference", "label": "What is Marine Electricity — Marine Insight", "url": "https://www.marineinsight.com/marine-electrical/what-is-marine-electricity/" }
+      { "type": "reference", "label": "What is Marine Electricity — Marine Insight", "url": "https://www.marineinsight.com/what-is-marine-electricity/" }
     ]
   },
   {
@@ -277,7 +277,7 @@
       { "type": "youtube", "label": "How Electricity is Generated on Ships", "url": "https://www.youtube.com/watch?v=eRRChImarPw" },
       { "type": "youtube", "label": "Marine Diesel Engine Turbocharger", "url": "https://www.youtube.com/watch?v=XbaLOZjHz4I" },
       { "type": "wikipedia", "label": "Governor (Device) — Wikipedia", "url": "https://en.wikipedia.org/wiki/Governor_(device)" },
-      { "type": "reference", "label": "Types of Governors for Ship Engines — Marine Insight", "url": "https://www.marineinsight.com/tech/types-of-governors-for-engines-used-on-ships/" },
+      { "type": "reference", "label": "Types of Governors for Ship Engines — Marine Insight", "url": "https://www.marineinsight.com/types-of-governors-for-engines-used-on-ships/" },
       { "type": "reference", "label": "Woodward Governor Official Documentation", "url": "https://www.woodward.com/marine" }
     ]
   },
@@ -308,7 +308,7 @@
       { "type": "youtube", "label": "LSA & FFA Survival Equipments on Ships", "url": "https://www.youtube.com/watch?v=Zo7H99TcyTA" },
       { "type": "youtube", "label": "Full LSA Equipment List — SOLAS Guide", "url": "https://www.youtube.com/watch?v=wUhJkA4fH1E" },
       { "type": "wikipedia", "label": "Life-Saving Appliances — Wikipedia", "url": "https://en.wikipedia.org/wiki/Life-saving_appliances" },
-      { "type": "reference", "label": "Types of Life Saving Equipment on Ships — Marine Insight", "url": "https://www.marineinsight.com/guidelines/types-of-life-saving-equipment-onboard-ships/" }
+      { "type": "reference", "label": "Types of Life Saving Equipment on Ships — Marine Insight", "url": "https://www.marineinsight.com/types-of-life-saving-equipment-onboard-ships/" }
     ]
   },
   {
@@ -333,8 +333,8 @@
       { "type": "youtube", "label": "Maritime Training Oily Water Separator", "url": "https://www.youtube.com/watch?v=qeysZVAKJgg" },
       { "type": "youtube", "label": "LSA & FFA Survival Equipments on Ships", "url": "https://www.youtube.com/watch?v=Zo7H99TcyTA" },
       { "type": "wikipedia", "label": "MARPOL (Oil Pollution) — Wikipedia", "url": "https://en.wikipedia.org/wiki/MARPOL_73/78" },
-      { "type": "reference", "label": "SOPEP — Ship Oil Pollution Emergency Plan — Marine Insight", "url": "https://www.marineinsight.com/maritime-law/what-is-ship-oil-pollution-emergency-plan-sopep/" },
-      { "type": "reference", "label": "Damage Stability Analysis of Ships — Marine Insight", "url": "https://www.marineinsight.com/naval-architecture/damage-stability-analysis-of-ships/" }
+      { "type": "reference", "label": "SOPEP — Ship Oil Pollution Emergency Plan — Marine Insight", "url": "https://www.marineinsight.com/what-is-ship-oil-pollution-emergency-plan-sopep/" },
+      { "type": "reference", "label": "Damage Stability Analysis of Ships — Marine Insight", "url": "https://www.marineinsight.com/damage-stability-analysis-of-ships/" }
     ]
   },
   {
@@ -385,7 +385,7 @@
       { "type": "youtube", "label": "Ship's Refrigeration System (3D Animation)", "url": "https://www.youtube.com/watch?v=gatqRle5s1I" },
       { "type": "youtube", "label": "Marine Air Compressor: Parts and Operation", "url": "https://www.youtube.com/watch?v=izLAXx5nv7E" },
       { "type": "wikipedia", "label": "Air Handling Unit — Wikipedia", "url": "https://en.wikipedia.org/wiki/Air_handler" },
-      { "type": "reference", "label": "Ship's Accommodation Systems Explained — Marine Insight", "url": "https://www.marineinsight.com/guidelines/different-systems-in-ships-accommodation-area-explained/" }
+      { "type": "reference", "label": "Ship's Accommodation Systems Explained — Marine Insight", "url": "https://www.marineinsight.com/different-systems-in-ships-accommodation-area-explained/" }
     ]
   },
   {
@@ -409,7 +409,7 @@
       { "type": "youtube", "label": "LNG Carrier Cargo Operations — Full Summary", "url": "https://www.youtube.com/watch?v=52WirXbsWaU" },
       { "type": "youtube", "label": "Steam Turbine — LNG Ship Engine Room Tour", "url": "https://www.youtube.com/watch?v=RDRVh8AFC3c" },
       { "type": "wikipedia", "label": "LNG Carrier — Wikipedia", "url": "https://en.wikipedia.org/wiki/LNG_carrier" },
-      { "type": "reference", "label": "What are LNG Carrier Ships — Marine Insight", "url": "https://www.marineinsight.com/know-more/what-are-lng-carrier-ships/" },
+      { "type": "reference", "label": "What are LNG Carrier Ships — Marine Insight", "url": "https://www.marineinsight.com/what-are-lng-carrier-ships/" },
       { "type": "reference", "label": "SIGTTO — Society of International Gas Tanker Owners", "url": "https://www.sigtto.org/" }
     ]
   },
@@ -436,7 +436,7 @@
       { "type": "youtube", "label": "How to Take the OIC Theoretical Exam in MARINA", "url": "https://www.youtube.com/watch?v=ln1XZGmjp0A" },
       { "type": "wikipedia", "label": "STCW Convention — Wikipedia", "url": "https://en.wikipedia.org/wiki/International_Convention_on_Standards_of_Training,_Certification_and_Watchkeeping_for_Seafarers" },
       { "type": "reference", "label": "Japan Maritime Examination (JMETS) Official Site", "url": "https://www.jmets.or.jp/" },
-      { "type": "reference", "label": "Merchant Navy Officer Ranks — Marine Insight", "url": "https://www.marineinsight.com/careers-2/a-guide-to-merchant-navy-officer-ranks/" }
+      { "type": "reference", "label": "Merchant Navy Officer Ranks — Marine Insight", "url": "https://www.marineinsight.com/a-guide-to-merchant-navy-officer-ranks/" }
     ]
   },
   {
@@ -461,7 +461,7 @@
       { "type": "youtube", "label": "How a Ship Engine Works — 2-Stroke Diesel (3D)", "url": "https://www.youtube.com/watch?v=3zRIndR9j40" },
       { "type": "youtube", "label": "How Electricity is Generated on Ships", "url": "https://www.youtube.com/watch?v=eRRChImarPw" },
       { "type": "wikipedia", "label": "PID Controller — Wikipedia", "url": "https://en.wikipedia.org/wiki/PID_controller" },
-      { "type": "reference", "label": "UMS Operation Preparation on Ships — Marine Insight", "url": "https://www.marineinsight.com/guidelines/preparation-for-ums-operation-on-ships/" }
+      { "type": "reference", "label": "UMS Operation Preparation on Ships — Marine Insight", "url": "https://www.marineinsight.com/preparation-for-ums-operation-on-ships/" }
     ]
   },
   {
@@ -531,7 +531,7 @@
       { "type": "youtube", "label": "Marine Air Compressor: Parts and Operation", "url": "https://www.youtube.com/watch?v=izLAXx5nv7E" },
       { "type": "youtube", "label": "How a Ship Engine Works — 2-Stroke Diesel (3D)", "url": "https://www.youtube.com/watch?v=3zRIndR9j40" },
       { "type": "wikipedia", "label": "Belt Drive — Wikipedia", "url": "https://en.wikipedia.org/wiki/Belt_(mechanical)" },
-      { "type": "reference", "label": "Mechanical Measuring Tools & Gauges on Ships — Marine Insight", "url": "https://www.marineinsight.com/tech/different-types-of-mechanical-measuring-tools-and-gauges-used-on-ships/" }
+      { "type": "reference", "label": "Mechanical Measuring Tools & Gauges on Ships — Marine Insight", "url": "https://www.marineinsight.com/different-types-of-mechanical-measuring-tools-and-gauges-used-on-ships/" }
     ]
   },
   {
@@ -606,7 +606,7 @@
       { "type": "youtube", "label": "Ship's Switchboard & Emergency Power Distribution", "url": "https://www.youtube.com/watch?v=VATiXnmPNek" },
       { "type": "youtube", "label": "How Electricity is Generated on Ships", "url": "https://www.youtube.com/watch?v=eRRChImarPw" },
       { "type": "wikipedia", "label": "Switchboard (Electrical) — Wikipedia", "url": "https://en.wikipedia.org/wiki/Switchboard_(electrical)" },
-      { "type": "reference", "label": "Power Generated & Supplied on Ships — Marine Insight", "url": "https://www.marineinsight.com/marine-electrical/how-is-power-generated-and-supplied-on-a-ship/" }
+      { "type": "reference", "label": "Power Generated & Supplied on Ships — Marine Insight", "url": "https://www.marineinsight.com/how-is-power-generated-and-supplied-on-a-ship/" }
     ]
   },
   {
