@@ -133,7 +133,14 @@ function buildCard(topic) {
 function buildTopicDetail(topic) {
   const diffClass     = 'diff-' + topic.difficulty.replace(/\s+/g, '');
   const catLabel      = capitalize(topic.category);
-  const keyTopicsHtml = topic.keyTopics.map(k => `<li>${k}</li>`).join('');
+  const keyTopicsHtml = topic.keyTopics.map((k, i) => `
+    <li class="kt-item" onclick="toggleKeyTopic(this, '${escapeHtml(k)}')">
+      <div class="kt-row">
+        <span class="kt-label">${k}</span>
+        <span class="kt-chevron">›</span>
+      </div>
+      <div class="kt-expand" id="kte-${topic.id}-${i}" style="display:none"></div>
+    </li>`).join('');
   const tagsHtml      = topic.tags.map(t => `<span class="tag">${t}</span>`).join('');
 
   const driveLink = topic.driveUrl || null;
@@ -387,6 +394,94 @@ function closeMenu() {
   links.classList.remove('nav-open');
   btn.classList.remove('is-open');
   btn.setAttribute('aria-expanded', 'false');
+}
+
+// ─── KEY TOPIC EXPAND (Wikipedia) ────────────────────────────────
+const ktCache = {};
+
+// Extract a short search term from a verbose key topic phrase
+function wikiSearchTerm(phrase) {
+  // Strip parenthetical notes, "and X" tails, verbs at start
+  return phrase
+    .replace(/\s*\([^)]*\)/g, '')          // remove (parentheses)
+    .replace(/\s+(and|or|vs\.?|with|for|of|in|from|on|–|—).*$/i, '') // trim after connectors
+    .replace(/^(Understanding|Preparation for|How to|Introduction to|Overview of)\s+/i, '')
+    .trim();
+}
+
+async function wikiSummary(term) {
+  const url = `https://en.wikipedia.org/api/rest_v1/page/summary/${encodeURIComponent(term)}`;
+  const res = await fetch(url);
+  if (!res.ok) return null;
+  const data = await res.json();
+  if (data.type === 'disambiguation' || !data.extract) return null;
+  return data;
+}
+
+async function toggleKeyTopic(li, query) {
+  const panel = li.querySelector('.kt-expand');
+  const chevron = li.querySelector('.kt-chevron');
+  const isOpen = panel.style.display !== 'none';
+
+  // close any other open panels
+  document.querySelectorAll('.kt-item.kt-open').forEach(el => {
+    if (el !== li) {
+      el.querySelector('.kt-expand').style.display = 'none';
+      el.classList.remove('kt-open');
+      el.querySelector('.kt-chevron').textContent = '›';
+    }
+  });
+
+  if (isOpen) {
+    panel.style.display = 'none';
+    li.classList.remove('kt-open');
+    chevron.textContent = '›';
+    return;
+  }
+
+  li.classList.add('kt-open');
+  chevron.textContent = '⌄';
+  panel.style.display = '';
+
+  if (ktCache[query]) { panel.innerHTML = ktCache[query]; return; }
+
+  panel.innerHTML = '<div class="kt-loading">Loading…</div>';
+
+  try {
+    const term = wikiSearchTerm(query);
+    // Try progressively shorter terms until we get a hit
+    const candidates = [
+      term,
+      term.split(' ').slice(0, 3).join(' '),
+      term.split(' ').slice(0, 2).join(' '),
+    ];
+
+    let data = null;
+    for (const candidate of candidates) {
+      data = await wikiSummary(candidate);
+      if (data) break;
+    }
+
+    let html = '';
+    if (data) {
+      const img = data.thumbnail
+        ? `<img class="kt-img" src="${data.thumbnail.source}" alt="${escapeHtml(data.title)}" loading="lazy">`
+        : '';
+      const extract = data.extract.split('. ').slice(0, 3).join('. ').trim();
+      const endPunct = extract.endsWith('.') ? '' : '.';
+      const wikiLink = data.content_urls
+        ? `<a href="${data.content_urls.desktop.page}" class="kt-wiki-link" target="_blank" rel="noopener">Read more on Wikipedia ↗</a>`
+        : '';
+      html = `<div class="kt-content">${img}<p class="kt-text">${escapeHtml(extract + endPunct)}</p>${wikiLink}</div>`;
+    } else {
+      const searchUrl = `https://en.wikipedia.org/w/index.php?search=${encodeURIComponent(term)}`;
+      html = `<div class="kt-no-result">No quick summary found. <a href="${searchUrl}" class="kt-wiki-link" target="_blank" rel="noopener">Search Wikipedia for "${escapeHtml(term)}" ↗</a></div>`;
+    }
+    ktCache[query] = html;
+    panel.innerHTML = html;
+  } catch (e) {
+    panel.innerHTML = `<div class="kt-no-result">Could not load summary. Check your connection.</div>`;
+  }
 }
 
 // ─── BOARD EXAM ──────────────────────────────────────────────────────
