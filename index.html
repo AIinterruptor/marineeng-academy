@@ -23,6 +23,7 @@
       <div class="nav-links" id="navLinks">
         <a href="#" onclick="showHome(); closeMenu(); return false;" class="nav-link">Home</a>
         <a href="#topics" onclick="showAllTopics(); closeMenu(); return false;" class="nav-link">Topics</a>
+        <a href="#" onclick="showBunkering(); closeMenu(); return false;" class="nav-link">Bunkering Calc</a>
         <a href="#" onclick="showExam(); closeMenu(); return false;" class="nav-link">Board Exam</a>
         <a href="#about" onclick="showAbout(); closeMenu(); return false;" class="nav-link">About</a>
       </div>
@@ -190,6 +191,14 @@
       </div>
     </div>
   </main>
+
+    <!-- BUNKERING VIEW -->
+    <div id="bunkeringView" style="display:none;">
+      <div class="container">
+        <button class="back-btn" onclick="showHome()">← Back to Home</button>
+        <div id="bunkeringContent"></div>
+      </div>
+    </div>
 
   <!-- FOOTER -->
   <footer class="footer">
