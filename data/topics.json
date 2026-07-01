@@ -4,34 +4,86 @@
     "title": "Boiler Systems",
     "icon": "🔥",
     "category": "machinery",
-    "tags": ["boiler", "steam", "water treatment", "soot blowing"],
-    "summary": "Covers auxiliary boiler operations, exhaust gas economizers, and boiler water chemistry management. Includes practical guidance on boiler water quality control, EGE soot blowing procedures, and wind box fire prevention — essential knowledge for 3AE candidates and watchkeeping engineers.",
+    "tags": [
+      "boiler",
+      "steam",
+      "water treatment",
+      "soot blowing"
+    ],
+    "summary": "Marine boiler systems encompass both oil-fired auxiliary boilers (operating at 6–15 bar) and exhaust gas economizers (EGEs) that recover waste heat from the main engine exhaust, making EGEs one of the most efficient energy recovery systems aboard modern ships. Boiler water chemistry is a critical operational discipline: engineers must maintain phosphate concentrations at 30–50 PPM to precipitate calcium hardness, alkalinity between 200–700 PPM to prevent both acidic corrosion and caustic embrittlement, and closely monitor total dissolved solids (TDS) through daily bottom and surface blowdown routines. Soot accumulation on EGE and auxiliary boiler tubes is managed through scheduled soot-blowing using steam lances, and when heavy deposits occur, water washing with a 10% soda solution restores heat-transfer efficiency. Contamination by oil — often from leaking heating coils — is a particularly dangerous condition that causes foaming, priming, and carryover of water droplets into the steam system, which can hydraulically damage turbines and auxiliary machinery downstream.",
     "keyTopics": [
       "Auxiliary boiler structure and operation",
       "Boiler water management and testing",
       "Exhaust Gas Economizer (EGE) and soot blowing",
       "Wind box fire prevention and response",
       "BLR transmitter blow-off procedures",
-      "Cooling water management"
+      "Cooling water management",
+      "Exhaust Gas Economizer (EGE) heat recovery and soot fire risk",
+      "Boiler water blowdown procedures — bottom blowdown vs. surface blowdown",
+      "Priming, foaming, and carryover — causes and prevention",
+      "Caustic embrittlement and scale formation in boiler tubes",
+      "Boiler chemical dosing — phosphate, hydrazine, and oxygen scavengers"
     ],
     "difficulty": "Intermediate",
     "fileCount": 7,
     "sourceDir": "Boiler",
     "externalLinks": [
-      { "type": "youtube", "label": "Steam Boiler Operation on Ship Explained", "url": "https://www.youtube.com/watch?v=QHS2qHY8xUw" },
-      { "type": "youtube", "label": "Marine Boiler Systems Explained: Safety & Operation", "url": "https://www.youtube.com/watch?v=HI-zPzP7I50" },
-      { "type": "wikipedia", "label": "Marine Boiler — Wikipedia", "url": "https://en.wikipedia.org/wiki/Marine_steam_engine" },
-      { "type": "reference", "label": "Exhaust Gas System of Main Engine — Marine Insight", "url": "https://www.marineinsight.com/exhaust-gas-system-of-main-engine-on-ship/" },
-      { "type": "reference", "label": "Boiler Feed Water Contamination — Marine Insight", "url": "https://www.marineinsight.com/understanding-boiler-feed-water-contamination/" }
-    ]
+      {
+        "type": "youtube",
+        "label": "Steam Boiler Operation on Ship Explained",
+        "url": "https://www.youtube.com/watch?v=QHS2qHY8xUw"
+      },
+      {
+        "type": "youtube",
+        "label": "Marine Boiler Systems Explained: Safety & Operation",
+        "url": "https://www.youtube.com/watch?v=HI-zPzP7I50"
+      },
+      {
+        "type": "wikipedia",
+        "label": "Marine Boiler — Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Marine_steam_engine"
+      },
+      {
+        "type": "reference",
+        "label": "Exhaust Gas System of Main Engine — Marine Insight",
+        "url": "https://www.marineinsight.com/exhaust-gas-system-of-main-engine-on-ship/"
+      },
+      {
+        "type": "reference",
+        "label": "Boiler Feed Water Contamination — Marine Insight",
+        "url": "https://www.marineinsight.com/understanding-boiler-feed-water-contamination/"
+      },
+      {
+        "type": "reference",
+        "label": "Boiler Water Treatment — Chemicals and Composition (DieselShip)",
+        "url": "https://dieselship.com/marine-technical-articles/marine-engineering-knowledge-general/marine-boilers/boiler-water-treatment/boiler-water-treatment"
+      },
+      {
+        "type": "reference",
+        "label": "Blow-Down Procedure for Marine Boilers (Marine Insight)",
+        "url": "https://www.marineinsight.com/tech/boiler/blow-down-procedure-for-marine-boilers/"
+      },
+      {
+        "type": "reference",
+        "label": "Do's and Don'ts for Efficient Boiler Operations On Ships (Marine Insight)",
+        "url": "https://www.marineinsight.com/tech/boiler/dos-and-donts-for-efficient-boiler-operations-on-ships/"
+      }
+    ],
+    "didYouKnow": "An EGE soot fire can ignite when accumulated dry soot deposits in the economizer spontaneously combust — a risk that intensifies during low-load engine operation when exhaust temperatures drop and unburned carbon settles on tube banks. To suppress an EGE fire, the standard response is steam smothering combined with emergency soot-blowing, but the engine load must never be suddenly increased during a fire as the surge of hot gas can fan the flames catastrophically."
   },
   {
     "id": "dg",
     "title": "Diesel Generator",
     "icon": "⚡",
     "category": "machinery",
-    "tags": ["diesel", "generator", "AVR", "safety device", "tappet"],
-    "summary": "Comprehensive diesel generator resource covering engine structure, AVR (Automatic Voltage Regulator) theory, governor operation, fuel filter maintenance, Pmax measurement, tappet clearance adjustment, and full safety device test procedures. Includes work instructions used onboard NYK vessels.",
+    "tags": [
+      "diesel",
+      "generator",
+      "AVR",
+      "safety device",
+      "tappet"
+    ],
+    "summary": "A marine diesel generator (auxiliary engine) is a self-contained power unit pairing a four-stroke diesel prime mover with a synchronous alternator, supplying the ship's electrical busbar at typically 440 V or 6.6 kV, 60 Hz. Two interlocked control systems govern its output: the speed governor maintains constant frequency by modulating fuel rack position in response to load transients, while the Automatic Voltage Regulator (AVR) maintains terminal voltage by continuously adjusting excitation current in the rotor field winding. Parallel operation — mandatory on all but the smallest vessels — requires exact matching of voltage, frequency, and phase angle before the incoming breaker is closed, achieved via synchroscope or the three-bulb emergency method, after which reactive load sharing is trimmed through AVR droop settings and real load sharing through governor droop (typically 4–5%). Planned maintenance cycles address valve tappet clearances (checked cold, to manufacturer tolerance), indicator card analysis to verify peak firing pressure (Pmax), fuel injection timing, and turbocharger performance to sustain output efficiency and prevent unplanned blackouts.",
     "keyTopics": [
       "DG engine structure and components",
       "AVR and excitation systems",
@@ -40,125 +92,323 @@
       "Tappet clearance measurement and adjustment",
       "Safety device test procedures (full WI format)",
       "FO filter cleaning procedures",
-      "Pump rack adjustment"
+      "Pump rack adjustment",
+      "AVR droop and reactive load sharing between parallel generators",
+      "Governor droop setting and active power load sharing",
+      "Synchroscope method vs. three-lamp dark method for synchronization",
+      "Indicator card (power card) analysis and Pmax verification",
+      "Dead-bus closing procedure and blackout prevention"
     ],
     "difficulty": "Intermediate",
     "fileCount": 27,
     "sourceDir": "DG",
     "externalLinks": [
-      { "type": "youtube", "label": "How Electricity is Generated on Ships", "url": "https://www.youtube.com/watch?v=eRRChImarPw" },
-      { "type": "youtube", "label": "How a Ship Engine Works — 2-Stroke Marine Diesel", "url": "https://www.youtube.com/watch?v=3zRIndR9j40" },
-      { "type": "youtube", "label": "Marine Diesel Engine Turbocharger Explained", "url": "https://www.youtube.com/watch?v=XbaLOZjHz4I" },
-      { "type": "wikipedia", "label": "Diesel Generator — Wikipedia", "url": "https://en.wikipedia.org/wiki/Diesel_generator" },
-      { "type": "reference", "label": "Overspeed Trip in Diesel Engines — Marine Insight", "url": "https://www.marineinsight.com/over-speed-trip-in-diesel-engines-types-of-over-speed-trips/" }
-    ]
+      {
+        "type": "youtube",
+        "label": "How Electricity is Generated on Ships",
+        "url": "https://www.youtube.com/watch?v=eRRChImarPw"
+      },
+      {
+        "type": "youtube",
+        "label": "How a Ship Engine Works — 2-Stroke Marine Diesel",
+        "url": "https://www.youtube.com/watch?v=3zRIndR9j40"
+      },
+      {
+        "type": "youtube",
+        "label": "Marine Diesel Engine Turbocharger Explained",
+        "url": "https://www.youtube.com/watch?v=XbaLOZjHz4I"
+      },
+      {
+        "type": "wikipedia",
+        "label": "Diesel Generator — Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Diesel_generator"
+      },
+      {
+        "type": "reference",
+        "label": "Overspeed Trip in Diesel Engines — Marine Insight",
+        "url": "https://www.marineinsight.com/over-speed-trip-in-diesel-engines-types-of-over-speed-trips/"
+      },
+      {
+        "type": "reference",
+        "label": "How to Synchronize Generators on a Ship – Marine Insight",
+        "url": "https://www.marineinsight.com/tech/generator/how-to-synchronize-generators-on-a-ship/"
+      },
+      {
+        "type": "reference",
+        "label": "Hydraulic Governor for Marine Diesel Engines: How It Works – DieselShip",
+        "url": "https://dieselship.com/uncategorized/hydraulic-governor-for-marine-diesel-engine"
+      }
+    ],
+    "didYouKnow": "When two generators are running in parallel, closing the incoming breaker even a fraction of a second out of phase can generate a current surge many times the rated full-load current — enough to shear coupling bolts and damage windings — which is why the synchroscope needle must be drifting clockwise slowly and sitting near the 11 o'clock position before the breaker is pressed."
   },
   {
     "id": "me",
     "title": "Main Engine",
     "icon": "🚢",
     "category": "machinery",
-    "tags": ["main engine", "diesel", "piston", "cylinder", "WinGD"],
-    "summary": "Main engine fundamentals including WinGD two-stroke diesel engine manual reference, piston removal procedures, cylinder lubrication rate theory, and MCR vs NOR concepts. Core knowledge for any marine engineer aspiring to Chief Engineer rank.",
+    "tags": [
+      "main engine",
+      "diesel",
+      "piston",
+      "cylinder",
+      "WinGD"
+    ],
+    "summary": "The marine main engine on large ocean-going vessels is almost universally a slow-speed, two-stroke crosshead diesel engine, with WinGD (Winterthur Gas & Diesel) and MAN B&W being the dominant manufacturers, offering bore sizes from 30 to 95 cm and power outputs up to 82,440 kW on a single engine. Unlike four-stroke engines, these uniflow-scavenged engines fire on every revolution, with a separate cylinder lubrication system — delivering precisely timed pulses of high-BN cylinder oil through electronically controlled injectors — completely isolated from the crankcase system oil. Engine power is expressed through several key ratings: the Maximum Continuous Rating (MCR) is the nameplate maximum, while the Nominal Continuous Rating (NCR) — the operating point the ship is actually designed for — is typically set at 85–90% MCR, where Specific Fuel Oil Consumption (SFOC) is at its minimum. Major overhaul intervals for pistons, rings, and cylinder liners are directly tied to cylinder lubrication quality, with modern Pulse Lubricating Systems (PLS) enabling significantly extended time between overhauls by achieving homogeneous oil film distribution through zig-zag groove geometries on the liner bore.",
     "keyTopics": [
       "WinGD two-stroke engine operation",
       "Piston removal and overhauling",
       "Cylinder lubrication rate (cylinder oil dosing)",
-      "MCR (Maximum Continuous Rating) vs NOR (Normal Operating Rating)"
+      "MCR (Maximum Continuous Rating) vs NOR (Normal Operating Rating)",
+      "Pulse Lubricating System (PLS) and electronically controlled cylinder oil injection",
+      "Engine layout diagram — MCR, NCR, and the light/heavy propeller curves",
+      "Piston overhaul procedure: ring pack inspection, groove clearance measurement, and scuffing assessment",
+      "Cylinder liner bore gauging — measuring ovality and wear at port/starboard and fore/aft axes",
+      "Running-in and breaking-in procedures for new or overhauled cylinder liners and piston rings"
     ],
     "difficulty": "Advanced",
     "fileCount": 4,
     "sourceDir": "ME",
     "externalLinks": [
-      { "type": "youtube", "label": "How a 2-Stroke Marine Diesel Engine Works", "url": "https://www.youtube.com/watch?v=KCJH1iznTZs" },
-      { "type": "youtube", "label": "Marine Diesel Two Stroke Engine — How it Works!", "url": "https://www.youtube.com/watch?v=IM8rxp8qB8k" },
-      { "type": "youtube", "label": "How a Ship Engine Works — Full Breakdown (3D)", "url": "https://www.youtube.com/watch?v=3zRIndR9j40" },
-      { "type": "wikipedia", "label": "Two-Stroke Engine — Wikipedia", "url": "https://en.wikipedia.org/wiki/Two-stroke_engine" },
-      { "type": "reference", "label": "MCR / CSR / NCR — Marine Engine Power Terms — Marine Insight", "url": "https://www.marineinsight.com/12-terminologies-used-for-power-of-the-ships-marine-propulsion-engine/" }
-    ]
+      {
+        "type": "youtube",
+        "label": "How a 2-Stroke Marine Diesel Engine Works",
+        "url": "https://www.youtube.com/watch?v=KCJH1iznTZs"
+      },
+      {
+        "type": "youtube",
+        "label": "Marine Diesel Two Stroke Engine — How it Works!",
+        "url": "https://www.youtube.com/watch?v=IM8rxp8qB8k"
+      },
+      {
+        "type": "youtube",
+        "label": "How a Ship Engine Works — Full Breakdown (3D)",
+        "url": "https://www.youtube.com/watch?v=3zRIndR9j40"
+      },
+      {
+        "type": "wikipedia",
+        "label": "Two-Stroke Engine — Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Two-stroke_engine"
+      },
+      {
+        "type": "reference",
+        "label": "MCR / CSR / NCR — Marine Engine Power Terms — Marine Insight",
+        "url": "https://www.marineinsight.com/12-terminologies-used-for-power-of-the-ships-marine-propulsion-engine/"
+      },
+      {
+        "type": "reference",
+        "label": "Cylinder Liner Wear — Reasons and Measurement Methods — Marine Insight",
+        "url": "https://www.marineinsight.com/guidelines/reasons-for-cylinder-liner-wear-and-ways-to-measure-it/"
+      },
+      {
+        "type": "reference",
+        "label": "WinGD Cylinder Lubrication Technology",
+        "url": "https://wingd.com/design-development/engine-technologies/tribology-fuels-lubricants"
+      }
+    ],
+    "didYouKnow": "On a modern WinGD two-stroke crosshead engine, the cylinder liner bore is machined with zig-zag-shaped grooves at multiple levels — not just to hold oil, but to actively redistribute freshly injected cylinder lubricant upward through the entire stroke, allowing some engines to achieve liner and ring overhaul intervals exceeding 24,000 running hours with optimized PLS settings."
   },
   {
     "id": "mt",
     "title": "Main Turbine (Steam Plant)",
     "icon": "🌀",
     "category": "machinery",
-    "tags": ["turbine", "steam", "maneuvering", "crash astern", "LP turbine"],
-    "summary": "Steam turbine plant operations for LNG and steam-powered vessels. Covers crash astern procedure, maneuvering valve operation, machine-side control, LP turbine blade design, and hydraulic bolt tensioning methods. Critical for engineers on steam-powered LNG carriers.",
+    "tags": [
+      "turbine",
+      "steam",
+      "maneuvering",
+      "crash astern",
+      "LP turbine"
+    ],
+    "summary": "The main turbine on a steam-propulsion LNG carrier is a cross-compound impulse-reaction unit comprising a High-Pressure (HP) turbine, a Low-Pressure (LP) turbine, and an integrated astern turbine section — all coupled through a double-reduction gearbox that steps turbine speed of several thousand RPM down to approximately 100 RPM at the propeller shaft. The HP turbine receives superheated steam through the ahead stop valve and passes partially expanded steam via a large-bore crossover pipe to the LP turbine, which extracts further energy through alternating impulse and reaction blade stages before exhausting to the main condenser under vacuum. Because most steam LNG carriers use fixed-pitch propellers, reverse propulsion is achieved by admitting steam to two Curtis-row astern stages mounted on the LP turbine shaft via dedicated astern guardian and astern maneuvering valves — capable of delivering up to 50% of ahead power astern. The entire turbine set is protected by a main trip relay that cuts hydraulic oil to the maneuvering valve on conditions including low lube oil pressure, overspeed, low condenser vacuum, high condensate level, and abnormal thrust bearing weardown.",
     "keyTopics": [
       "Crash astern procedure and logic",
       "Maneuvering valve operation and diagrams",
       "Machine-side (local) operation",
       "LP turbine blade engineering",
       "High-frequency bolt heater usage",
-      "Engine room trip mechanisms"
+      "Engine room trip mechanisms",
+      "Astern guardian valve and astern maneuvering valve sequencing during crash-astern maneuvers",
+      "Curtis-row impulse staging in the astern turbine section",
+      "Double-reduction gearbox — role in converting turbine speed to propeller shaft RPM",
+      "Main trip relay — fault conditions and hydraulic oil cutoff mechanism",
+      "Turning gear operation and rotor warm-up procedure before steam admission"
     ],
     "difficulty": "Advanced",
     "fileCount": 7,
     "sourceDir": "MT",
     "externalLinks": [
-      { "type": "youtube", "label": "Steam Turbine — LNG Ship Engine Room Tour", "url": "https://www.youtube.com/watch?v=RDRVh8AFC3c" },
-      { "type": "youtube", "label": "Inside the Heart of a Steam LNG Ship", "url": "https://www.youtube.com/watch?v=tmBSiSdSNpU" },
-      { "type": "wikipedia", "label": "Steam Turbine — Wikipedia", "url": "https://en.wikipedia.org/wiki/Steam_turbine" },
-      { "type": "wikipedia", "label": "Marine Steam Engine — Wikipedia", "url": "https://en.wikipedia.org/wiki/Marine_steam_engine" },
-      { "type": "reference", "label": "Introduction to Ship's Turbine Generator — Marine Insight", "url": "https://www.marineinsight.com/an-introduction-to-ships-turbine-generator/" }
-    ]
+      {
+        "type": "youtube",
+        "label": "Steam Turbine — LNG Ship Engine Room Tour",
+        "url": "https://www.youtube.com/watch?v=RDRVh8AFC3c"
+      },
+      {
+        "type": "youtube",
+        "label": "Inside the Heart of a Steam LNG Ship",
+        "url": "https://www.youtube.com/watch?v=tmBSiSdSNpU"
+      },
+      {
+        "type": "wikipedia",
+        "label": "Steam Turbine — Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Steam_turbine"
+      },
+      {
+        "type": "wikipedia",
+        "label": "Marine Steam Engine — Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Marine_steam_engine"
+      },
+      {
+        "type": "reference",
+        "label": "Introduction to Ship's Turbine Generator — Marine Insight",
+        "url": "https://www.marineinsight.com/an-introduction-to-ships-turbine-generator/"
+      },
+      {
+        "type": "reference",
+        "label": "Steam Turbine LNG Carriers Explained — LNG Navigator",
+        "url": "https://lngnavigator.eu/steam-turbine-lng-carriers-explained"
+      },
+      {
+        "type": "reference",
+        "label": "Steam Turbines for Marine Propulsion — University of Rijeka (PDF)",
+        "url": "https://www.pfri.uniri.hr/bopri/documents/24_Steam_turbines_000.pdf"
+      }
+    ],
+    "didYouKnow": "When a steam LNG carrier executes a crash-astern maneuver, steam is first admitted to the astern turbine blades before any ahead steam is applied during the warm-up sequence — meaning the turbine is actually started in reverse to verify astern capability before normal ahead operation begins. This is a deliberate safety procedure to ensure the astern function is available for emergency port maneuvering."
   },
   {
     "id": "tg",
     "title": "Turbo Generator",
     "icon": "⚙️",
     "category": "machinery",
-    "tags": ["turbo generator", "TG", "overspeed", "SSS clutch", "safety device"],
-    "summary": "Turbo Generator theory and practical operation guides. Covers TG instruction manuals, safety device test procedures, overspeed trip mechanism, SSS clutch operation, load limiting precautions, and why no-load operation should be avoided. Important for steam vessel engineers.",
+    "tags": [
+      "turbo generator",
+      "TG",
+      "overspeed",
+      "SSS clutch",
+      "safety device"
+    ],
+    "summary": "A marine turbo generator is a steam-turbine-driven alternator where the turbine rotor and alternator rotor share a common shaft, converting steam energy into electrical power for the ship's main switchboard. The governor plays a critical role in regulating steam admission through the trip and throttle valve, maintaining stable speed from startup through full-load operation by modulating steam flow to the turbine nozzles. Overspeed protection is a key safety system: the mechanical overspeed trip is typically set at 110% of rated shaft speed, with a secondary emergency trip at approximately 113%, both acting to shut the steam supply and prevent catastrophic rotor failure. On combined-cycle and naval vessels, a Synchro-Self-Shifting (SSS) clutch is incorporated between the turbine and generator, automatically engaging when turbine speed matches or exceeds generator shaft speed and freewheeling to disengage during shutdown.",
     "keyTopics": [
       "TG structure and instruction manual",
       "Safety device test procedures",
       "Overspeed protection mechanism",
       "SSS (Synchro-Self-Shifting) clutch",
       "Load limiter operation precautions",
-      "Run signal relay logic"
+      "Run signal relay logic",
+      "SSS (Synchro-Self-Shifting) clutch engagement and freewheel disengagement mechanism",
+      "Overspeed trip testing procedures: simulated vs. live set-point reduction method",
+      "Condenser vacuum maintenance and condensate return system",
+      "Trip and throttle valve hydraulic actuator system",
+      "Steam inlet nozzle control groups and partial-arc admission"
     ],
     "difficulty": "Advanced",
     "fileCount": 9,
     "sourceDir": "TG",
     "externalLinks": [
-      { "type": "youtube", "label": "LNG Carrier Engineroom — Steam Turbine Driven", "url": "https://www.youtube.com/watch?v=CgbPdMbMY44" },
-      { "type": "wikipedia", "label": "Turbo Generator — Wikipedia", "url": "https://en.wikipedia.org/wiki/Turbogenerator" },
-      { "type": "wikipedia", "label": "Synchro-Self-Shifting Clutch — Wikipedia", "url": "https://en.wikipedia.org/wiki/Synchro-self-shifting_clutch" },
-      { "type": "reference", "label": "Introduction to Ship's Turbine Generator — Marine Insight", "url": "https://www.marineinsight.com/an-introduction-to-ships-turbine-generator/" }
-    ]
+      {
+        "type": "youtube",
+        "label": "LNG Carrier Engineroom — Steam Turbine Driven",
+        "url": "https://www.youtube.com/watch?v=CgbPdMbMY44"
+      },
+      {
+        "type": "wikipedia",
+        "label": "Turbo Generator — Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Turbogenerator"
+      },
+      {
+        "type": "wikipedia",
+        "label": "Synchro-Self-Shifting Clutch — Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Synchro-self-shifting_clutch"
+      },
+      {
+        "type": "reference",
+        "label": "Introduction to Ship's Turbine Generator — Marine Insight",
+        "url": "https://www.marineinsight.com/an-introduction-to-ships-turbine-generator/"
+      },
+      {
+        "type": "reference",
+        "label": "Starting Procedure for Turbine Generator on Ship — Marine Insight",
+        "url": "https://www.marineinsight.com/tech/generator/starting-procedure-for-turbine-generator-on-ship/"
+      }
+    ],
+    "didYouKnow": "The SSS (Synchro-Self-Shifting) clutch used in naval and marine turbo generator sets can transmit up to 4 MNm of torque and requires absolutely no external control signal to engage or disengage — it shifts automatically by sensing the relative speed difference between its two halves, which is why over 900 units have been installed across 14 different classes of U.S. Navy ships."
   },
   {
     "id": "eg",
     "title": "Emergency Generator",
     "icon": "🔋",
     "category": "machinery",
-    "tags": ["emergency generator", "EG", "load test", "dead ship", "safety device"],
-    "summary": "Emergency generator load test procedures and safety device tests as required by SOLAS and classification societies. Includes dead ship recovery procedure — starting from total blackout back to normal power. A key topic in 3AE oral examinations.",
+    "tags": [
+      "emergency generator",
+      "EG",
+      "load test",
+      "dead ship",
+      "safety device"
+    ],
+    "summary": "The emergency generator is a self-contained diesel-driven power source mandated by SOLAS Chapter II-1 (Regulations 42 and 43) to supply the emergency switchboard within 45 seconds of main power failure, automatically and without crew intervention. It must be physically located above the uppermost continuous deck (freeboard deck), entirely separated from the main machinery spaces to ensure survivability in flooding or fire scenarios. SOLAS also requires at least two independent starting methods — typically battery start and hydraulic or pneumatic start — and the stored starting energy must not be depleted by repeated automatic start attempts, preserving capability for a minimum of three additional starts within 30 minutes if the first attempt fails.",
     "keyTopics": [
       "EG load test procedure (start and restoration)",
       "Safety device test items",
       "Dead ship recovery from total blackout",
       "Load test flowchart and work instructions",
-      "SOLAS compliance for EG testing"
+      "SOLAS compliance for EG testing",
+      "Transitional Source of Emergency Power (TSEP) — battery-backed bridging supply covering the gap before EG reaches full load",
+      "Dead Ship Condition vs. Blackout Condition — regulatory distinction under SOLAS II-1/42",
+      "Emergency Switchboard Isolation — automatic disconnection from MSB on blackout",
+      "Load Test Regime — weekly, monthly, and annual test requirements by class",
+      "Starting Energy Protection Rule — SOLAS prohibition on using EG stored energy to start main machinery"
     ],
     "difficulty": "Intermediate",
     "fileCount": 10,
     "sourceDir": "EG",
     "externalLinks": [
-      { "type": "youtube", "label": "Ship's Switchboard & Emergency Power Distribution", "url": "https://www.youtube.com/watch?v=VATiXnmPNek" },
-      { "type": "youtube", "label": "How Electricity is Generated on Ships", "url": "https://www.youtube.com/watch?v=eRRChImarPw" },
-      { "type": "wikipedia", "label": "Emergency Power Supply (Marine) — Wikipedia", "url": "https://en.wikipedia.org/wiki/Emergency_power_supply" },
-      { "type": "reference", "label": "Power Generation & Supply on Ships — Marine Insight", "url": "https://www.marineinsight.com/how-is-power-generated-and-supplied-on-a-ship/" }
-    ]
+      {
+        "type": "youtube",
+        "label": "Ship's Switchboard & Emergency Power Distribution",
+        "url": "https://www.youtube.com/watch?v=VATiXnmPNek"
+      },
+      {
+        "type": "youtube",
+        "label": "How Electricity is Generated on Ships",
+        "url": "https://www.youtube.com/watch?v=eRRChImarPw"
+      },
+      {
+        "type": "wikipedia",
+        "label": "Emergency Power Supply (Marine) — Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Emergency_power_supply"
+      },
+      {
+        "type": "reference",
+        "label": "Power Generation & Supply on Ships — Marine Insight",
+        "url": "https://www.marineinsight.com/how-is-power-generated-and-supplied-on-a-ship/"
+      },
+      {
+        "type": "reference",
+        "label": "Ways of Starting and Testing Emergency Generator — Marine Insight",
+        "url": "https://www.marineinsight.com/ways-of-starting-and-testing-emergency-generator"
+      },
+      {
+        "type": "reference",
+        "label": "Dead Ship Start Procedure: Technical Overview and Regulatory Compliance — BBC SMR Marine",
+        "url": "https://bbc-smrmarine.com/dead-ship-start-procedure-technical-overview-and-regulatory-compliance-n18.html"
+      }
+    ],
+    "didYouKnow": "Under SOLAS, the emergency generator's stored starting energy is legally prohibited from being used to start the ship's main engine or main generators — even in a dead ship recovery scenario — specifically to ensure the emergency generator can always self-start no matter how depleted the rest of the ship's systems are."
   },
   {
     "id": "purifier",
     "title": "Fuel Oil Purifier",
     "icon": "🔄",
     "category": "machinery",
-    "tags": ["purifier", "centrifuge", "selfjector", "mitsubishi", "bowl", "disc"],
-    "summary": "Complete purifier resource using Mitsubishi Kakoki (MKK) Selfjector H-Series as reference. Covers centrifugal separation theory, auto-operation sequences, time chart understanding, alarm monitoring, bowl disassembly and overhaul, and vertical/horizontal shaft maintenance. Includes training video reference.",
+    "tags": [
+      "purifier",
+      "centrifuge",
+      "selfjector",
+      "mitsubishi",
+      "bowl",
+      "disc"
+    ],
+    "summary": "A marine fuel oil purifier is a high-speed disc-stack centrifuge that spins at 6,000–9,000 RPM, generating forces exceeding 8,000 Gs to separate water and solid contaminants from heavy fuel oil before it reaches the main engine. The bowl contains up to 150 conical discs stacked with approximately 500-micron inter-disc spacing, dramatically increasing the effective settling surface area and enabling separation of particles down to 0.5 microns. A correctly sized gravity disc is critical to establishing and holding the oil-water interface at the correct radial position inside the bowl — a disc that is too small allows water carry-over into the clean oil outlet, while one that is too large causes oil loss through the water discharge. Modern self-cleaning purifiers (such as the Mitsubishi Selfjector series) perform automatic sludge discharge by momentarily opening the bowl at timed intervals, ejecting accumulated sludge to a dedicated sludge tank while maintaining continuous oil throughput.",
     "keyTopics": [
       "Centrifugal separation theory",
       "Selfjector auto-operation sequence and time chart",
@@ -166,120 +416,315 @@
       "Alarm and multi-monitor system",
       "Vertical shaft and horizontal shaft maintenance",
       "Quick reference procedures",
-      "Timer setting and adjustment"
+      "Timer setting and adjustment",
+      "Gravity disc sizing and oil-water interface control",
+      "Water seal establishment and loss consequences",
+      "Automatic sludge discharge cycle (self-cleaning bowl operation)",
+      "Purifier vs. clarifier configuration and back-pressure valve role",
+      "Disc stack inspection, spacing tolerances, and overhaul interval"
     ],
     "difficulty": "Intermediate",
     "fileCount": 25,
     "sourceDir": "Purifier",
     "externalLinks": [
-      { "type": "youtube", "label": "Alfa Laval Marine Purifiers Explanation", "url": "https://www.youtube.com/watch?v=hSVFE2Gz3s8" },
-      { "type": "youtube", "label": "Fuel Oil Purifier Operations", "url": "https://www.youtube.com/watch?v=Hsy6w86p4Hs" },
-      { "type": "wikipedia", "label": "Centrifuge — Wikipedia", "url": "https://en.wikipedia.org/wiki/Centrifuge" },
-      { "type": "reference", "label": "Lube Oil Purifier Guide — Marine Insight", "url": "https://www.marineinsight.com/a-guide-to-lube-oil-purifier/" },
-      { "type": "reference", "label": "Alfa Laval Separator Training Resources", "url": "https://www.alfalaval.com/industries/marine/marine-separation/" }
-    ]
+      {
+        "type": "youtube",
+        "label": "Alfa Laval Marine Purifiers Explanation",
+        "url": "https://www.youtube.com/watch?v=hSVFE2Gz3s8"
+      },
+      {
+        "type": "youtube",
+        "label": "Fuel Oil Purifier Operations",
+        "url": "https://www.youtube.com/watch?v=Hsy6w86p4Hs"
+      },
+      {
+        "type": "wikipedia",
+        "label": "Centrifuge — Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Centrifuge"
+      },
+      {
+        "type": "reference",
+        "label": "Lube Oil Purifier Guide — Marine Insight",
+        "url": "https://www.marineinsight.com/a-guide-to-lube-oil-purifier/"
+      },
+      {
+        "type": "reference",
+        "label": "Alfa Laval Separator Training Resources",
+        "url": "https://www.alfalaval.com/industries/marine/marine-separation/"
+      },
+      {
+        "type": "reference",
+        "label": "High Speed Centrifuge on Ship: Construction and Working — Marine Insight",
+        "url": "https://www.marineinsight.com/guidelines/high-speed-centrifuge-on-ship-construction-and-working/"
+      },
+      {
+        "type": "reference",
+        "label": "10 Important Things to Check While Starting Fuel Oil Purifier — Marine Insight",
+        "url": "https://www.marineinsight.com/10-things-must-check-starting-fo-purifier/"
+      },
+      {
+        "type": "wikipedia",
+        "label": "Conical Plate Centrifuge — Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Conical_plate_centrifuge"
+      }
+    ],
+    "didYouKnow": "The inter-disc spacing inside a marine purifier bowl is only about 500 microns — roughly the thickness of five sheets of paper — yet a full stack of up to 150 of these discs multiplies the effective settling area so dramatically that the centrifuge can separate water droplets and solids down to 0.5 microns, far finer than any filter used elsewhere in the fuel system."
   },
   {
     "id": "pump",
     "title": "Pumps",
     "icon": "💧",
     "category": "auxiliary",
-    "tags": ["pump", "mechanical seal", "vacuum pump", "trochoid", "impeller"],
-    "summary": "Marine pump fundamentals including mechanical seal theory and maintenance, vacuum pump operation, trochoid pump principles, impeller orientation, and oil quench seal systems. Covers practical pump supplementary materials used for training junior engineers.",
+    "tags": [
+      "pump",
+      "mechanical seal",
+      "vacuum pump",
+      "trochoid",
+      "impeller"
+    ],
+    "summary": "Marine pumps are classified into two fundamental families — positive displacement (self-priming, constant flow regardless of back-pressure) and rotodynamic (centrifugal or axial, flow-dependent on system head) — with each type matched to specific shipboard duties based on fluid viscosity, required flow rate, and system pressure. Centrifugal pumps dominate high-volume, low-viscosity services such as ballast, seawater cooling, and fire-fighting, while gear and screw pumps handle high-viscosity fuel oil and lube oil transfer where impeller shear would be destructive. A critical operating parameter for any centrifugal pump is Net Positive Suction Head (NPSH): the available NPSH must always exceed the pump's required NPSH to prevent cavitation, where local pressure drops below vapour pressure, forming vapour bubbles that collapse violently on the impeller and cause pitting damage. Mechanical seals — consisting of two lapped mating faces held together by spring force and a thin hydrodynamic fluid film — have largely replaced traditional gland packing in modern engine rooms.",
     "keyTopics": [
       "Mechanical seal types and maintenance",
       "Vacuum pump operation and troubleshooting",
       "Trochoid (gear) pump principles",
       "Impeller direction and priming",
       "Oil quench meaning and application",
-      "Self-priming pump instruction"
+      "Self-priming pump instruction",
+      "Net Positive Suction Head (NPSH) and cavitation prevention",
+      "Mechanical seal types: single, double, and cartridge configurations",
+      "Oily Water Separator compatibility and pump selection for bilge service",
+      "Priming methods for centrifugal pumps (vacuum priming, foot valves, ejector priming)",
+      "Trochoid (internal gear) pump operation for viscous fuel and lube oil transfer"
     ],
     "difficulty": "Beginner",
     "fileCount": 7,
     "sourceDir": "pump",
     "externalLinks": [
-      { "type": "youtube", "label": "Working of Centrifugal Pump — Marine Engineer", "url": "https://www.youtube.com/watch?v=5YOKEYpOqwc" },
-      { "type": "youtube", "label": "Marine Auxiliaries: Centrifugal Pumps", "url": "https://www.youtube.com/watch?v=Iu7OMS6IbiM" },
-      { "type": "wikipedia", "label": "Centrifugal Pump — Wikipedia", "url": "https://en.wikipedia.org/wiki/Centrifugal_pump" },
-      { "type": "wikipedia", "label": "Mechanical Seal — Wikipedia", "url": "https://en.wikipedia.org/wiki/Mechanical_seal" },
-      { "type": "reference", "label": "Types of Pumps on Ships — Marine Insight", "url": "https://www.marineinsight.com/general-overview-of-types-of-pumps-on-ship/" }
-    ]
+      {
+        "type": "youtube",
+        "label": "Working of Centrifugal Pump — Marine Engineer",
+        "url": "https://www.youtube.com/watch?v=5YOKEYpOqwc"
+      },
+      {
+        "type": "youtube",
+        "label": "Marine Auxiliaries: Centrifugal Pumps",
+        "url": "https://www.youtube.com/watch?v=Iu7OMS6IbiM"
+      },
+      {
+        "type": "wikipedia",
+        "label": "Centrifugal Pump — Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Centrifugal_pump"
+      },
+      {
+        "type": "wikipedia",
+        "label": "Mechanical Seal — Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Mechanical_seal"
+      },
+      {
+        "type": "reference",
+        "label": "Types of Pumps on Ships — Marine Insight",
+        "url": "https://www.marineinsight.com/general-overview-of-types-of-pumps-on-ship/"
+      },
+      {
+        "type": "wikipedia",
+        "label": "Net Positive Suction Head (NPSH) — Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Net_positive_suction_head"
+      }
+    ],
+    "didYouKnow": "Using a centrifugal pump to transfer oily bilge water before the Oily Water Separator (OWS) can render the entire OWS system ineffective — the high-speed rotating impeller emulsifies the oil into fine droplets that the separator cannot distinguish from water, causing the vessel to discharge non-compliant effluent and potentially violate MARPOL Annex I. Slow-speed screw or vortex pumps are mandated specifically to preserve droplet size for effective separation."
   },
   {
     "id": "motor",
     "title": "Electric Motors & Alignment",
     "icon": "🔧",
     "category": "electrical",
-    "tags": ["motor", "alignment", "centering", "grease", "inverter", "bearing"],
-    "summary": "Electric motor maintenance and shaft alignment (centering) procedures. Includes grease selection and application intervals, motor-inverter troubleshooting case studies, difference between rolling and sliding bearings, and motor control circuit fundamentals. Practical field-level knowledge from experienced 2nd Engineers.",
+    "tags": [
+      "motor",
+      "alignment",
+      "centering",
+      "grease",
+      "inverter",
+      "bearing"
+    ],
+    "summary": "Marine electric motors are integral to propulsion, pumping, and auxiliary systems aboard ships, requiring precise shaft alignment to prevent stator-rotor contact — even a deviation of a few millimetres can induce excessive vibration, insulation breakdown, and winding burnout. Shaft alignment is performed using optical sighting, dial gauges, or laser systems, with interference-fit bearing clearances held to tolerances as tight as 0.01–0.02 mm; hull girder bending under load (hogging and sagging) must be factored into the alignment calculation at both lightship and fully-loaded drafts. The growing use of Pulse Width Modulated (PWM) variable frequency drives (VFDs) introduces an additional failure mode — bearing currents caused by high-frequency common-mode voltage that discharge through rolling-element bearings, producing characteristic \"fluting\" washboard wear patterns on raceways that lead to premature bearing failure if shaft grounding rings or insulated bearings are not fitted.",
     "keyTopics": [
       "Shaft alignment / centering methodology",
       "Grease consistency (NLGI grade) and application intervals",
       "Motor inverter troubleshooting (two-part case study)",
       "Motor control circuit basics",
       "Rolling bearing vs sliding bearing differences",
-      "Fan-side grease-up considerations"
+      "Fan-side grease-up considerations",
+      "PWM inverter bearing currents and fluting damage",
+      "Common-mode voltage mitigation (shaft grounding rings, insulated bearings, dv/dt filters)",
+      "Interference-fit bearing installation (heat-to-70°C press-fit technique)",
+      "Hull deflection compensation in propulsion shaft alignment (hogging/sagging loads)",
+      "Megger insulation resistance testing before and after motor overhaul"
     ],
     "difficulty": "Intermediate",
     "fileCount": 12,
     "sourceDir": "motor",
     "externalLinks": [
-      { "type": "youtube", "label": "Marine Air Compressor: Parts and Operation", "url": "https://www.youtube.com/watch?v=izLAXx5nv7E" },
-      { "type": "youtube", "label": "How a Ship Engine Works — 2-Stroke Diesel (3D)", "url": "https://www.youtube.com/watch?v=3zRIndR9j40" },
-      { "type": "youtube", "label": "Marine Diesel Engine Turbocharger", "url": "https://www.youtube.com/watch?v=XbaLOZjHz4I" },
-      { "type": "wikipedia", "label": "Induction Motor — Wikipedia", "url": "https://en.wikipedia.org/wiki/Induction_motor" },
-      { "type": "reference", "label": "How to Overhaul Motors on Ships — Marine Insight", "url": "https://www.marineinsight.com/how-to-overhaul-motors-on-ships/" }
-    ]
+      {
+        "type": "youtube",
+        "label": "Marine Air Compressor: Parts and Operation",
+        "url": "https://www.youtube.com/watch?v=izLAXx5nv7E"
+      },
+      {
+        "type": "youtube",
+        "label": "How a Ship Engine Works — 2-Stroke Diesel (3D)",
+        "url": "https://www.youtube.com/watch?v=3zRIndR9j40"
+      },
+      {
+        "type": "youtube",
+        "label": "Marine Diesel Engine Turbocharger",
+        "url": "https://www.youtube.com/watch?v=XbaLOZjHz4I"
+      },
+      {
+        "type": "wikipedia",
+        "label": "Induction Motor — Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Induction_motor"
+      },
+      {
+        "type": "reference",
+        "label": "How to Overhaul Motors on Ships — Marine Insight",
+        "url": "https://www.marineinsight.com/how-to-overhaul-motors-on-ships/"
+      },
+      {
+        "type": "reference",
+        "label": "Sighting, Boring and Alignment of Ship's Propeller Shaft — Marine Insight",
+        "url": "https://www.marineinsight.com/naval-architecture/sighting-boring-and-alignment-of-ships-propeller-shaft/"
+      },
+      {
+        "type": "wikipedia",
+        "label": "Variable-frequency drive — Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Variable-frequency_drive"
+      }
+    ],
+    "didYouKnow": "Variable frequency drives (VFDs) used to control marine electric motors can silently destroy bearings through a mechanism called \"fluting\" — high-frequency common-mode voltages from PWM switching cause electrical discharges through the bearing rolling elements, etching washboard-like grooves into the bearing raceway. The damage is invisible during routine inspection until catastrophic vibration develops, and the fix is electrical: a shaft grounding ring or ceramic-coated insulated bearing."
   },
   {
     "id": "electrical",
     "title": "Electrical Systems",
     "icon": "🔌",
     "category": "electrical",
-    "tags": ["electrical", "insulation", "reactive power", "bow thruster", "HV"],
-    "summary": "Essential electrical knowledge for marine engineers: insulation resistance testing and low insulation troubleshooting with a multimeter, why bow thrusters use 3300V high voltage systems, and the physics of reactive power. Foundation knowledge tested in 3rd Class licensing examinations.",
+    "tags": [
+      "electrical",
+      "insulation",
+      "reactive power",
+      "bow thruster",
+      "HV"
+    ],
+    "summary": "Marine electrical systems on modern vessels operate as isolated (insulated neutral earth) 3-phase, 3-wire networks — a deliberate design choice that allows a single earth fault to persist without immediately tripping power, giving engineers time to locate and clear the fault without catastrophic loss of propulsion or safety systems. High-voltage systems at 3.3 kV, 6.6 kV, and 11 kV are now standard for large loads including bow/stern thrusters, electric propulsion motors, and cargo pump drives — where operating a bow thruster motor at 6,600 V rather than 440 V reduces current draw by a factor of 15, dramatically cutting copper losses. Insulation resistance (IR) testing using the Polarization Index (PI) method — the ratio of IR measured at 10 minutes versus 1 minute under applied DC voltage — is the primary diagnostic tool for HV rotating machinery health, with a minimum threshold of (kV+1) MΩ. Variable Frequency Drives (VFDs) used on thrusters introduce significant harmonic distortion (THD) into the ship's power bus; paralleling additional generators paradoxically reduces harmonic distortion by lowering overall system impedance.",
     "keyTopics": [
       "Insulation resistance (IR) testing with a tester",
       "Low insulation diagnosis and corrective action",
       "High-voltage systems — why 3300V for bow thrusters",
-      "Reactive power (VAR) fundamentals"
+      "Reactive power (VAR) fundamentals",
+      "Polarization Index (PI) testing for HV insulation health assessment",
+      "Insulated neutral earth (IT) system fault continuity philosophy",
+      "Harmonic distortion and THD management from VFD-driven thruster loads",
+      "Neutral Earth Resistor (NER) function and sizing in shipboard HV systems",
+      "Residual charge hazard management after HV system isolation"
     ],
     "difficulty": "Intermediate",
     "fileCount": 3,
     "sourceDir": "Electrical",
     "externalLinks": [
-      { "type": "youtube", "label": "Ship's Switchboard & Power Distribution", "url": "https://www.youtube.com/watch?v=VATiXnmPNek" },
-      { "type": "youtube", "label": "How Electricity is Generated on Ships", "url": "https://www.youtube.com/watch?v=eRRChImarPw" },
-      { "type": "wikipedia", "label": "Insulation Resistance — Wikipedia", "url": "https://en.wikipedia.org/wiki/Insulation_resistance_tester" },
-      { "type": "wikipedia", "label": "Reactive Power — Wikipedia", "url": "https://en.wikipedia.org/wiki/AC_power#Reactive_power" },
-      { "type": "reference", "label": "What is Marine Electricity — Marine Insight", "url": "https://www.marineinsight.com/what-is-marine-electricity/" }
-    ]
+      {
+        "type": "youtube",
+        "label": "Ship's Switchboard & Power Distribution",
+        "url": "https://www.youtube.com/watch?v=VATiXnmPNek"
+      },
+      {
+        "type": "youtube",
+        "label": "How Electricity is Generated on Ships",
+        "url": "https://www.youtube.com/watch?v=eRRChImarPw"
+      },
+      {
+        "type": "wikipedia",
+        "label": "Insulation Resistance — Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Insulation_resistance_tester"
+      },
+      {
+        "type": "wikipedia",
+        "label": "Reactive Power — Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/AC_power#Reactive_power"
+      },
+      {
+        "type": "reference",
+        "label": "What is Marine Electricity — Marine Insight",
+        "url": "https://www.marineinsight.com/what-is-marine-electricity/"
+      },
+      {
+        "type": "reference",
+        "label": "High Voltage Systems on Ships — DieselShip",
+        "url": "https://dieselship.com/marine-technical-articles/marine-electro-technology/high-voltage-systems-on-ships"
+      }
+    ],
+    "didYouKnow": "After isolating a shipboard high-voltage system, residual charges can remain on cables and equipment at up to 10% of the rated operating voltage — meaning a 6,600 V system can still carry 660 V on its conductors even after the breaker opens, which is why HV safety procedures mandate mandatory discharge and earthing sticks before any personnel contact."
   },
   {
     "id": "governor",
     "title": "Governor Systems",
     "icon": "🎛️",
     "category": "machinery",
-    "tags": ["governor", "droop", "woodward", "parallel operation", "speed control"],
-    "summary": "Governor theory and practical operation covering mechanical and electronic governors (Woodward). Explains droop control characteristics, isochronous vs droop mode, parallel generator operation, and load sharing. The droop concept is a frequent oral examination topic for 3AE/2AE candidates.",
+    "tags": [
+      "governor",
+      "droop",
+      "woodward",
+      "parallel operation",
+      "speed control"
+    ],
+    "summary": "Marine engine governor systems are precision speed-regulating devices that maintain engine RPM within tight tolerances by continuously balancing the centrifugal force of rotating flyweights against a calibrated speeder spring, then translating any deviation into corrective fuel rack movement via hydraulic, electro-hydraulic, or fully electronic actuation. Modern vessels operate governors in one of two fundamental modes: isochronous mode (fixed speed regardless of load, essential for standalone generators) or droop mode (speed intentionally falls 3–5% as load increases) — this deliberate characteristic enables multiple generators running in parallel to share load proportionally without fighting each other. A stabilizing feedback compensator (the buffer or needle valve in hydraulic governors) is critical to preventing hunting — the destructive speed oscillation that occurs when an over-sensitive governor overcorrects in both directions.",
     "keyTopics": [
       "Governor function and speed regulation",
       "Droop control characteristic explained",
       "Isochronous vs droop mode",
       "Load sharing in parallel generator operation",
       "Woodward electronic governor basics",
-      "DG governor practical adjustment"
+      "DG governor practical adjustment",
+      "Droop vs. isochronous mode selection criteria for parallel generators",
+      "Governor hunting: causes, diagnosis, and needle valve compensation",
+      "Flyweight speed multiplication — why flyweights spin faster than crankshaft RPM",
+      "Woodward EGCP-3 and 2301A electronic load-sharing control units",
+      "Actuator-to-fuel-rack linkage friction and its effect on governor stability"
     ],
     "difficulty": "Intermediate",
     "fileCount": 7,
     "sourceDir": "Governer",
     "externalLinks": [
-      { "type": "youtube", "label": "How Electricity is Generated on Ships", "url": "https://www.youtube.com/watch?v=eRRChImarPw" },
-      { "type": "youtube", "label": "Marine Diesel Engine Turbocharger", "url": "https://www.youtube.com/watch?v=XbaLOZjHz4I" },
-      { "type": "wikipedia", "label": "Governor (Device) — Wikipedia", "url": "https://en.wikipedia.org/wiki/Governor_(device)" },
-      { "type": "reference", "label": "Types of Governors for Ship Engines — Marine Insight", "url": "https://www.marineinsight.com/types-of-governors-for-engines-used-on-ships/" },
-      { "type": "reference", "label": "Woodward Governor Official Documentation", "url": "https://www.woodward.com/marine" }
-    ]
+      {
+        "type": "youtube",
+        "label": "How Electricity is Generated on Ships",
+        "url": "https://www.youtube.com/watch?v=eRRChImarPw"
+      },
+      {
+        "type": "youtube",
+        "label": "Marine Diesel Engine Turbocharger",
+        "url": "https://www.youtube.com/watch?v=XbaLOZjHz4I"
+      },
+      {
+        "type": "wikipedia",
+        "label": "Governor (Device) — Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Governor_(device)"
+      },
+      {
+        "type": "reference",
+        "label": "Types of Governors for Ship Engines — Marine Insight",
+        "url": "https://www.marineinsight.com/types-of-governors-for-engines-used-on-ships/"
+      },
+      {
+        "type": "reference",
+        "label": "Woodward Governor Official Documentation",
+        "url": "https://www.woodward.com/marine"
+      },
+      {
+        "type": "reference",
+        "label": "Electro-mechanical Governor Handling — Marine Insight",
+        "url": "https://www.marineinsight.com/main-engine/10-points-to-consider-while-handling-electro-mechanical-governor-of-marine-engine/"
+      }
+    ],
+    "didYouKnow": "The flyweights in a hydraulic governor are deliberately geared to spin at a much higher rotational speed than the engine crankshaft — sometimes 3 to 6 times faster — because the centrifugal force acting on them increases with the square of rotational speed, giving the governor the sensitivity needed to detect tiny RPM changes (fractions of a percent) and respond before the speed deviation becomes perceptible."
   },
   {
     "id": "lsa-ffe",
@@ -287,8 +732,16 @@
     "icon": "🧯",
     "category": "safety",
     "localImage": "img/topics/lsa-foam-line.png",
-    "tags": ["fire", "lifeboat", "CO2", "foam", "BA", "SOLAS", "LSA"],
-    "summary": "Life Saving Appliances (LSA) and Fire Fighting Equipment (FFE) covering lifeboat launching, BA compressor testing, fixed foam system, CO2 system operation, fire hose pressure testing, fire detector testing (Autronica), high-expansion foam systems, dry chemical powder extinguishers, and SOFTEX water mist systems. SOLAS-mandatory knowledge.",
+    "tags": [
+      "fire",
+      "lifeboat",
+      "CO2",
+      "foam",
+      "BA",
+      "SOLAS",
+      "LSA"
+    ],
+    "summary": "Life-Saving Appliances (LSA) and fire-fighting equipment on ships are governed by SOLAS Chapter III and Chapter II-2 respectively, with detailed technical requirements codified in the International LSA Code and the Fire Safety Systems (FSS) Code. Lifeboats — typically totally enclosed, self-propelled at ~6 knots and carrying 24 hours of fuel — must now include mandatory ventilation at a minimum rate of 5 m³/hr/person following MSC 107 amendments to prevent dangerous CO2 buildup inside the enclosed hull. Fixed fire-fighting systems rely on CO2 flooding for unoccupied machinery spaces (with a mandatory 85% volume concentration) and high-expansion foam for occupied spaces, while portable BA sets (SCBA) must carry a minimum 1,200-litre air supply. The fireman's outfit must be stored in at least two separate locations so that a single fire cannot simultaneously destroy both sets.",
     "keyTopics": [
       "Lifeboat launching drill and engine starting",
       "BA compressor maintenance and testing",
@@ -299,44 +752,123 @@
       "High-expansion foam system (Hypermist)",
       "DCP (Dry Chemical Powder) extinguisher",
       "SOFTEX water mist system",
-      "Emergency shut-off valve testing"
+      "Emergency shut-off valve testing",
+      "FSS Code Chapter structure (CO2, foam, sprinkler, water-mist systems)",
+      "Totally enclosed lifeboat ventilation mandate (MSC 107 amendment)",
+      "Fireman's outfit composition and SOLAS stowage requirements",
+      "EPIRB and SART — electronic LSA for search and rescue",
+      "Hydrostatic release unit (HRU) for automatic liferaft deployment"
     ],
     "difficulty": "Intermediate",
     "fileCount": 45,
     "sourceDir": "LSA, FFE",
     "externalLinks": [
-      { "type": "youtube", "label": "LSA Equipment and SOLAS Requirements", "url": "https://www.youtube.com/watch?v=w6OII3-R0B4" },
-      { "type": "youtube", "label": "LSA & FFA Survival Equipments on Ships", "url": "https://www.youtube.com/watch?v=Zo7H99TcyTA" },
-      { "type": "youtube", "label": "Full LSA Equipment List — SOLAS Guide", "url": "https://www.youtube.com/watch?v=wUhJkA4fH1E" },
-      { "type": "wikipedia", "label": "Life-Saving Appliances — Wikipedia", "url": "https://en.wikipedia.org/wiki/Life-saving_appliances" },
-      { "type": "reference", "label": "Types of Life Saving Equipment on Ships — Marine Insight", "url": "https://www.marineinsight.com/types-of-life-saving-equipment-onboard-ships/" }
-    ]
+      {
+        "type": "youtube",
+        "label": "LSA Equipment and SOLAS Requirements",
+        "url": "https://www.youtube.com/watch?v=w6OII3-R0B4"
+      },
+      {
+        "type": "youtube",
+        "label": "LSA & FFA Survival Equipments on Ships",
+        "url": "https://www.youtube.com/watch?v=Zo7H99TcyTA"
+      },
+      {
+        "type": "youtube",
+        "label": "Full LSA Equipment List — SOLAS Guide",
+        "url": "https://www.youtube.com/watch?v=wUhJkA4fH1E"
+      },
+      {
+        "type": "wikipedia",
+        "label": "Life-Saving Appliances — Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Life-saving_appliances"
+      },
+      {
+        "type": "reference",
+        "label": "Types of Life Saving Equipment on Ships — Marine Insight",
+        "url": "https://www.marineinsight.com/types-of-life-saving-equipment-onboard-ships/"
+      },
+      {
+        "type": "reference",
+        "label": "16 Fire Fighting Appliances and Preventive Measures Present Onboard Ship — Marine Insight",
+        "url": "https://www.marineinsight.com/marine-safety/16-fire-fighting-appliances-and-preventive-measures-present-onboard-ship/"
+      }
+    ],
+    "didYouKnow": "A ship's fixed CO2 engine-room flooding system must release at least 85% of the required CO2 volume within the first two minutes of activation — meaning the entire engine room is rendered life-incompatible in under 120 seconds, which is why the system is interlocked with alarms requiring all personnel to evacuate before the master control cabinet can be opened."
   },
   {
     "id": "drill",
     "title": "Emergency Drills",
     "icon": "🚨",
     "category": "safety",
-    "tags": ["drill", "SOPEP", "oil spill", "damage control", "CO2", "emergency"],
-    "summary": "Emergency drill procedures including oil spill containment (SOPEP), damage control drills, CO2 release procedures, and bilge emergency discharge. Includes checklists and work instructions used on actual vessels. Understanding drill procedures is required by STCW and ISM Code.",
+    "tags": [
+      "drill",
+      "SOPEP",
+      "oil spill",
+      "damage control",
+      "CO2",
+      "emergency"
+    ],
+    "summary": "Emergency drills aboard ships are mandated by SOLAS Regulation III/19 and the ISM Code, requiring all crew to participate in at least one abandon-ship drill and one fire drill every month, with passenger ships held to weekly drills; if more than 25% of a crew have not drilled on a particular vessel in the previous month, the drills must be conducted within 24 hours of departure. Engine room-specific drills cover CO2 fixed fire system activation — including the critical pre-release muster to account for all personnel before sealing the space. Enclosed space entry and rescue drills are required at least once every two months under SOLAS 2011 Manila Amendments, recognizing that oxygen-deficient or toxic atmospheres in tanks, voids, and pump rooms are a leading cause of multiple-fatality incidents at sea. SOPEP (Shipboard Oil Pollution Emergency Plan) drills, conducted at least once every two months, rehearse containment and reporting chains.",
     "keyTopics": [
       "Oil spill containment drill (SOPEP)",
       "Damage control drill procedures and checklist",
       "CO2 fire extinguishing system release",
       "Emergency bilge discharge method",
       "Hypermist system operation",
-      "FFA (fire fighting appliances) use training"
+      "FFA (fire fighting appliances) use training",
+      "SOLAS Regulation III/19 drill frequency mandates",
+      "CO2 pre-release muster and two-minute discharge requirement",
+      "Enclosed space entry and rescue drill (bimonthly SOLAS requirement)",
+      "SOPEP drill — containment deployment and reporting chain rehearsal",
+      "Damage control drill — emergency bilging, watertight door operation, and flooding response"
     ],
     "difficulty": "Beginner",
     "fileCount": 14,
     "sourceDir": "Drill",
     "externalLinks": [
-      { "type": "youtube", "label": "Maritime Training Oily Water Separator", "url": "https://www.youtube.com/watch?v=qeysZVAKJgg" },
-      { "type": "youtube", "label": "LSA & FFA Survival Equipments on Ships", "url": "https://www.youtube.com/watch?v=Zo7H99TcyTA" },
-      { "type": "wikipedia", "label": "MARPOL (Oil Pollution) — Wikipedia", "url": "https://en.wikipedia.org/wiki/MARPOL_73/78" },
-      { "type": "reference", "label": "SOPEP — Ship Oil Pollution Emergency Plan — Marine Insight", "url": "https://www.marineinsight.com/what-is-ship-oil-pollution-emergency-plan-sopep/" },
-      { "type": "reference", "label": "Damage Stability Analysis of Ships — Marine Insight", "url": "https://www.marineinsight.com/damage-stability-analysis-of-ships/" }
-    ]
+      {
+        "type": "youtube",
+        "label": "Maritime Training Oily Water Separator",
+        "url": "https://www.youtube.com/watch?v=qeysZVAKJgg"
+      },
+      {
+        "type": "youtube",
+        "label": "LSA & FFA Survival Equipments on Ships",
+        "url": "https://www.youtube.com/watch?v=Zo7H99TcyTA"
+      },
+      {
+        "type": "wikipedia",
+        "label": "MARPOL (Oil Pollution) — Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/MARPOL_73/78"
+      },
+      {
+        "type": "reference",
+        "label": "SOPEP — Ship Oil Pollution Emergency Plan — Marine Insight",
+        "url": "https://www.marineinsight.com/what-is-ship-oil-pollution-emergency-plan-sopep/"
+      },
+      {
+        "type": "reference",
+        "label": "Damage Stability Analysis of Ships — Marine Insight",
+        "url": "https://www.marineinsight.com/damage-stability-analysis-of-ships/"
+      },
+      {
+        "type": "reference",
+        "label": "10 Important Safety Drills for Ship's Engine Room — Marine Insight",
+        "url": "https://www.marineinsight.com/marine-safety/important-safety-drills-ships-engine-room/"
+      },
+      {
+        "type": "wikipedia",
+        "label": "Ship Oil Pollution Emergency Plan (SOPEP) — Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Ship_oil_pollution_emergency_plan"
+      },
+      {
+        "type": "reference",
+        "label": "12 Must-Do Things Before Operating CO2 Fire Extinguishing System — Marine Insight",
+        "url": "https://www.marineinsight.com/guidelines/12-must-do-things-before-operating-co2-fire-extinguishing-system-for-engine-room-fire/"
+      }
+    ],
+    "didYouKnow": "Before activating a ship's fixed CO2 fire-extinguishing system in the engine room, regulations require a second dedicated muster to physically account for every person — because the system must flood 85% of the compartment volume with CO2 within just two minutes, leaving no survivable atmosphere for anyone accidentally left inside."
   },
   {
     "id": "refrigeration",
@@ -344,8 +876,15 @@
     "icon": "❄️",
     "category": "auxiliary",
     "localImage": "img/topics/refrigeration-compressor-overhaul.jpg",
-    "tags": ["refrigeration", "provision", "refrigerant", "compressor", "R404A", "R449a"],
-    "summary": "Provision refrigeration and air conditioning systems covering refrigerant types (R404A, R449a), Mollier diagram interpretation, compressor overhaul procedures, refrigerant leak detection, refrigeration oil properties, and the regulatory transition to HFO-free refrigerants. Includes photo-documented compressor overhaul.",
+    "tags": [
+      "refrigeration",
+      "provision",
+      "refrigerant",
+      "compressor",
+      "R404A",
+      "R449a"
+    ],
+    "summary": "Marine refrigeration systems aboard ships operate on the vapour-compression cycle, using a compressor, condenser, liquid receiver, thermostatic expansion valve (TEV), and evaporator interconnected by discharge, liquid, and suction lines. The dominant marine provision refrigerant R404A (GWP 3,943) is under accelerated phase-down by IMO, EU F-Gas, and national regulations, driving adoption of R449A (GWP 1,397) — a non-flammable A1 HFC blend offering roughly 64% lower global warming potential while delivering comparable capacity without requiring compressor replacement on most installations. Reciprocating compressor overhaul intervals are driven by running hours (typically valve plate inspection every 3,000 h, major overhaul at dry-dock), with bumping clearance set by adjusting cylinder-head gasket thickness, and system performance verified post-overhaul by plotting the operating cycle on the P-h chart against the refrigerant's published Mollier diagram.",
     "keyTopics": [
       "Refrigeration cycle theory",
       "Refrigerant types — R404A, R449a, environmental regulations",
@@ -354,92 +893,252 @@
       "Refrigerant leak check procedures",
       "Refrigeration oil properties and selection",
       "Refrigerant transfer procedure",
-      "LO replenishment for provision compressor"
+      "LO replenishment for provision compressor",
+      "R404A to R449A Retrofit Procedure and Drop-in Limitations",
+      "Bumping Clearance Adjustment on Reciprocating Refrigeration Compressors",
+      "Pressure-Enthalpy (Mollier) Diagram Analysis for Fault Diagnosis",
+      "F-Gas Regulation Phase-Down Timeline and IMO Compliance for Ships",
+      "Thermostatic Expansion Valve (TEV) Superheat Setting and Hunting"
     ],
     "difficulty": "Intermediate",
     "fileCount": 28,
     "sourceDir": "Ref Prov 冷凍装置",
     "externalLinks": [
-      { "type": "youtube", "label": "Ship's Refrigeration System (3D Animation)", "url": "https://www.youtube.com/watch?v=gatqRle5s1I" },
-      { "type": "youtube", "label": "Refrigeration Cycle on Ship", "url": "https://www.youtube.com/watch?v=dfLFt2X1uh4" },
-      { "type": "wikipedia", "label": "Vapor-Compression Refrigeration — Wikipedia", "url": "https://en.wikipedia.org/wiki/Vapor-compression_refrigeration" },
-      { "type": "reference", "label": "How to Charge Refrigeration Plant on Ships — Marine Insight", "url": "https://www.marineinsight.com/how-to-charge-refrigeration-plant-on-ships/" },
-      { "type": "reference", "label": "Refrigerant Quality Guidelines on Ships — Marine Insight", "url": "https://www.marineinsight.com/guidelines-on-quality-of-refrigerant-used-on-ships/" }
-    ]
+      {
+        "type": "youtube",
+        "label": "Ship's Refrigeration System (3D Animation)",
+        "url": "https://www.youtube.com/watch?v=gatqRle5s1I"
+      },
+      {
+        "type": "youtube",
+        "label": "Refrigeration Cycle on Ship",
+        "url": "https://www.youtube.com/watch?v=dfLFt2X1uh4"
+      },
+      {
+        "type": "wikipedia",
+        "label": "Vapor-Compression Refrigeration — Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Vapor-compression_refrigeration"
+      },
+      {
+        "type": "reference",
+        "label": "How to Charge Refrigeration Plant on Ships — Marine Insight",
+        "url": "https://www.marineinsight.com/how-to-charge-refrigeration-plant-on-ships/"
+      },
+      {
+        "type": "reference",
+        "label": "Refrigerant Quality Guidelines on Ships — Marine Insight",
+        "url": "https://www.marineinsight.com/guidelines-on-quality-of-refrigerant-used-on-ships/"
+      },
+      {
+        "type": "reference",
+        "label": "Construction and Working of Ship's Refrigeration Plant — Marine Insight",
+        "url": "https://www.marineinsight.com/refrigeration-air-conditioning/ships-refrigeration-plant/"
+      },
+      {
+        "type": "reference",
+        "label": "Refrigerant FAQ — R404A Replacement (Danfoss)",
+        "url": "https://www.danfoss.com/en/about-danfoss/our-businesses/cooling/refrigerants-and-energy-efficiency/refrigerant-faq-r404a/"
+      }
+    ],
+    "didYouKnow": "Although R449A is widely called a \"drop-in\" replacement for R404A, it is actually a zeotropic blend with a temperature glide of approximately 1–2°C. If the refrigerant is topped-up as vapour rather than liquid, the blend composition shifts, altering system pressures and reducing capacity in ways that cannot be corrected by simply adjusting the TEV superheat."
   },
   {
     "id": "ahu",
     "title": "Air Handling Unit (HVAC)",
     "icon": "💨",
     "category": "auxiliary",
-    "tags": ["AHU", "HVAC", "evaporator", "drain", "accommodation"],
-    "summary": "Air Handling Unit maintenance covering evaporator cleaning procedures, cooler drain line maintenance, and alarm troubleshooting for accommodation and engine room HVAC systems. Includes package aircon alarm diagnosis.",
+    "tags": [
+      "AHU",
+      "HVAC",
+      "evaporator",
+      "drain",
+      "accommodation"
+    ],
+    "summary": "A marine Air Handling Unit (AHU) is the central conditioning module of a ship's HVAC plant, drawing supply air sequentially through a pre-filter, steam pre-heater, enthalpy heat-exchanger, dual evaporator coils (supplied with chilled refrigerant from dedicated compressor-condenser sets), a humidifier section, a moisture eliminator, and a centrifugal fan before discharging into the accommodation ductwork. On larger vessels the AHU connects to a chilled-water loop rather than a direct-expansion circuit, circulating cooled water from centralized chillers to the evaporator coils and to satellite fan coil units (FCUs) in individual cabins. Fresh-air intake is blended with recirculated interior air via motorised mixing dampers, with the fresh-air fraction typically set to 15–30% at sea. SOLAS Chapter II-2 and IMO Resolution A.468(XII) mandate minimum ventilation rates for accommodation and machinery spaces, requiring at least 10 air changes per hour under normal operations.",
     "keyTopics": [
       "AHU evaporator cleaning procedure",
       "Cooler drain line maintenance",
       "Package aircon alarm types and response",
-      "Package aircon maintenance checklist"
+      "Package aircon maintenance checklist",
+      "Chilled-water loop vs. direct-expansion (DX) AHU circuits",
+      "Enthalpy heat-exchanger (run-around coil) for energy recovery",
+      "Fresh-air/recirculation damper ratio control and CO2-based demand ventilation",
+      "IMO Resolution A.468(XII) and SOLAS Chapter II-2 ventilation compliance",
+      "Freeze-stat protection and chilled-water flow-switch interlocks"
     ],
     "difficulty": "Beginner",
     "fileCount": 5,
     "sourceDir": "Air Handling Unit",
     "externalLinks": [
-      { "type": "youtube", "label": "Ship's Refrigeration System (3D Animation)", "url": "https://www.youtube.com/watch?v=gatqRle5s1I" },
-      { "type": "youtube", "label": "Marine Air Compressor: Parts and Operation", "url": "https://www.youtube.com/watch?v=izLAXx5nv7E" },
-      { "type": "wikipedia", "label": "Air Handling Unit — Wikipedia", "url": "https://en.wikipedia.org/wiki/Air_handler" },
-      { "type": "reference", "label": "Ship's Accommodation Systems Explained — Marine Insight", "url": "https://www.marineinsight.com/different-systems-in-ships-accommodation-area-explained/" }
-    ]
+      {
+        "type": "youtube",
+        "label": "Ship's Refrigeration System (3D Animation)",
+        "url": "https://www.youtube.com/watch?v=gatqRle5s1I"
+      },
+      {
+        "type": "youtube",
+        "label": "Marine Air Compressor: Parts and Operation",
+        "url": "https://www.youtube.com/watch?v=izLAXx5nv7E"
+      },
+      {
+        "type": "wikipedia",
+        "label": "Air Handling Unit — Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Air_handler"
+      },
+      {
+        "type": "reference",
+        "label": "Ship's Accommodation Systems Explained — Marine Insight",
+        "url": "https://www.marineinsight.com/different-systems-in-ships-accommodation-area-explained/"
+      },
+      {
+        "type": "reference",
+        "label": "Vessel Accommodation Air Conditioning Plant Explained — Chief Engineer Log",
+        "url": "https://chiefengineerlog.com/2022/05/22/vessel-accommodation-air-conditioning-plant-explained/"
+      },
+      {
+        "type": "reference",
+        "label": "Systems for Accommodation Area of a Ship — Marine Insight",
+        "url": "https://www.marineinsight.com/guidelines/different-systems-in-ships-accommodation-area-explained/"
+      }
+    ],
+    "didYouKnow": "A typical ship AHU passes supply air through two separate evaporator coils in series — the first coil performs the bulk cooling and dehumidification, while the second coil acts as a trim cooler — allowing the system to reach dew-point temperatures low enough to wring out tropical humidity before the air is reheated to the desired cabin delivery temperature, a process called \"cool-and-reheat\" unique to high-humidity marine environments."
   },
   {
     "id": "lng",
     "title": "LNG Vessel Operations",
     "icon": "🧊",
     "category": "specialist",
-    "tags": ["LNG", "drydock", "inspection", "cargo", "cryogenic"],
-    "summary": "LNG vessel-specific materials including drydock superintendent manuals, overseas stationed superintendent guides, fitting-out manuals for new LNG vessels, and class survey acceptance manuals. Essential reading for engineers targeting LNG carrier assignments.",
+    "tags": [
+      "LNG",
+      "drydock",
+      "inspection",
+      "cargo",
+      "cryogenic"
+    ],
+    "summary": "LNG carriers transport liquefied natural gas at cryogenic temperatures of approximately -162°C, reducing gas volume by a factor of 600 through containment in either Moss-type independent spherical aluminium tanks or membrane-type rectangular tanks integrated into the hull. During loaded voyages, heat ingress inevitably generates boil-off gas (BOG) at a rate of roughly 0.10–0.15% of cargo volume per day, which modern vessels manage either by combustion in dual-fuel or steam turbine propulsion systems or through onboard partial reliquefaction units. Before loading, cargo tanks that have warmed up must undergo a systematic cooldown procedure — taking 10–12 hours on membrane vessels and up to 20 hours on Moss-type ships — using LNG heel sprayed through dedicated nozzles to avoid thermal shock to the tank structure. Industry bodies SIGTTO and OCIMF publish the joint terminal safety standards and ship/shore compatibility guidelines that govern every loading and discharge interface worldwide.",
     "keyTopics": [
       "LNG drydock superintendent procedures",
       "Overseas stationed superintendent guide",
       "LNG vessel fitting-out (instrumentation) manual",
       "Class survey acceptance procedures",
-      "Drydock and afloat survey requirements"
+      "Drydock and afloat survey requirements",
+      "Boil-Off Gas (BOG) Rate and Management (reliquefaction vs. fuel combustion)",
+      "Cargo Tank Cooldown and Warm-Up Procedures (heel management, thermal shock prevention)",
+      "Inert Gas and Gas-Freeing Sequences for Drydock Entry",
+      "Membrane vs. Moss-Type Containment System Design Differences",
+      "Ship-Shore Compatibility and SIGTTO/OCIMF Terminal Standards"
     ],
     "difficulty": "Advanced",
     "fileCount": 8,
     "sourceDir": "LNG船資料",
     "externalLinks": [
-      { "type": "youtube", "label": "LNG Carrier Cargo Operations — Full Summary", "url": "https://www.youtube.com/watch?v=52WirXbsWaU" },
-      { "type": "youtube", "label": "Steam Turbine — LNG Ship Engine Room Tour", "url": "https://www.youtube.com/watch?v=RDRVh8AFC3c" },
-      { "type": "wikipedia", "label": "LNG Carrier — Wikipedia", "url": "https://en.wikipedia.org/wiki/LNG_carrier" },
-      { "type": "reference", "label": "What are LNG Carrier Ships — Marine Insight", "url": "https://www.marineinsight.com/what-are-lng-carrier-ships/" },
-      { "type": "reference", "label": "SIGTTO — Society of International Gas Tanker Owners", "url": "https://www.sigtto.org/" }
-    ]
+      {
+        "type": "youtube",
+        "label": "LNG Carrier Cargo Operations — Full Summary",
+        "url": "https://www.youtube.com/watch?v=52WirXbsWaU"
+      },
+      {
+        "type": "youtube",
+        "label": "Steam Turbine — LNG Ship Engine Room Tour",
+        "url": "https://www.youtube.com/watch?v=RDRVh8AFC3c"
+      },
+      {
+        "type": "wikipedia",
+        "label": "LNG Carrier — Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/LNG_carrier"
+      },
+      {
+        "type": "reference",
+        "label": "What are LNG Carrier Ships — Marine Insight",
+        "url": "https://www.marineinsight.com/what-are-lng-carrier-ships/"
+      },
+      {
+        "type": "reference",
+        "label": "SIGTTO — Society of International Gas Tanker Owners",
+        "url": "https://www.sigtto.org/"
+      },
+      {
+        "type": "reference",
+        "label": "What Are LNG Carrier Ships? — Marine Insight",
+        "url": "https://www.marineinsight.com/know-more/what-are-lng-carrier-ships/"
+      },
+      {
+        "type": "reference",
+        "label": "Overview of LNG Operations — Safety4Sea",
+        "url": "https://safety4sea.com/steamship-mutual-overview-of-lng-operations/"
+      }
+    ],
+    "didYouKnow": "To prevent LNG tanks from warming up completely between voyages, operators deliberately retain a small quantity of LNG (called the \"heel,\" typically 3–5% of cargo capacity) on the ballast voyage. Without this heel, re-cooling warm tanks before the next loading can take up to 20 hours and consumes significant quantities of LNG simply to restore the cryogenic environment."
   },
   {
     "id": "exam",
     "title": "Marine Engineer Licensing Exam",
     "icon": "📋",
     "category": "certification",
-    "tags": ["exam", "oral", "3AE", "2AE", "1AE", "past questions", "JMETS"],
-    "summary": "Comprehensive licensing exam preparation materials for 3rd, 2nd, and 1st Class Marine Engineer (Kikan) certificates. Includes past oral examination questions from 2009–2024, topic-by-topic study guides (Diesel, Steam Turbine, Gas Turbine, Boiler, Aux Machinery, Electrical, Fuel, Automation, Maritime Law), and a practical exam questions bank.",
+    "tags": [
+      "exam",
+      "oral",
+      "3AE",
+      "2AE",
+      "1AE",
+      "past questions",
+      "JMETS"
+    ],
+    "summary": "The Marine Engineer Licensing Exam is a multi-stage certification pathway governed by the STCW Convention (as amended by the 2010 Manila Amendments), requiring candidates to pass both written and oral examinations administered by national maritime authorities such as the USCG (US), MCA (UK), or MARINA (Philippines). In the US system, the USCG exam is structured into discrete modules — for a 3rd Assistant Engineer (3AE) the written exam covers eight modules spanning Motor Plants I and II, Gas Turbine Plants, Steam Plants I and II, General Subjects, Electricity/Electronics/Control Engineering, and Engineering Safety and Environmental Protection, drawing from a published question bank of nearly 5,000 items. The MCA pathway in the UK adds a separate oral examination (lasting up to three hours) conducted by an MCA-approved examiner, covering practical application of knowledge in areas such as main engine casualty control, steering gear failure, UMS watchkeeping obligations, and shipboard pollution prevention.",
     "keyTopics": [
       "3rd Class oral exam past questions (2009–2024)",
       "2nd Class oral exam past questions",
       "1st Class oral exam past questions",
       "Topic modules: Basic Knowledge, Diesel, Steam Turbine, Gas Turbine, Boiler, Auxiliary, Electrical, Fuel Oil, Automation, Maritime Law, Inspection",
       "Practical exam guidance",
-      "Training ship question sets"
+      "Training ship question sets",
+      "USCG exam module structure (Q531–Q538 for 3AE/2AE written exam question banks)",
+      "MCA oral examination syllabus under STCW Regulation III/1 and III/2 (motor and steam endorsements separate)",
+      "STCW Record of Assessment (NVIC onboard competency tasks signed by a Qualified Assessor)",
+      "Sea service recency requirements and qualifying vessel tonnage/power thresholds per rank",
+      "Engineering Knowledge written examinations (IAMI/SQA) as prerequisite to MCA oral examination"
     ],
     "difficulty": "All Levels",
     "fileCount": 35,
     "sourceDir": "海技試験",
     "externalLinks": [
-      { "type": "youtube", "label": "MARINA OIC-EW Exam Function 1 Reviewer", "url": "https://www.youtube.com/watch?v=FfKT7GtxsOI" },
-      { "type": "youtube", "label": "How to Take the OIC Theoretical Exam in MARINA", "url": "https://www.youtube.com/watch?v=ln1XZGmjp0A" },
-      { "type": "wikipedia", "label": "STCW Convention — Wikipedia", "url": "https://en.wikipedia.org/wiki/International_Convention_on_Standards_of_Training,_Certification_and_Watchkeeping_for_Seafarers" },
-      { "type": "reference", "label": "Japan Maritime Examination (JMETS) Official Site", "url": "https://www.jmets.or.jp/" },
-      { "type": "reference", "label": "Merchant Navy Officer Ranks — Marine Insight", "url": "https://www.marineinsight.com/a-guide-to-merchant-navy-officer-ranks/" }
-    ]
+      {
+        "type": "youtube",
+        "label": "MARINA OIC-EW Exam Function 1 Reviewer",
+        "url": "https://www.youtube.com/watch?v=FfKT7GtxsOI"
+      },
+      {
+        "type": "youtube",
+        "label": "How to Take the OIC Theoretical Exam in MARINA",
+        "url": "https://www.youtube.com/watch?v=ln1XZGmjp0A"
+      },
+      {
+        "type": "wikipedia",
+        "label": "STCW Convention — Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/International_Convention_on_Standards_of_Training,_Certification_and_Watchkeeping_for_Seafarers"
+      },
+      {
+        "type": "reference",
+        "label": "Japan Maritime Examination (JMETS) Official Site",
+        "url": "https://www.jmets.or.jp/"
+      },
+      {
+        "type": "reference",
+        "label": "Merchant Navy Officer Ranks — Marine Insight",
+        "url": "https://www.marineinsight.com/a-guide-to-merchant-navy-officer-ranks/"
+      },
+      {
+        "type": "reference",
+        "label": "USCG Engineers License Examination Test Questions (SeaSources.net)",
+        "url": "https://www.seasources.net/Engineering_Examination_Questions.html"
+      },
+      {
+        "type": "reference",
+        "label": "Mastering Your Maritime Oral Exam (Voyager Marine Education)",
+        "url": "https://www.voyager-marine.com/post/mastering-a-maritime-oral-exam-techniques-for-success"
+      }
+    ],
+    "didYouKnow": "The USCG 3rd Assistant Engineer written exam question bank is entirely public — every question, with all answer choices and correct answers, is published on the NMC website and mirrored at seasources.net. This means candidates are memorising a finite, known set of approximately 4,995 multiple-choice items — the oral examination is where practical knowledge is actually probed."
   },
   {
     "id": "control",
@@ -447,193 +1146,510 @@
     "icon": "📊",
     "category": "engineering",
     "localImage": "img/topics/control-pid-diagram.png",
-    "tags": ["PID", "control", "automation", "feedback", "sensor"],
-    "summary": "Control engineering fundamentals applied to marine systems. Covers PID (Proportional-Integral-Derivative) control theory, feedback control loops, sensors including RTDs (resistance temperature detectors), flow meters (oval gear type), and practical automation system knowledge required for the 3AE licensing exam automation module.",
+    "tags": [
+      "PID",
+      "control",
+      "automation",
+      "feedback",
+      "sensor"
+    ],
+    "summary": "PID (Proportional-Integral-Derivative) control is the dominant feedback algorithm in ship engine room automation, governing parameters such as jacket cooling water temperature, lubricating oil temperature, fuel oil viscosity, and boiler water level — all using the same three-term law first formalized by Nicolas Minorsky in 1922 when he was designing automatic ship steering for the US Navy. In marine practice, temperature sensing is typically performed by Pt100 RTDs, which feed the measured variable back to the PID controller; the integral term eliminates steady-state offset, while the derivative term damps out rapid disturbances such as load swings during maneuvering. Fuel oil viscosity control is a particularly demanding marine application: a viscometer measures viscosity online and a PID controller modulates a steam-heated exchanger to keep Heavy Fuel Oil at the precise viscosity required for correct injector atomization.",
     "keyTopics": [
       "PID control theory and tuning",
       "Feedback and feedforward control",
       "Sensors: RTD (Pt100), thermocouples",
       "Oval gear flow meter principle",
       "Control engineering lecture series",
-      "Marine automation system overview"
+      "Marine automation system overview",
+      "Integral windup and anti-windup strategies in marine PID loops",
+      "Fuel oil viscosity control loop — viscometer, steam heater, and PID interaction",
+      "Ziegler-Nichols and bump-test tuning methods applied to shipboard control loops",
+      "Pt100 RTD wiring configurations (2-wire, 3-wire, 4-wire) and lead resistance compensation",
+      "Dead-band and hysteresis settings in boiler water level PI controllers"
     ],
     "difficulty": "Intermediate",
     "fileCount": 10,
     "sourceDir": "制御機構　PID",
     "externalLinks": [
-      { "type": "youtube", "label": "How a Ship Engine Works — 2-Stroke Diesel (3D)", "url": "https://www.youtube.com/watch?v=3zRIndR9j40" },
-      { "type": "youtube", "label": "How Electricity is Generated on Ships", "url": "https://www.youtube.com/watch?v=eRRChImarPw" },
-      { "type": "wikipedia", "label": "PID Controller — Wikipedia", "url": "https://en.wikipedia.org/wiki/PID_controller" },
-      { "type": "reference", "label": "UMS Operation Preparation on Ships — Marine Insight", "url": "https://www.marineinsight.com/preparation-for-ums-operation-on-ships/" }
-    ]
+      {
+        "type": "youtube",
+        "label": "How a Ship Engine Works — 2-Stroke Diesel (3D)",
+        "url": "https://www.youtube.com/watch?v=3zRIndR9j40"
+      },
+      {
+        "type": "youtube",
+        "label": "How Electricity is Generated on Ships",
+        "url": "https://www.youtube.com/watch?v=eRRChImarPw"
+      },
+      {
+        "type": "wikipedia",
+        "label": "PID Controller — Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/PID_controller"
+      },
+      {
+        "type": "reference",
+        "label": "UMS Operation Preparation on Ships — Marine Insight",
+        "url": "https://www.marineinsight.com/preparation-for-ums-operation-on-ships/"
+      },
+      {
+        "type": "reference",
+        "label": "Viscosity Meter and Viscosity Controller Used on Ships — Marine Insight",
+        "url": "https://www.marineinsight.com/tech/viscosity-meter-and-viscosity-controller-used-on-ships/"
+      },
+      {
+        "type": "reference",
+        "label": "Basic Principles of PID Controllers — Marine Engineering Online",
+        "url": "https://marineengineeringonline.com/basic-principles-of-pid-controllers/"
+      }
+    ],
+    "didYouKnow": "The theoretical foundation of PID control traces directly to ship steering: Russian-American engineer Nicolas Minorsky derived the three-term control law in 1922 specifically while analyzing the dynamics of automatic helmsmen on US Navy vessels — meaning the algorithm now running fuel oil heaters and cooling water valves in every modern engine room was invented for maritime use more than a century ago."
   },
   {
     "id": "steering",
     "title": "Steering Gear",
     "icon": "🎯",
     "category": "auxiliary",
-    "tags": ["steering", "rudder", "hydraulic", "emergency steering"],
-    "summary": "Steering gear system fundamentals and emergency steering procedures. SOLAS-required knowledge for all watchkeeping officers. Covers hydraulic steering gear operation and emergency changeover to manual/local steering.",
+    "tags": [
+      "steering",
+      "rudder",
+      "hydraulic",
+      "emergency steering"
+    ],
+    "summary": "Ship steering gear systems are hydraulically actuated mechanisms that translate helm commands into precise rudder movements, with two dominant configurations: the ram-type (four-ram or two-ram arrangements) operating at 100–175 bar oil pressure, and the more compact rotary vane type which achieves volumetric efficiencies of 96–98%. The telemotor serves as the hydraulic transmission link between the bridge and the steering gear compartment, conveying helm signals through pressurized pipelines and converting them into actuator commands via a hunting gear feedback mechanism that self-centers once the desired rudder angle is reached. SOLAS Chapter V Regulation 26 mandates emergency steering drills at least every three months, and within 12 hours before departure, full rudder movement must be tested and bridge-to-steering-gear-room communications verified. Under emergency conditions, a dedicated power source must swing the rudder from 15° on one side to 15° on the other within 60 seconds at maximum service speed or 7 knots.",
     "keyTopics": [
       "Hydraulic steering gear operation",
       "Emergency steering procedure",
-      "SOLAS requirements for steering gear drills"
+      "SOLAS requirements for steering gear drills",
+      "Hunting gear feedback mechanism and self-centering operation",
+      "Telemotor hydraulic transmission system",
+      "Four-ram vs two-ram actuator configurations",
+      "SOLAS Chapter V Regulation 26 compliance requirements",
+      "Rotary vane volumetric efficiency and sealing strip design"
     ],
     "difficulty": "Beginner",
     "fileCount": 2,
     "sourceDir": "steering",
     "externalLinks": [
-      { "type": "youtube", "label": "How Ship Steering Works (Hydraulic System)", "url": "https://www.youtube.com/watch?v=d_s7dv95qJU" },
-      { "type": "youtube", "label": "How Massive Ship Steering Gears Work!", "url": "https://www.youtube.com/watch?v=99PkWjURKTY" },
-      { "type": "wikipedia", "label": "Steering Gear — Wikipedia", "url": "https://en.wikipedia.org/wiki/Steering_gear" },
-      { "type": "reference", "label": "Understanding Steering Gear on Ships — Marine Insight", "url": "https://www.marineinsight.com/understanding-steering-gear-ships/" }
-    ]
+      {
+        "type": "youtube",
+        "label": "How Ship Steering Works (Hydraulic System)",
+        "url": "https://www.youtube.com/watch?v=d_s7dv95qJU"
+      },
+      {
+        "type": "youtube",
+        "label": "How Massive Ship Steering Gears Work!",
+        "url": "https://www.youtube.com/watch?v=99PkWjURKTY"
+      },
+      {
+        "type": "wikipedia",
+        "label": "Steering Gear — Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Steering_gear"
+      },
+      {
+        "type": "reference",
+        "label": "Understanding Steering Gear on Ships — Marine Insight",
+        "url": "https://www.marineinsight.com/understanding-steering-gear-ships/"
+      },
+      {
+        "type": "reference",
+        "label": "SOLAS Requirements on Steering Gear System — DieselShip",
+        "url": "https://dieselship.com/marine-technical-articles/marine-engineering-knowledge-general/steering-gear/solas-requirement-on-steering-gear-system"
+      },
+      {
+        "type": "reference",
+        "label": "Rotary Vane Steering Gear — DieselShip",
+        "url": "https://dieselship.com/marine-technical-articles/marine-engineering-knowledge-general/rotary-vane-steering-gear"
+      }
+    ],
+    "didYouKnow": "The rotary vane steering gear uses steel sealing strips backed by synthetic rubber fitted into grooves along the vane faces — achieving a volumetric efficiency of 96–98% even at relief valve pressures of 100 bar or more, making it more compact and efficient than ram-type systems for the same torque output."
   },
   {
     "id": "valve",
     "title": "Valves & Piping",
     "icon": "🔩",
     "category": "auxiliary",
-    "tags": ["valve", "piping", "gland packing", "sea chest", "MGPS"],
-    "summary": "Valve maintenance and piping systems covering gland packing replacement, accommodation hot water valve replacement, sea chest piping diagrams, Marine Growth Prevention System (MGPS) chloride testing and overhaul, and piping diagram interpretation.",
+    "tags": [
+      "valve",
+      "piping",
+      "gland packing",
+      "sea chest",
+      "MGPS"
+    ],
+    "summary": "Ship valves and piping systems form the circulatory backbone of a vessel, with each valve type — gate, globe, ball, butterfly, and non-return — selected for specific pressure, flow-regulation, or isolation duties across seawater, fuel, ballast, and bilge circuits. Sea chests serve as the primary raw-water intake reservoirs built into the hull, protected by Kingston valves and fitted with strainers; their maintenance is safety-critical, as failures in ship-side valves have caused uncontrolled flooding incidents. Marine Growth Prevention Systems (MGPS), typically installed directly in the sea chest, use impressed-current electrolysis through paired copper and aluminium/ferrous anodes to release ionic concentrations below 2 parts per billion — sufficient to block biofouling throughout the entire internal seawater circuit without chemical dosing.",
     "keyTopics": [
       "Gland packing selection and replacement",
       "Sea chest piping and sea water systems",
       "MGPS (Marine Growth Prevention System) operation and maintenance",
       "Accommodation hot water line valve replacement",
-      "Piping diagram reading"
+      "Piping diagram reading",
+      "Kingston valve and sea chest isolation procedure during drydock",
+      "MGPS anode replacement intervals and drydock scheduling",
+      "Aluminium piping incompatibility with copper-anode MGPS systems",
+      "Screw-down non-return (SDNR) valve — combined stop and check function",
+      "Ship-side valve general condition checks in planned maintenance systems (PMS)"
     ],
     "difficulty": "Beginner",
     "fileCount": 8,
     "sourceDir": "Valve",
     "externalLinks": [
-      { "type": "youtube", "label": "Maritime Training: Oily Water Separator", "url": "https://www.youtube.com/watch?v=qeysZVAKJgg" },
-      { "type": "youtube", "label": "Cathodic Protection — Your Ship's Shield Against Corrosion", "url": "https://www.youtube.com/watch?v=42NJ2-bDmwE" },
-      { "type": "wikipedia", "label": "Sea Chest — Wikipedia", "url": "https://en.wikipedia.org/wiki/Sea_chest_(nautical)" },
-      { "type": "reference", "label": "Types of Valves Used on Ships — Marine Insight", "url": "https://www.marineinsight.com/types-of-valves-used-on-ships-gate-valve-part-1/" }
-    ]
+      {
+        "type": "youtube",
+        "label": "Maritime Training: Oily Water Separator",
+        "url": "https://www.youtube.com/watch?v=qeysZVAKJgg"
+      },
+      {
+        "type": "youtube",
+        "label": "Cathodic Protection — Your Ship's Shield Against Corrosion",
+        "url": "https://www.youtube.com/watch?v=42NJ2-bDmwE"
+      },
+      {
+        "type": "wikipedia",
+        "label": "Sea Chest — Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Sea_chest_(nautical)"
+      },
+      {
+        "type": "reference",
+        "label": "Types of Valves Used on Ships — Marine Insight",
+        "url": "https://www.marineinsight.com/types-of-valves-used-on-ships-gate-valve-part-1/"
+      },
+      {
+        "type": "reference",
+        "label": "What is Marine Growth Preventive System (MGPS) On a Ship? — Marine Insight",
+        "url": "https://www.marineinsight.com/what-is-marine-growth-preventive-system-on-a-ship/"
+      },
+      {
+        "type": "reference",
+        "label": "Globe Valve Used on Ships: Design and Maintenance — Marine Insight",
+        "url": "https://www.marineinsight.com/tech/pipeing/globe-valve-used-on-ships-design-and-maintenance/"
+      }
+    ],
+    "didYouKnow": "The copper ions released by an MGPS anode need only reach a concentration of less than 2 parts per billion in the seawater stream to prevent marine organisms from settling on pipe walls and heat exchanger surfaces — a dose hundreds of times below any threshold of toxicity to humans, yet lethal enough to barnacles and mussels to protect the entire internal seawater system between drydockings."
   },
   {
     "id": "tools-parts",
     "title": "Tools, Parts & Materials",
     "icon": "🛠️",
     "category": "practical",
-    "tags": ["tools", "V-belt", "anti-seize", "hydraulic jack", "spare parts"],
-    "summary": "Practical knowledge on tools and spare parts used in engine room maintenance. Covers V-belt selection and tensioning, hydraulic jack operation for bolt tensioning, anti-seize compound application, and spare parts management concepts including a novel spare parts platform idea for the maritime industry.",
+    "tags": [
+      "tools",
+      "V-belt",
+      "anti-seize",
+      "hydraulic jack",
+      "spare parts"
+    ],
+    "summary": "Ship engine rooms carry a broad arsenal of specialized tools and materials — from hydraulic torque wrenches and jack bolt tensioners (operating at pressures up to 600 bar) for critical fastener work, to onboard workshop machines such as lathes, grinders, and drill presses that allow engineers to fabricate or recondition parts at sea. Critical spare parts for two-stroke main engines are governed by IACS Recommendation No. 26, which mandates minimum inventories of items like piston rings, cylinder liners, crosshead bearings, and fuel injection components. Planned Maintenance Systems (PMS) such as BASSnet and AMOS serve as the digital backbone tying together running-hours-based job cards, spare-parts requisitions, and manufacturer service intervals into a single auditable record for flag-state and class inspections.",
     "keyTopics": [
       "V-belt selection and tensioning",
       "Hydraulic jack operation for flange bolts",
       "Anti-seize compound (焼き付き防止剤) usage",
       "Spare parts management and ordering",
-      "BASSnet maintenance management system"
+      "BASSnet maintenance management system",
+      "Hydraulic bolt tensioning and jack bolt procedure (600 bar)",
+      "IACS Recommendation No. 26 — minimum main engine spares",
+      "Onboard workshop machinery: lathe, grinder, drill press operations",
+      "Anti-seize and thread-locking compounds for high-temperature assemblies",
+      "Planned Maintenance System (PMS) software — BASSnet / AMOS job-card workflow"
     ],
     "difficulty": "Beginner",
     "fileCount": 15,
     "sourceDir": "Tool ＆ parts",
     "externalLinks": [
-      { "type": "youtube", "label": "Marine Air Compressor: Parts and Operation", "url": "https://www.youtube.com/watch?v=izLAXx5nv7E" },
-      { "type": "youtube", "label": "How a Ship Engine Works — 2-Stroke Diesel (3D)", "url": "https://www.youtube.com/watch?v=3zRIndR9j40" },
-      { "type": "wikipedia", "label": "Belt Drive — Wikipedia", "url": "https://en.wikipedia.org/wiki/Belt_(mechanical)" },
-      { "type": "reference", "label": "Mechanical Measuring Tools & Gauges on Ships — Marine Insight", "url": "https://www.marineinsight.com/different-types-of-mechanical-measuring-tools-and-gauges-used-on-ships/" }
-    ]
+      {
+        "type": "youtube",
+        "label": "Marine Air Compressor: Parts and Operation",
+        "url": "https://www.youtube.com/watch?v=izLAXx5nv7E"
+      },
+      {
+        "type": "youtube",
+        "label": "How a Ship Engine Works — 2-Stroke Diesel (3D)",
+        "url": "https://www.youtube.com/watch?v=3zRIndR9j40"
+      },
+      {
+        "type": "wikipedia",
+        "label": "Belt Drive — Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Belt_(mechanical)"
+      },
+      {
+        "type": "reference",
+        "label": "Mechanical Measuring Tools & Gauges on Ships — Marine Insight",
+        "url": "https://www.marineinsight.com/different-types-of-mechanical-measuring-tools-and-gauges-used-on-ships/"
+      },
+      {
+        "type": "reference",
+        "label": "Jack Bolts for Marine Engine and the Procedure for Tensioning — Marine Insight",
+        "url": "https://www.marineinsight.com/main-engine/jack-bolts-for-marine-engine-and-the-procedure-for-tensioning/"
+      },
+      {
+        "type": "reference",
+        "label": "List of Critical Spares for Main Engine — DieselShip",
+        "url": "https://dieselship.com/marine-technical-articles/motor-engineering-knowledge/list-of-main-engine-spares-required-to-be-carried-onboard"
+      },
+      {
+        "type": "reference",
+        "label": "A List of Processes Used in the Marine Workshop of a Ship — Marine Insight",
+        "url": "https://www.marineinsight.com/tech/a-list-of-processes-used-in-marine-workshop-of-ship/"
+      }
+    ],
+    "didYouKnow": "Jack bolts used to secure the main bearing keeps on large two-stroke diesel engines are tensioned hydraulically at pressures around 600 bar — roughly 8,700 psi — and are deliberately angled at 15° from vertical so that the hydraulic load clamps the bearing keep without passing through the housing itself, allowing bearing removal without disturbing the crankshaft alignment."
   },
   {
     "id": "fuel-oil",
     "title": "Fuel Oil Properties",
     "icon": "⛽",
     "category": "engineering",
-    "tags": ["fuel oil", "HFO", "VLSFO", "ULSFO", "viscosity", "sulfur"],
-    "summary": "Fuel oil properties and management for marine diesel and steam plants. Covers HFO, VLSFO, and ULSFO characteristics, viscosity-temperature relationships, sulfur content regulations (IMO 2020), and fuel oil analysis and treatment.",
+    "tags": [
+      "fuel oil",
+      "HFO",
+      "VLSFO",
+      "ULSFO",
+      "viscosity",
+      "sulfur"
+    ],
+    "summary": "Marine fuel oils span a wide spectrum from Heavy Fuel Oil (HFO) with up to 3.5% sulfur content to Very Low Sulfur Fuel Oil (VLSFO, max 0.5% S) and Ultra Low Sulfur Fuel Oil (ULSFO, max 0.1% S), the latter two mandated by IMO 2020 regulations. HFO is a residual product of crude oil distillation with a density up to 1010 kg/m³ at 15°C, requiring preheating to 120–150°C to achieve the 2–20 cSt viscosity window safe for injection into main engines. Catalytic fines (Al+Si particles from fluid catalytic cracking units) are particularly hazardous — ISO 8217 limits them to 60 ppm, but engine manufacturers recommend no more than 10–15 mg/kg at the engine inlet, requiring centrifugal purifiers operated at 95–98°C to remove them before combustion.",
     "keyTopics": [
       "Heavy Fuel Oil (HFO) properties",
       "VLSFO and ULSFO for IMO 2020 compliance",
       "Viscosity and heating requirements",
       "Fuel oil purification and treatment",
-      "Sulfur cap regulations"
+      "Sulfur cap regulations",
+      "Catalytic fines (cat fines) — Al+Si particles from FCC units; ISO 8217 limit 60 ppm vs. engine OEM limit 10–15 mg/kg",
+      "VLSFO fuel stability and asphaltene compatibility when blending paraffinic and aromatic residual streams",
+      "ISO 8217:2024 marine fuel standard — key parameters including pour point, acid number, TSP, and MCR",
+      "IMO 2020 fuel switchover procedure: viscosity control between 2–20 cSt during HFO-to-VLSFO changeover",
+      "Centrifugal purifier inlet temperature (95–98°C) and density-differential separation for HFO up to 1010 kg/m³"
     ],
     "difficulty": "Intermediate",
     "fileCount": 2,
     "sourceDir": "FO 性状",
     "externalLinks": [
-      { "type": "youtube", "label": "Oily Water Separator (OWS) Explained", "url": "https://www.youtube.com/watch?v=_fAkwpgFGRU" },
-      { "type": "youtube", "label": "Maritime Training: Oily Water Separator", "url": "https://www.youtube.com/watch?v=qeysZVAKJgg" },
-      { "type": "wikipedia", "label": "Fuel Oil — Wikipedia", "url": "https://en.wikipedia.org/wiki/Fuel_oil" },
-      { "type": "reference", "label": "IMO 2020 Sulphur Cap — Official IMO", "url": "https://www.imo.org/en/MediaCentre/HotTopics/Pages/Sulphur-2020.aspx" },
-      { "type": "reference", "label": "Heavy Fuel Oil for Ships — Marine Insight", "url": "https://www.marineinsight.com/marine-heavy-fuel-oil-hfo-for-ships-properties-challenges-and-treatment-methods/" }
-    ]
+      {
+        "type": "youtube",
+        "label": "Oily Water Separator (OWS) Explained",
+        "url": "https://www.youtube.com/watch?v=_fAkwpgFGRU"
+      },
+      {
+        "type": "youtube",
+        "label": "Maritime Training: Oily Water Separator",
+        "url": "https://www.youtube.com/watch?v=qeysZVAKJgg"
+      },
+      {
+        "type": "wikipedia",
+        "label": "Fuel Oil — Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Fuel_oil"
+      },
+      {
+        "type": "reference",
+        "label": "IMO 2020 Sulphur Cap — Official IMO",
+        "url": "https://www.imo.org/en/MediaCentre/HotTopics/Pages/Sulphur-2020.aspx"
+      },
+      {
+        "type": "reference",
+        "label": "Heavy Fuel Oil for Ships — Marine Insight",
+        "url": "https://www.marineinsight.com/marine-heavy-fuel-oil-hfo-for-ships-properties-challenges-and-treatment-methods/"
+      },
+      {
+        "type": "reference",
+        "label": "IMO 2020: A Review of the Transition to VLSFOs — Safety4Sea",
+        "url": "https://safety4sea.com/imo-2020-a-review-of-the-transition-to-vlsfos/"
+      }
+    ],
+    "didYouKnow": "Despite ISO 8217 allowing up to 60 ppm of catalytic fines in residual marine fuels, real-world bunker samples have been found containing Al+Si levels as high as 139 mg/kg — more than double the ISO limit and nearly 14 times what major diesel engine manufacturers consider safe for injection equipment, meaning onboard purification is not optional but a critical last line of defense against accelerated liner and injector wear."
   },
   {
     "id": "regulations",
     "title": "Maritime Conventions & Surveys",
     "icon": "📜",
     "category": "certification",
-    "tags": ["SOLAS", "MARPOL", "STCW", "survey", "certificate", "ISM"],
-    "summary": "Maritime conventions, statutory certificates, and survey requirements. Essential regulatory knowledge including SOLAS, MARPOL, STCW, Load Line Convention, and ISM Code. Covers what certificates a vessel must carry and the survey schedule for statutory inspections.",
+    "tags": [
+      "SOLAS",
+      "MARPOL",
+      "STCW",
+      "survey",
+      "certificate",
+      "ISM"
+    ],
+    "summary": "Maritime Conventions & Surveys form the legal and operational backbone of global shipping, with SOLAS, MARPOL, STCW, and the ISM Code collectively mandating minimum standards for vessel construction, pollution prevention, crew competency, and safety management systems. The ISM Code, incorporated into SOLAS Chapter IX since 1994, requires every shipowner or \"Company\" to implement a documented Safety Management System (SMS), evidenced by a Document of Compliance (DOC) valid for 5 years and a vessel-specific Safety Management Certificate (SMC) subject to intermediate audit. Statutory surveys are conducted by Flag State Administrations or Recognized Organizations (ROs) under the Harmonized System of Survey and Certification (HSSC). Port State Control (PSC) inspections form a complementary enforcement layer, where foreign vessels are inspected against up to 40 statutory certificates and documents, and deficiencies can lead to detentions.",
     "keyTopics": [
       "SOLAS — Safety of Life at Sea",
       "MARPOL — Marine Pollution prevention",
       "STCW — Seafarer certification standards",
       "ISM Code — Safety management system",
       "Statutory certificates and their validity",
-      "Survey schedule (Annual, Intermediate, Special)"
+      "Survey schedule (Annual, Intermediate, Special)",
+      "Harmonized System of Survey and Certification (HSSC) — IMO framework aligning survey intervals across conventions",
+      "Enhanced Survey Programme (ESP) — mandatory in-water and dry-dock survey regime for aging bulk carriers and tankers",
+      "Recognized Organizations (ROs) and Delegated Authority — how Flag States authorize classification societies",
+      "Port State Control (PSC) MOU Regimes — Paris MOU, Tokyo MOU, USCG and how detention records affect risk profile",
+      "Document of Compliance (DOC) vs Safety Management Certificate (SMC) — distinct ISM certificates with separate audit cycles"
     ],
     "difficulty": "Intermediate",
     "fileCount": 5,
     "sourceDir": "条約、証書等の規則関連",
     "externalLinks": [
-      { "type": "youtube", "label": "LSA Equipment and SOLAS Requirements", "url": "https://www.youtube.com/watch?v=w6OII3-R0B4" },
-      { "type": "youtube", "label": "Oily Water Separator (OWS) Explained", "url": "https://www.youtube.com/watch?v=_fAkwpgFGRU" },
-      { "type": "wikipedia", "label": "SOLAS — Wikipedia", "url": "https://en.wikipedia.org/wiki/SOLAS_Convention" },
-      { "type": "wikipedia", "label": "MARPOL — Wikipedia", "url": "https://en.wikipedia.org/wiki/MARPOL_73/78" },
-      { "type": "reference", "label": "IMO Official Website", "url": "https://www.imo.org/" }
-    ]
+      {
+        "type": "youtube",
+        "label": "LSA Equipment and SOLAS Requirements",
+        "url": "https://www.youtube.com/watch?v=w6OII3-R0B4"
+      },
+      {
+        "type": "youtube",
+        "label": "Oily Water Separator (OWS) Explained",
+        "url": "https://www.youtube.com/watch?v=_fAkwpgFGRU"
+      },
+      {
+        "type": "wikipedia",
+        "label": "SOLAS — Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/SOLAS_Convention"
+      },
+      {
+        "type": "wikipedia",
+        "label": "MARPOL — Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/MARPOL_73/78"
+      },
+      {
+        "type": "reference",
+        "label": "IMO Official Website",
+        "url": "https://www.imo.org/"
+      },
+      {
+        "type": "reference",
+        "label": "Statutory Certificates to be Carried by a Ship — DieselShip",
+        "url": "https://dieselship.com/management/statutory-certificates"
+      },
+      {
+        "type": "reference",
+        "label": "40 Ship Certificates Checked in a PSC Survey — Marine Insight",
+        "url": "https://www.marineinsight.com/maritime-law/40-ship-certificates-and-documents-that-are-checked-in-a-port-state-control-psc-survey/"
+      }
+    ],
+    "didYouKnow": "The ISM Code's Document of Compliance (DOC) is issued to the Company, not the ship — meaning if a shipping company loses its DOC following a failed audit, every vessel in its fleet simultaneously loses the right to operate commercially, regardless of the individual condition of each ship."
   },
   {
     "id": "switchboard",
     "title": "Switchboard & Power Distribution",
     "icon": "🔲",
     "category": "electrical",
-    "tags": ["switchboard", "MSB", "ESB", "power distribution", "bus bar"],
-    "summary": "Main switchboard (MSB) and emergency switchboard (ESB) power distribution systems. Covers bus bar configuration, circuit breaker operation, power distribution topology on merchant vessels, and practical electrical panel maintenance.",
+    "tags": [
+      "switchboard",
+      "MSB",
+      "ESB",
+      "power distribution",
+      "bus bar"
+    ],
+    "summary": "The ship's Main Switchboard (MSB) is the central nerve of the vessel's power distribution system, receiving electrical power from alternators and redistributing it to all consumers through a tiered hierarchy of bus bars, Air Circuit Breakers (ACBs), and sub-distribution boards. Under IACS and SOLAS Chapter II-1 regulations, the MSB must be constructible in at least two independent sections — each fed by at least one generator — so that a fault on one section does not cause a total blackout, and access doors must open outward with dead-front construction. The Emergency Switchboard (ESB) is physically segregated from the MSB, connected via a bus-tie breaker with a hard interlock; SOLAS requires the ESB to automatically connect to its emergency source within 45 seconds of main power loss. Copper bus bars replace conventional wiring inside both boards, and IACS now mandates online continuous temperature monitoring of bus bar joints.",
     "keyTopics": [
       "Main Switchboard (MSB) layout and operation",
       "Emergency Switchboard (ESB) configuration",
       "Bus bar systems and power distribution",
       "Circuit breaker types and operation",
-      "Electrical panel maintenance"
+      "Electrical panel maintenance",
+      "Preferential tripping and automatic load-shedding schemes",
+      "Bus-tie breaker interlocking and dead-bus closing procedure",
+      "Synchroscope and synchronizing panel — manual vs. auto-synchronization",
+      "Earth fault detection on IT (insulated) distribution networks",
+      "IACS Unified Requirement E11/E12 — HV switchboard and zone classification"
     ],
     "difficulty": "Intermediate",
     "fileCount": 4,
     "sourceDir": "配電盤",
     "externalLinks": [
-      { "type": "youtube", "label": "Ship's Switchboard & Emergency Power Distribution", "url": "https://www.youtube.com/watch?v=VATiXnmPNek" },
-      { "type": "youtube", "label": "How Electricity is Generated on Ships", "url": "https://www.youtube.com/watch?v=eRRChImarPw" },
-      { "type": "wikipedia", "label": "Switchboard (Electrical) — Wikipedia", "url": "https://en.wikipedia.org/wiki/Switchboard_(electrical)" },
-      { "type": "reference", "label": "Power Generated & Supplied on Ships — Marine Insight", "url": "https://www.marineinsight.com/how-is-power-generated-and-supplied-on-a-ship/" }
-    ]
+      {
+        "type": "youtube",
+        "label": "Ship's Switchboard & Emergency Power Distribution",
+        "url": "https://www.youtube.com/watch?v=VATiXnmPNek"
+      },
+      {
+        "type": "youtube",
+        "label": "How Electricity is Generated on Ships",
+        "url": "https://www.youtube.com/watch?v=eRRChImarPw"
+      },
+      {
+        "type": "wikipedia",
+        "label": "Switchboard (Electrical) — Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Switchboard_(electrical)"
+      },
+      {
+        "type": "reference",
+        "label": "Power Generated & Supplied on Ships — Marine Insight",
+        "url": "https://www.marineinsight.com/how-is-power-generated-and-supplied-on-a-ship/"
+      },
+      {
+        "type": "reference",
+        "label": "Main Switchboard Safety Devices — Marine Insight",
+        "url": "https://www.marineinsight.com/marine-electrical/what-are-the-main-safety-devices-for-main-switch-board-on-ship/"
+      },
+      {
+        "type": "reference",
+        "label": "Preferential Tripping in Marine Electrical Distribution — DieselShip",
+        "url": "https://dieselship.com/marine-technical-articles/marine-electro-technology/preferential-tripping-in-a-marine-electrical-distribution-system"
+      },
+      {
+        "type": "reference",
+        "label": "Busbar Inspection and Maintenance on Ships — Marine Insight",
+        "url": "https://www.marineinsight.com/marine-electrical/how-to-do-busbar-inspection-and-maintenance-on-ships/"
+      }
+    ],
+    "didYouKnow": "Many ships can demonstrate a satisfactory sequential-test of the emergency generator on a \"Routine Test Switch\" (RTS) — yet when an actual blackout is simulated by opening the MSB bus-tie, the emergency generator fails to auto-start or auto-connect. IACS launched a dedicated focus-inspection campaign after PSCOs found an alarming number of vessels in exactly this condition, meaning crews had a false sense of emergency-power readiness."
   },
   {
     "id": "capac",
     "title": "CAPAC (Cathodic Protection)",
     "icon": "🛡️",
     "category": "auxiliary",
-    "tags": ["CAPAC", "cathodic protection", "electrode", "corrosion"],
-    "summary": "Impressed Current Cathodic Protection (ICCP) system — CAPAC system documentation covering reference electrode assembly, main component functions, and operation manual. Prevents hull corrosion on steel vessels through controlled electric current.",
+    "tags": [
+      "CAPAC",
+      "cathodic protection",
+      "electrode",
+      "corrosion"
+    ],
+    "summary": "CAPAC (Cathodic Protection AC) refers to Impressed Current Cathodic Protection (ICCP) systems used in marine engineering to prevent electrochemical corrosion of ship hulls below the waterline. The system works by injecting a controlled DC current through Mixed Metal Oxide (MMO)-coated titanium anodes mounted flush on the hull, making the entire steel hull a cathode and suppressing galvanic corrosion reactions. Hull potential is continuously monitored by silver/silver-chloride (Ag/AgCl) or high-purity zinc reference electrodes, feeding a microprocessor-based control panel that automatically adjusts output current in response to changes in vessel speed, water salinity, temperature, and paint coating degradation. Unlike sacrificial anode systems renewed in dry-dock, ICCP anodes have a service life of 10–15 years.",
     "keyTopics": [
       "ICCP (Impressed Current Cathodic Protection) principle",
       "CAPAC system components and functions",
       "Reference electrode assembly and maintenance",
-      "Operation manual procedures"
+      "Operation manual procedures",
+      "Mixed Metal Oxide (MMO) titanium anode construction and current output characteristics",
+      "Reference electrode types (Ag/AgCl vs. zinc) and hull potential set-point calibration",
+      "Stray current interference and its effect on required protection current density",
+      "ICCP integration with shaft earthing brushes and propeller bonding to prevent bearing pitting",
+      "IMO and classification society survey requirements for ICCP system certification"
     ],
     "difficulty": "Intermediate",
     "fileCount": 3,
     "sourceDir": "CAPAC",
     "externalLinks": [
-      { "type": "youtube", "label": "Cathodic Protection — Your Ship's Shield Against Corrosion", "url": "https://www.youtube.com/watch?v=42NJ2-bDmwE" },
-      { "type": "youtube", "label": "Maritime Training: Oily Water Separator", "url": "https://www.youtube.com/watch?v=qeysZVAKJgg" },
-      { "type": "wikipedia", "label": "Cathodic Protection — Wikipedia", "url": "https://en.wikipedia.org/wiki/Cathodic_protection" },
-      { "type": "reference", "label": "Hull Corrosion & ICCP on Ships — Marine Insight", "url": "https://www.marineinsight.com/hull-corrosion-and-impressed-current-cathodic-protection-iccp-on-ships-construction-and-working/" }
-    ]
+      {
+        "type": "youtube",
+        "label": "Cathodic Protection — Your Ship's Shield Against Corrosion",
+        "url": "https://www.youtube.com/watch?v=42NJ2-bDmwE"
+      },
+      {
+        "type": "youtube",
+        "label": "Maritime Training: Oily Water Separator",
+        "url": "https://www.youtube.com/watch?v=qeysZVAKJgg"
+      },
+      {
+        "type": "wikipedia",
+        "label": "Cathodic Protection — Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Cathodic_protection"
+      },
+      {
+        "type": "reference",
+        "label": "Hull Corrosion & ICCP on Ships — Marine Insight",
+        "url": "https://www.marineinsight.com/hull-corrosion-and-impressed-current-cathodic-protection-iccp-on-ships-construction-and-working/"
+      },
+      {
+        "type": "reference",
+        "label": "Impressed Current Cathodic Protection (ICCP) on Ships — DieselShip",
+        "url": "https://dieselship.co.uk/marine-electro-technology-marine-technical-articles/impressed-current-cathodic-protection-iccp-on-ships"
+      },
+      {
+        "type": "reference",
+        "label": "CAPAC ICCP Systems — Official CAPAC Site",
+        "url": "https://www.capac.eu/"
+      }
+    ],
+    "didYouKnow": "An ICCP system on a large tanker or bulk carrier can deliver protection across an underwater hull area exceeding 10,000 square meters using only four to eight flush-mounted anodes — each no larger than a dinner plate — by exploiting the high electrical conductivity of seawater to spread current uniformly across the entire submerged surface."
   },
   {
     "id": "turbine-plant",
@@ -641,8 +1657,16 @@
     "icon": "💨",
     "category": "machinery",
     "localImage": "img/topics/turbine-plant-overview.jpg",
-    "tags": ["turbine", "steam", "12MPa", "LNG", "boiler", "condenser", "gland steam"],
-    "summary": "Comprehensive steam turbine plant reference for LNG carrier engineers. Covers the full 12MPa high-pressure steam cycle from boiler to condenser, turbine plant layout and system overview, gland steam sealing, de-aerator operation, and auxiliary steam systems. Based on NYK turbine plant textbooks and onboard supplementary materials updated through 2025.",
+    "tags": [
+      "turbine",
+      "steam",
+      "12MPa",
+      "LNG",
+      "boiler",
+      "condenser",
+      "gland steam"
+    ],
+    "summary": "The marine steam turbine propulsion plant, dominant on LNG carriers from the 1960s through the early 2000s, typically consists of two oil/gas-fired water-tube boilers generating high-pressure superheated steam at 60–70 bar and around 510–520°C, feeding a cross-compound impulse-reaction turbine arrangement — a high-pressure (HP) turbine and a low-pressure (LP) turbine on separate shafts — both connected to a single propeller shaft through a double-reduction gear. The fundamental appeal of steam propulsion on LNG carriers is the seamless combustion of boil-off gas (BOG) directly in the main boilers, eliminating the need for complex cargo reliquefaction systems. Critical auxiliary systems include the de-aerator (which uses bled steam to scavenge dissolved oxygen from feedwater) and the gland steam condenser (which captures shaft seal leakoff steam at roughly 0.3–0.5 bar to maintain casing vacuum integrity). Despite thermal efficiencies of only 28–35%, the simplicity and dual-fuel flexibility kept steam propulsion preferred until high-efficiency two-stroke dual-fuel engines began displacing it after 2004.",
     "keyTopics": [
       "12MPa high-pressure steam turbine plant overview",
       "Steam cycle: boiler → turbine → condenser",
@@ -650,68 +1674,189 @@
       "Gland steam sealing system",
       "De-aerator and feed water heating",
       "Auxiliary steam systems (heating, services)",
-      "Turbine plant for navigation officers (non-engineer overview)"
+      "Turbine plant for navigation officers (non-engineer overview)",
+      "Cross-compound turbine arrangement (HP and LP turbines on separate shafts connected via double-reduction gear)",
+      "Boil-off gas (BOG) combustion in main boilers and its role in eliminating cargo reliquefaction",
+      "Gland steam sealing system — shaft seal steam at 0.3–0.5 bar to maintain condenser vacuum",
+      "De-aerator function — bled-steam oxygen scavenging and feedwater preheating before boiler entry",
+      "Thermal efficiency limitation (~28–35%) and the shift to dual-fuel diesel-electric propulsion post-2004"
     ],
     "difficulty": "Advanced",
     "fileCount": 5,
     "sourceDir": "Turbin plant",
     "externalLinks": [
-      { "type": "youtube", "label": "Steam Turbine — LNG Ship Engine Room Tour", "url": "https://www.youtube.com/watch?v=RDRVh8AFC3c" },
-      { "type": "youtube", "label": "Inside the Heart of a Steam LNG Ship", "url": "https://www.youtube.com/watch?v=tmBSiSdSNpU" },
-      { "type": "youtube", "label": "How a Steam Turbine Works (Animated)", "url": "https://www.youtube.com/watch?v=LBMecPPHaKI" },
-      { "type": "wikipedia", "label": "Steam Turbine — Wikipedia", "url": "https://en.wikipedia.org/wiki/Steam_turbine" },
-      { "type": "wikipedia", "label": "Rankine Cycle — Wikipedia", "url": "https://en.wikipedia.org/wiki/Rankine_cycle" },
-      { "type": "reference", "label": "Steam Turbine on Ship — Marine Insight", "url": "https://www.marineinsight.com/steam-turbine-on-ship/" }
-    ]
+      {
+        "type": "youtube",
+        "label": "Steam Turbine — LNG Ship Engine Room Tour",
+        "url": "https://www.youtube.com/watch?v=RDRVh8AFC3c"
+      },
+      {
+        "type": "youtube",
+        "label": "Inside the Heart of a Steam LNG Ship",
+        "url": "https://www.youtube.com/watch?v=tmBSiSdSNpU"
+      },
+      {
+        "type": "youtube",
+        "label": "How a Steam Turbine Works (Animated)",
+        "url": "https://www.youtube.com/watch?v=LBMecPPHaKI"
+      },
+      {
+        "type": "wikipedia",
+        "label": "Steam Turbine — Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Steam_turbine"
+      },
+      {
+        "type": "wikipedia",
+        "label": "Rankine Cycle — Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Rankine_cycle"
+      },
+      {
+        "type": "reference",
+        "label": "Steam Turbine on Ship — Marine Insight",
+        "url": "https://www.marineinsight.com/steam-turbine-on-ship/"
+      },
+      {
+        "type": "reference",
+        "label": "Steam Turbine LNG Carriers Explained — LNG Navigator",
+        "url": "https://lngnavigator.eu/steam-turbine-lng-carriers-explained/"
+      },
+      {
+        "type": "reference",
+        "label": "Options and Evaluations on Propulsion Systems of LNG Carriers — IntechOpen",
+        "url": "https://www.intechopen.com/chapters/64509"
+      }
+    ],
+    "didYouKnow": "The high-pressure steam turbine on a large LNG carrier spins at approximately 3,000–6,000 RPM, but the propeller it drives turns at only around 80–100 RPM — meaning the double-reduction gear inside the gearbox must achieve a total speed reduction ratio of up to 60:1 in just two meshing stages, transmitting tens of thousands of shaft horsepower through gears no larger than a small room."
   },
   {
     "id": "elevator",
     "title": "Ship Elevator Systems",
     "icon": "🛗",
     "category": "auxiliary",
-    "tags": ["elevator", "lift", "limit switch", "maintenance", "accommodation"],
-    "summary": "Ship elevator (lift) structure, safety systems, and maintenance procedures. Covers various elevator designs found on merchant vessels, door limit switch functions and testing, safety interlocks, and routine maintenance inspection items. A niche but exam-relevant topic for engineers managing accommodation and cargo lift systems.",
+    "tags": [
+      "elevator",
+      "lift",
+      "limit switch",
+      "maintenance",
+      "accommodation"
+    ],
+    "summary": "Ship elevators serve as critical vertical transportation systems aboard passenger vessels, cruise ships, cargo ships, and offshore units, handling both personnel and freight between decks spanning up to 55 m and 24 deck levels at speeds up to 1.6 m/s. Unlike shore-based installations, marine elevators must withstand ship motion, saltwater-laden atmospheres, and vibration, while complying with SOLAS Chapter II-2 Regulation 9.2.5.2, which mandates that lift trunks be fitted to prevent smoke and flame passage between decks. A significant regulatory gap existed: as of 2021, there was no SOLAS provision specifically governing the use, maintenance, or safety of shipboard elevators — leading IMO MSC 106 (November 2022) to assign the SSE Sub-Committee to develop dedicated measures. Classification societies such as DNV and Bureau Veritas certify marine elevators against ISO 8383 and EN 81-20.",
     "keyTopics": [
       "Elevator structural types on merchant vessels",
       "Door limit switch roles and testing",
       "Safety interlock systems",
       "Routine maintenance and inspection checklist",
-      "Electrical control circuit overview"
+      "Electrical control circuit overview",
+      "ISO 8383 and EN 81-20 certification for marine elevators by classification societies",
+      "SOLAS Chapter II-2 Regulation 9.2.5.2 — lift trunk fire and smoke containment requirements",
+      "Machine-room-less (MRL) marine elevator design and EcoDisc traction technology",
+      "IMO MSC 106 / SSE Sub-Committee regulatory gap initiative for shipboard elevator safety",
+      "Annual safety inspections — motor, brake, cable, limit switch, and safety device checks per EN 81 requirements"
     ],
     "difficulty": "Beginner",
     "fileCount": 3,
     "sourceDir": "Elevator",
     "externalLinks": [
-      { "type": "youtube", "label": "How Ship Deck Cranes and Lifts Work", "url": "https://www.youtube.com/watch?v=m5N3PBvFT-E" },
-      { "type": "wikipedia", "label": "Elevator — Wikipedia", "url": "https://en.wikipedia.org/wiki/Elevator" },
-      { "type": "wikipedia", "label": "Limit Switch — Wikipedia", "url": "https://en.wikipedia.org/wiki/Limit_switch" },
-      { "type": "reference", "label": "Ship Machinery Spaces — Marine Insight", "url": "https://www.marineinsight.com/tech/ship-machinery-spaces/" }
-    ]
+      {
+        "type": "youtube",
+        "label": "How Ship Deck Cranes and Lifts Work",
+        "url": "https://www.youtube.com/watch?v=m5N3PBvFT-E"
+      },
+      {
+        "type": "wikipedia",
+        "label": "Elevator — Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Elevator"
+      },
+      {
+        "type": "wikipedia",
+        "label": "Limit Switch — Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Limit_switch"
+      },
+      {
+        "type": "reference",
+        "label": "Ship Machinery Spaces — Marine Insight",
+        "url": "https://www.marineinsight.com/tech/ship-machinery-spaces/"
+      },
+      {
+        "type": "reference",
+        "label": "IMO MSC 106: Development of Measures for Safe Operation of Elevators on Ships",
+        "url": "https://www.imo.org/en/mediacentre/meetingsummaries/pages/msc-106.aspx"
+      },
+      {
+        "type": "reference",
+        "label": "DNV: New SOLAS Regulation for Lifting Appliances from 1 January 2026",
+        "url": "https://www.dnv.com/news/2025/new-safety-requirements-for-onboard-lifting-appliances-from-1-january-2026"
+      }
+    ],
+    "didYouKnow": "As of 2021, there was no dedicated provision anywhere in the SOLAS Convention governing the safety, maintenance, or operation of elevators on board ships — meaning that most maritime nations relied entirely on land-based elevator standards (EN 81-20) adapted by classification societies. IMO only formally tasked its SSE Sub-Committee to close this gap after MSC 106 in November 2022."
   },
   {
     "id": "sensors",
     "title": "Sensors & Instrumentation",
     "icon": "🌡️",
     "category": "engineering",
-    "tags": ["sensor", "RTD", "Pt100", "temperature", "switch", "instrumentation"],
-    "summary": "Marine instrumentation fundamentals covering sensor types, RTD (Resistance Temperature Detector) theory and selection, three-wire measurement circuits, and the differences between sensors and switches in engine room automation. RTD Pt100 is the standard temperature sensor on modern vessels and a common licensing exam topic.",
+    "tags": [
+      "sensor",
+      "RTD",
+      "Pt100",
+      "temperature",
+      "switch",
+      "instrumentation"
+    ],
+    "summary": "Marine sensors and instrumentation form the nervous system of modern ship automation, with Resistance Temperature Detectors (RTDs) — particularly the Pt100 platinum sensor — serving as the dominant temperature measurement technology in engine rooms due to their superior stability and repeatability. The Pt100's resistance changes at approximately 0.385 Ω per degree Celsius, which means even a short cable run of 50 meters can introduce lead resistance errors exceeding 3°C if a 2-wire configuration is used; marine installations therefore default to 3-wire or 4-wire circuits with Wheatstone bridge compensation, or use in-head 4–20 mA transmitters. Integrated Automation Systems (IAS) from manufacturers such as Kongsberg (K-Chief 600), Wärtsilä, and ABB aggregate signals from hundreds of sensors into a single alarm-logging platform certified by IACS for Periodically Unattended Machinery Space (UMS) operation.",
     "keyTopics": [
       "Sensor types: contact vs non-contact",
       "RTD (Resistance Temperature Detector) — Pt100 principle",
       "3-wire RTD circuit and lead resistance compensation",
       "RTD selection criteria (range, accuracy, response time)",
       "Sensors vs switches — functional differences",
-      "Common engine room sensor applications"
+      "Common engine room sensor applications",
+      "3-wire vs 4-wire RTD lead-resistance compensation in shipboard installations",
+      "4–20 mA current loop signal transmission and advantages over voltage signals over long cable runs",
+      "Periodically Unattended Machinery Space (UMS) classification and the sensor redundancy requirements it imposes",
+      "Callendar–Van Dusen equation and its use in linearising Pt100 resistance-to-temperature conversion",
+      "ATEX / IECEx intrinsic safety certification for sensors in hazardous zones on tankers and gas carriers"
     ],
     "difficulty": "Intermediate",
     "fileCount": 4,
     "sourceDir": "senser センサー",
     "externalLinks": [
-      { "type": "youtube", "label": "How RTD Temperature Sensors Work", "url": "https://www.youtube.com/watch?v=0aFnSRL1PBs" },
-      { "type": "youtube", "label": "Industrial Sensors Explained — Basics of Automation", "url": "https://www.youtube.com/watch?v=fKFWj4QL0bI" },
-      { "type": "wikipedia", "label": "Resistance Thermometer (RTD) — Wikipedia", "url": "https://en.wikipedia.org/wiki/Resistance_thermometer" },
-      { "type": "wikipedia", "label": "Sensor — Wikipedia", "url": "https://en.wikipedia.org/wiki/Sensor" },
-      { "type": "reference", "label": "Temperature Measurement on Ships — Marine Insight", "url": "https://www.marineinsight.com/tech/temperature-measurement-on-ships/" }
-    ]
+      {
+        "type": "youtube",
+        "label": "How RTD Temperature Sensors Work",
+        "url": "https://www.youtube.com/watch?v=0aFnSRL1PBs"
+      },
+      {
+        "type": "youtube",
+        "label": "Industrial Sensors Explained — Basics of Automation",
+        "url": "https://www.youtube.com/watch?v=fKFWj4QL0bI"
+      },
+      {
+        "type": "wikipedia",
+        "label": "Resistance Thermometer (RTD) — Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Resistance_thermometer"
+      },
+      {
+        "type": "wikipedia",
+        "label": "Sensor — Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Sensor"
+      },
+      {
+        "type": "reference",
+        "label": "Temperature Measurement on Ships — Marine Insight",
+        "url": "https://www.marineinsight.com/tech/temperature-measurement-on-ships/"
+      },
+      {
+        "type": "reference",
+        "label": "Integrated Automation System IAS — SEANAV",
+        "url": "https://seanav.org/integrated-automation-system-ias/"
+      },
+      {
+        "type": "reference",
+        "label": "Lead Compensation Techniques for RTDs: 2-Wire, 3-Wire, and 4-Wire Explained — Define Instruments",
+        "url": "https://defineinstruments.com/blog/lead-compensation-techniques-for-rtds/"
+      }
+    ],
+    "didYouKnow": "A bare Pt100 sensor changes resistance by only 0.385 Ω per °C — roughly the same as a few centimetres of ordinary copper wire — which means a 100-metre cable run in a ship's engine room can introduce an uncorrected temperature error of more than 7°C if a simple 2-wire circuit is used; this is why virtually every marine installation mandates either a 3-wire bridge circuit or a 4-wire Kelvin connection to cancel lead resistance entirely."
   }
 ]
