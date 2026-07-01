@@ -171,6 +171,10 @@ function buildTopicDetail(topic) {
       </div>
     </div>`;
 
+  const localImgHtml = topic.localImage
+    ? `<div class="detail-local-img"><img src="${topic.localImage}" alt="${escapeHtml(topic.title)}" loading="lazy"></div>`
+    : '';
+
   return `
     <div class="detail-hero">
       <div class="detail-header">
@@ -185,6 +189,7 @@ function buildTopicDetail(topic) {
         </div>
       </div>
       <p class="detail-summary">${topic.summary}</p>
+      ${localImgHtml}
     </div>
 
     <div class="detail-grid">

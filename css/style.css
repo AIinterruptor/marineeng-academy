@@ -340,6 +340,19 @@ a:hover { color: #93c5fd; }
   font-size: 1.05rem; color: var(--text2); line-height: 1.8;
   max-width: 800px;
 }
+.detail-local-img {
+  margin-top: 16px;
+  border-radius: var(--radius);
+  overflow: hidden;
+  max-width: 700px;
+  border: 1px solid var(--border);
+}
+.detail-local-img img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
 .detail-grid {
   display: grid; grid-template-columns: 2fr 1fr;
   gap: 24px;

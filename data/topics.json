@@ -286,6 +286,7 @@
     "title": "LSA & Fire Fighting Equipment",
     "icon": "🧯",
     "category": "safety",
+    "localImage": "img/topics/lsa-foam-line.png",
     "tags": ["fire", "lifeboat", "CO2", "foam", "BA", "SOLAS", "LSA"],
     "summary": "Life Saving Appliances (LSA) and Fire Fighting Equipment (FFE) covering lifeboat launching, BA compressor testing, fixed foam system, CO2 system operation, fire hose pressure testing, fire detector testing (Autronica), high-expansion foam systems, dry chemical powder extinguishers, and SOFTEX water mist systems. SOLAS-mandatory knowledge.",
     "keyTopics": [
@@ -342,6 +343,7 @@
     "title": "Refrigeration & Air Conditioning",
     "icon": "❄️",
     "category": "auxiliary",
+    "localImage": "img/topics/refrigeration-compressor-overhaul.jpg",
     "tags": ["refrigeration", "provision", "refrigerant", "compressor", "R404A", "R449a"],
     "summary": "Provision refrigeration and air conditioning systems covering refrigerant types (R404A, R449a), Mollier diagram interpretation, compressor overhaul procedures, refrigerant leak detection, refrigeration oil properties, and the regulatory transition to HFO-free refrigerants. Includes photo-documented compressor overhaul.",
     "keyTopics": [
@@ -444,6 +446,7 @@
     "title": "Control Engineering & PID",
     "icon": "📊",
     "category": "engineering",
+    "localImage": "img/topics/control-pid-diagram.png",
     "tags": ["PID", "control", "automation", "feedback", "sensor"],
     "summary": "Control engineering fundamentals applied to marine systems. Covers PID (Proportional-Integral-Derivative) control theory, feedback control loops, sensors including RTDs (resistance temperature detectors), flow meters (oval gear type), and practical automation system knowledge required for the 3AE licensing exam automation module.",
     "keyTopics": [
@@ -630,6 +633,85 @@
       { "type": "youtube", "label": "Maritime Training: Oily Water Separator", "url": "https://www.youtube.com/watch?v=qeysZVAKJgg" },
       { "type": "wikipedia", "label": "Cathodic Protection — Wikipedia", "url": "https://en.wikipedia.org/wiki/Cathodic_protection" },
       { "type": "reference", "label": "Hull Corrosion & ICCP on Ships — Marine Insight", "url": "https://www.marineinsight.com/hull-corrosion-and-impressed-current-cathodic-protection-iccp-on-ships-construction-and-working/" }
+    ]
+  },
+  {
+    "id": "turbine-plant",
+    "title": "Steam Turbine Plant",
+    "icon": "💨",
+    "category": "machinery",
+    "localImage": "img/topics/turbine-plant-overview.jpg",
+    "tags": ["turbine", "steam", "12MPa", "LNG", "boiler", "condenser", "gland steam"],
+    "summary": "Comprehensive steam turbine plant reference for LNG carrier engineers. Covers the full 12MPa high-pressure steam cycle from boiler to condenser, turbine plant layout and system overview, gland steam sealing, de-aerator operation, and auxiliary steam systems. Based on NYK turbine plant textbooks and onboard supplementary materials updated through 2025.",
+    "keyTopics": [
+      "12MPa high-pressure steam turbine plant overview",
+      "Steam cycle: boiler → turbine → condenser",
+      "Turbine plant general arrangement and piping",
+      "Gland steam sealing system",
+      "De-aerator and feed water heating",
+      "Auxiliary steam systems (heating, services)",
+      "Turbine plant for navigation officers (non-engineer overview)"
+    ],
+    "difficulty": "Advanced",
+    "fileCount": 5,
+    "sourceDir": "Turbin plant",
+    "externalLinks": [
+      { "type": "youtube", "label": "Steam Turbine — LNG Ship Engine Room Tour", "url": "https://www.youtube.com/watch?v=RDRVh8AFC3c" },
+      { "type": "youtube", "label": "Inside the Heart of a Steam LNG Ship", "url": "https://www.youtube.com/watch?v=tmBSiSdSNpU" },
+      { "type": "youtube", "label": "How a Steam Turbine Works (Animated)", "url": "https://www.youtube.com/watch?v=LBMecPPHaKI" },
+      { "type": "wikipedia", "label": "Steam Turbine — Wikipedia", "url": "https://en.wikipedia.org/wiki/Steam_turbine" },
+      { "type": "wikipedia", "label": "Rankine Cycle — Wikipedia", "url": "https://en.wikipedia.org/wiki/Rankine_cycle" },
+      { "type": "reference", "label": "Steam Turbine on Ship — Marine Insight", "url": "https://www.marineinsight.com/steam-turbine-on-ship/" }
+    ]
+  },
+  {
+    "id": "elevator",
+    "title": "Ship Elevator Systems",
+    "icon": "🛗",
+    "category": "auxiliary",
+    "tags": ["elevator", "lift", "limit switch", "maintenance", "accommodation"],
+    "summary": "Ship elevator (lift) structure, safety systems, and maintenance procedures. Covers various elevator designs found on merchant vessels, door limit switch functions and testing, safety interlocks, and routine maintenance inspection items. A niche but exam-relevant topic for engineers managing accommodation and cargo lift systems.",
+    "keyTopics": [
+      "Elevator structural types on merchant vessels",
+      "Door limit switch roles and testing",
+      "Safety interlock systems",
+      "Routine maintenance and inspection checklist",
+      "Electrical control circuit overview"
+    ],
+    "difficulty": "Beginner",
+    "fileCount": 3,
+    "sourceDir": "Elevator",
+    "externalLinks": [
+      { "type": "youtube", "label": "How Ship Deck Cranes and Lifts Work", "url": "https://www.youtube.com/watch?v=m5N3PBvFT-E" },
+      { "type": "wikipedia", "label": "Elevator — Wikipedia", "url": "https://en.wikipedia.org/wiki/Elevator" },
+      { "type": "wikipedia", "label": "Limit Switch — Wikipedia", "url": "https://en.wikipedia.org/wiki/Limit_switch" },
+      { "type": "reference", "label": "Ship Machinery Spaces — Marine Insight", "url": "https://www.marineinsight.com/tech/ship-machinery-spaces/" }
+    ]
+  },
+  {
+    "id": "sensors",
+    "title": "Sensors & Instrumentation",
+    "icon": "🌡️",
+    "category": "engineering",
+    "tags": ["sensor", "RTD", "Pt100", "temperature", "switch", "instrumentation"],
+    "summary": "Marine instrumentation fundamentals covering sensor types, RTD (Resistance Temperature Detector) theory and selection, three-wire measurement circuits, and the differences between sensors and switches in engine room automation. RTD Pt100 is the standard temperature sensor on modern vessels and a common licensing exam topic.",
+    "keyTopics": [
+      "Sensor types: contact vs non-contact",
+      "RTD (Resistance Temperature Detector) — Pt100 principle",
+      "3-wire RTD circuit and lead resistance compensation",
+      "RTD selection criteria (range, accuracy, response time)",
+      "Sensors vs switches — functional differences",
+      "Common engine room sensor applications"
+    ],
+    "difficulty": "Intermediate",
+    "fileCount": 4,
+    "sourceDir": "senser センサー",
+    "externalLinks": [
+      { "type": "youtube", "label": "How RTD Temperature Sensors Work", "url": "https://www.youtube.com/watch?v=0aFnSRL1PBs" },
+      { "type": "youtube", "label": "Industrial Sensors Explained — Basics of Automation", "url": "https://www.youtube.com/watch?v=fKFWj4QL0bI" },
+      { "type": "wikipedia", "label": "Resistance Thermometer (RTD) — Wikipedia", "url": "https://en.wikipedia.org/wiki/Resistance_thermometer" },
+      { "type": "wikipedia", "label": "Sensor — Wikipedia", "url": "https://en.wikipedia.org/wiki/Sensor" },
+      { "type": "reference", "label": "Temperature Measurement on Ships — Marine Insight", "url": "https://www.marineinsight.com/tech/temperature-measurement-on-ships/" }
     ]
   }
 ]
