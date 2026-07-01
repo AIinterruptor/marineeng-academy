@@ -40,6 +40,8 @@ a:hover { color: #93c5fd; }
   background: rgba(10,14,26,0.92);
   backdrop-filter: blur(16px);
   border-bottom: 1px solid var(--border);
+  /* needed for absolute-positioned mobile dropdown */
+  isolation: isolate;
 }
 .nav-inner {
   max-width: 1200px; margin: 0 auto;
@@ -494,26 +496,143 @@ a:hover { color: #93c5fd; }
 ::-webkit-scrollbar-track { background: var(--bg); }
 ::-webkit-scrollbar-thumb { background: var(--border2); border-radius: 3px; }
 
+/* ─── HAMBURGER ──────────────────────────────────────────────────── */
+.nav-hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  background: none;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 8px 10px;
+  cursor: pointer;
+  flex-shrink: 0;
+  margin-left: 8px;
+}
+.nav-hamburger span {
+  display: block;
+  width: 20px;
+  height: 2px;
+  background: var(--text2);
+  border-radius: 2px;
+  transition: all 0.25s;
+  transform-origin: center;
+}
+.nav-hamburger.is-open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.nav-hamburger.is-open span:nth-child(2) { opacity: 0; transform: scaleX(0); }
+.nav-hamburger.is-open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
 /* ─── RESPONSIVE ─────────────────────────────────────────────────── */
 @media (max-width: 900px) {
+  /* Navbar */
+  .nav-inner { gap: 12px; padding: 0 16px; }
+  .nav-hamburger { display: flex; }
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 64px;
+    left: 0; right: 0;
+    background: rgba(10,14,26,0.97);
+    backdrop-filter: blur(16px);
+    border-bottom: 1px solid var(--border);
+    flex-direction: column;
+    gap: 4px;
+    padding: 12px 16px;
+    z-index: 99;
+  }
+  .nav-links.nav-open { display: flex; }
+  .nav-link { padding: 10px 14px; font-size: 0.95rem; }
+  .nav-search { margin-left: auto; }
+  .search-input { width: 130px; }
+  .search-input:focus { width: 170px; }
+
+  /* Hero */
   .hero {
     grid-template-columns: 1fr;
-    padding: 60px 24px;
+    padding: 48px 16px 40px;
     text-align: center;
+    gap: 32px;
   }
-  .hero-subtitle { margin: 0 auto 32px; }
+  .hero-subtitle { margin: 0 auto 28px; font-size: 1rem; }
   .hero-actions { justify-content: center; }
-  .hero-stats { justify-content: center; }
+  .hero-stats { justify-content: center; gap: 16px; }
+  .stat-num { font-size: 1.3rem; }
   .hero-visual { display: none; }
-  .about-inner { grid-template-columns: 1fr; }
+
+  /* Layout */
+  .container { padding: 0 16px; }
+  .about-inner { grid-template-columns: 1fr; gap: 32px; }
   .detail-grid { grid-template-columns: 1fr; }
-  .nav-links { display: none; }
-  .search-input { width: 160px; }
-  .search-input:focus { width: 200px; }
+  .categories { padding: 48px 0 56px; }
 }
+
 @media (max-width: 600px) {
-  .topic-grid { grid-template-columns: 1fr; }
+  /* Nav brand text shortened on very small screens */
+  .brand-text { font-size: 1rem; }
+
+  /* Grid */
+  .topic-grid { grid-template-columns: 1fr; gap: 14px; }
   .about-cards { grid-template-columns: 1fr 1fr; }
-  .detail-hero { padding: 24px; }
-  .detail-header { flex-direction: column; }
+
+  /* Topic detail */
+  .detail-hero { padding: 20px 16px; }
+  .detail-header { flex-direction: column; gap: 12px; }
+  .detail-icon { font-size: 2.2rem; }
+  .detail-title-area h1 { font-size: 1.5rem; }
+  #topicDetailView { padding: 24px 0 60px; }
+
+  /* Hero */
+  .hero { padding: 36px 16px 32px; }
+  .hero-title { font-size: clamp(1.7rem, 7vw, 2.4rem); }
+  .hero-badge { font-size: 0.72rem; }
+  .hero-actions { flex-direction: column; align-items: center; }
+  .btn-primary, .btn-secondary { width: 100%; max-width: 300px; text-align: center; }
+  .hero-stats { gap: 12px; }
+  .stat-divider { display: none; }
+
+  /* Categories */
+  .section-title { font-size: 1.4rem; }
+  .category-pills { gap: 6px; }
+  .pill { padding: 6px 14px; font-size: 0.8rem; }
+
+  /* Cards */
+  .topic-card { padding: 18px 16px; }
+  .card-icon { font-size: 1.5rem; }
+
+  /* External links — allow wrapping */
+  .ext-link { white-space: normal; }
+
+  /* About strip */
+  .about-strip { padding: 48px 0; }
+  .about-text h2 { font-size: 1.4rem; }
+  .a-card { padding: 16px 12px; }
+  .a-icon { font-size: 1.4rem; }
+
+  /* About page */
+  .about-page { margin: 24px 0 60px; }
+  .about-page h1 { font-size: 1.6rem; }
+
+  /* View header */
+  .view-header { padding: 24px 0; }
+  .view-title { font-size: 1.5rem; }
+
+  /* All topics view */
+  #allTopicsView .container { padding-top: 24px; padding-bottom: 60px; }
+
+  /* Exam */
+  .exam-header { padding: 24px 0 20px; }
+  .exam-header h1 { font-size: 1.4rem; }
+  .exam-subtitle { font-size: 0.9rem; }
+  .exam-question { padding: 16px 14px; }
+  .eq-text { font-size: 0.9rem; }
+  .eq-choice { padding: 9px 12px; }
+  .exam-submit-btn { width: 100%; }
+  .score-num { font-size: 2.2rem; }
+
+  /* Search */
+  #searchView { padding: 24px 0 60px; }
+
+  /* Footer */
+  .footer { padding: 24px 0; }
 }

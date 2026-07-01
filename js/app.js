@@ -372,6 +372,23 @@ function scrollToSection(id) {
   if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
 }
 
+// ─── MOBILE MENU ─────────────────────────────────────────────────
+function toggleMenu() {
+  const links = document.getElementById('navLinks');
+  const btn = document.getElementById('navHamburger');
+  const open = links.classList.toggle('nav-open');
+  btn.classList.toggle('is-open', open);
+  btn.setAttribute('aria-expanded', String(open));
+}
+
+function closeMenu() {
+  const links = document.getElementById('navLinks');
+  const btn = document.getElementById('navHamburger');
+  links.classList.remove('nav-open');
+  btn.classList.remove('is-open');
+  btn.setAttribute('aria-expanded', 'false');
+}
+
 // ─── BOARD EXAM ──────────────────────────────────────────────────────
 let examQuestions = [];
 let examAnswers   = {};   // { questionId: 'A'|'B'|'C'|'D' }

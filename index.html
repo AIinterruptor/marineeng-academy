@@ -20,16 +20,19 @@
         <span class="brand-icon">⚓</span>
         <span class="brand-text">MarineEng <span class="brand-accent">Academy</span></span>
       </a>
-      <div class="nav-links">
-        <a href="#" onclick="showHome(); return false;" class="nav-link">Home</a>
-        <a href="#topics" onclick="showAllTopics(); return false;" class="nav-link">Topics</a>
-        <a href="#" onclick="showExam(); return false;" class="nav-link">Board Exam</a>
-        <a href="#about" onclick="showAbout(); return false;" class="nav-link">About</a>
+      <div class="nav-links" id="navLinks">
+        <a href="#" onclick="showHome(); closeMenu(); return false;" class="nav-link">Home</a>
+        <a href="#topics" onclick="showAllTopics(); closeMenu(); return false;" class="nav-link">Topics</a>
+        <a href="#" onclick="showExam(); closeMenu(); return false;" class="nav-link">Board Exam</a>
+        <a href="#about" onclick="showAbout(); closeMenu(); return false;" class="nav-link">About</a>
       </div>
       <div class="nav-search">
         <input type="text" id="globalSearch" placeholder="Search topics..." class="search-input" oninput="handleSearch(this.value)" />
         <span class="search-icon">🔍</span>
       </div>
+      <button class="nav-hamburger" id="navHamburger" onclick="toggleMenu()" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
     </div>
   </nav>
 
