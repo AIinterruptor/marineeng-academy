@@ -22,7 +22,7 @@
       { "type": "youtube", "label": "Marine Boiler Systems Explained: Safety & Operation", "url": "https://www.youtube.com/watch?v=HI-zPzP7I50" },
       { "type": "wikipedia", "label": "Marine Boiler — Wikipedia", "url": "https://en.wikipedia.org/wiki/Marine_steam_engine" },
       { "type": "reference", "label": "Exhaust Gas System of Main Engine — Marine Insight", "url": "https://www.marineinsight.com/main-engine/exhaust-gas-system-of-main-engine-on-ship/" },
-      { "type": "reference", "label": "Boiler Feed Water Contamination — Marine Insight", "url": "https://www.marineinsight.com/tech/boiler/understanding-boiler-feed-water-contamination/" }
+      { "type": "reference", "label": "Boiler Feed Water Contamination — Marine Insight", "url": "https://www.marineinsight.com/understanding-boiler-feed-water-contamination/" }
     ]
   },
   {
@@ -361,8 +361,8 @@
       { "type": "youtube", "label": "Ship's Refrigeration System (3D Animation)", "url": "https://www.youtube.com/watch?v=gatqRle5s1I" },
       { "type": "youtube", "label": "Refrigeration Cycle on Ship", "url": "https://www.youtube.com/watch?v=dfLFt2X1uh4" },
       { "type": "wikipedia", "label": "Vapor-Compression Refrigeration — Wikipedia", "url": "https://en.wikipedia.org/wiki/Vapor-compression_refrigeration" },
-      { "type": "reference", "label": "Ship's Refrigeration Plant — Marine Insight", "url": "https://www.marineinsight.com/refrigeration-air-conditioning/ships-refrigeration-plant/" },
-      { "type": "reference", "label": "Refrigerant Quality Guidelines on Ships — Marine Insight", "url": "https://www.marineinsight.com/maritime-law/guidelines-on-quality-of-refrigerant-used-on-ships/" }
+      { "type": "reference", "label": "How to Charge Refrigeration Plant on Ships — Marine Insight", "url": "https://www.marineinsight.com/how-to-charge-refrigeration-plant-on-ships/" },
+      { "type": "reference", "label": "Refrigerant Quality Guidelines on Ships — Marine Insight", "url": "https://www.marineinsight.com/guidelines-on-quality-of-refrigerant-used-on-ships/" }
     ]
   },
   {
